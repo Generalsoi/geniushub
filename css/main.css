@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+
+/*********************/
+/********Navbar*******/
+/*********************/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 132px;
+}
+
+nav ul{
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 72px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul li a:hover{
+    color: #F36F21;
+}
