@@ -1,6 +1,16 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap');
+
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body{
+    font-family: 'Overpass', sans-serif;
+}
+
+
 
 /*********************/
 /********Navbar*******/
@@ -9,6 +19,12 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 1% 132px;
+    height: 100px;
+    border-bottom: 8px solid #B0CB1F;
+}
+
+nav img{
+    line-height: 100px;
 }
 
 nav ul{
@@ -20,6 +36,8 @@ nav ul{
 nav ul li{
     display: inline-block;
     margin-left: 72px;
+    line-height: 72px;
+    align-items: center;
 }
 
 nav ul li a{
@@ -29,4 +47,16 @@ nav ul li a{
 
 nav ul li a:hover{
     color: #F36F21;
+} 
+
+
+/*****************************/
+/***Communication section*****/
+/*****************************/
+.communication{
+    height: calc(100vh - 100px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/WhatsApp\ Image\ 2020-12-17\ at\ 2.56.40\ AM.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.96;
 }
