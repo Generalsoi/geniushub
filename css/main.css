@@ -56,7 +56,7 @@ nav ul li a:hover{
 .communication{
     position: relative;
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(95vh - 100px);
     background-image: url(/images/WhatsApp\ Image\ 2020-12-17\ at\ 2.56.40\ AM.png);
     opacity: 1;
 }
@@ -97,9 +97,88 @@ nav ul li a:hover{
 .call-to-action a{
     text-decoration: none;
     color: white;
+    font-family: 'Overpass', sans-serif;
     font-weight: normal;
 }
 
-.call-to-action a:hover{
-    background-color: 
+.call-to-action:hover{
+    background-color: #405520;
+}
+
+.mission{
+    position: absolute;
+    margin-top: 46px;
+    height: 68px;
+    background-color: #43240F;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 16px;
+    top: 450px;
+}
+
+.mission .btn-{
+    height: 36px;
+    width: 92px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-left: 28px;
+    background: transparent;
+}
+
+.mission button:hover{
+    background: #F36F21;
+    border: none;
+}
+
+.mission a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+
+
+
+/********************************/
+/*********About section**********/
+/********************************/
+.about{
+    padding: 48px 284px;
+    text-align: center;
+} 
+
+.about h3{
+    font-size: 40px;
+}
+
+.about hr{
+    width: 50px;
+    margin: 30px auto;
+    background-color: #F36F21;
+    height: 4px;
+    border: none;
+    border-radius: 8px;
+    left: 500px;
+}
+
+.about p{
+    line-height: 30px;
+}
+
+.about button{
+    height: 49px;
+    width: 192px;
+    background-color: #E31E24;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 32px;
+}
+
+.about button a{
+    font-family: 'Overpass', sans-serif;
+    text-decoration: none;
+    color: white;
 }
