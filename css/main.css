@@ -204,7 +204,7 @@ nav ul li a:hover{
 /********Divisions section*********/
 /**********************************/
 .divisions{
-    padding: 5% 132px;
+    padding: 5% 150px;
     background-color: #43240F;
     text-align: center;
 }
@@ -234,15 +234,55 @@ nav ul li a:hover{
     color: white;
     opacity: 85%;
     font-size: 12px;
+    width: 93px;
+    height: 39px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
 }
 
+.divisions a:hover{
+    background-color: #E31E24;
+    opacity: 1;
+}
+
+.divisions img{
+    width: 125px;
+    height: 125px;
+}
+
+.divisions .row{
+    justify-content: space-between;
+    margin-top: 68px;
+}
+
+.divisions .row .col{
+    width: 400px;
+}
+
+.divisions .row .col .card{
+    align-items: center;
+}
+
+.divisions .row .col .card .card-head{
+    padding: 37px 90px;
+}
+
+.divisions .row .col .card .card-body{
+    background-color: #E4E4E4;
+    padding: 26px;
+}
+
+.divisions .row .col .card .card-body h5{
+    font-weight: bold;
+}
 
 
 /***********************************/
 /***** Approach Section ************/
 /***********************************/
 .approach{
-    padding: 5% 284px;
+    padding: 5% 132px;
     text-align: center;
 }
 
@@ -264,6 +304,15 @@ nav ul li a:hover{
 .approach p{
     line-height: 30px;
     font-size: 19px;
+}
+
+.approach div{
+    padding: 0 160px 32px;
+}
+
+.approach img{
+    width: 95%;
+    height: 350px;
 }
 
 
@@ -297,6 +346,49 @@ nav ul li a:hover{
     background-color: #E31E24;
     color: white;
     opacity: 85%;
+}
+
+.programs .row{
+    margin-top: 68px;
+}
+
+.programs .row .col .card img{
+    width: 125px;
+    height: 125px;
+}
+
+.programs .row .col{
+    width: 350px;
+}
+
+.programs .row .col .card .card-head{
+    padding: 37px 90px;
+}
+
+.programs .row .col .card .card-body{
+    background-color: #E4E4E4;
+    padding: 26px;
+}
+
+.programs .row .col .card .card-body h5{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.programs .row .col .card .card-body p{
+    font-size: 13px;
+}
+
+.programs .row .col .card .card-body a{
+    border: none;
+    border-radius: 10px;
+    width: 130px;
+    font-size: 12px;
+}
+
+.programs .row .col .card .card-body a:hover{
+    background-color: #E31E24;
+    opacity: 1;
 }
 
 
