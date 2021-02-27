@@ -1,0 +1,205 @@
+nav #nav-ul li{
+    display: inline-block;
+    margin-left: 40px;
+    line-height: 72px;
+    align-items: center;
+}
+
+nav button{
+    background-color: #E31E24;
+    opacity: 1;
+    height: 40px;
+    width: 90px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+nav button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/****************************/
+/***** Introduction *********/
+/****************************/
+.introduction img{
+    width: 55px;
+    height: 55px;
+}
+
+.introduction{
+    height: calc(100vh - 100px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/images/black-kid.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.introduction-content{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(30vh);
+}
+
+.introduction-content h3{
+    color: white;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.introduction-content p{
+    margin-top: 30px;
+    color: white;
+}
+
+
+
+/************************************/
+/****** Eduction section ************/
+/************************************/
+.education{
+    padding: 5% 132px;
+}
+
+.education img{
+    width: 125px;
+    height: 125px;
+}
+
+.education .row{
+    justify-content: space-between;
+    margin-top: 68px;
+}
+
+.education .row .col-md-6 .card{
+    padding-right: 80px;
+    border: none;
+}
+
+.education .row .col-md-6 .card h5{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 36px;
+}
+
+.education .row .col-md-6 .card p{
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.education .row .col-md-3{
+    width: 320px;
+}
+
+.education .row .col-md-3 .card{
+    align-items: center;
+    border-radius: 5px;
+}
+
+.education .row .col-md-3 .card .card-head{
+    padding: 37px 90px;
+}
+
+.education .row .col-md-3 .card .card-body{
+    background-color: #E4E4E4;
+    padding: 30px;
+    text-align: center;
+}
+
+.education .row .col-md-3 .card .card-body h5{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.education .row .col-md-3 .card .card-body p{
+    font-size: 13px;
+}
+
+.education .row .col-md-3 .card .card-body a{
+    background-color: #E31E24;
+    opacity: 85%;
+    color: white;
+    width: 95px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 10px;
+}
+
+
+
+
+/**************************************/
+/***** Empowerment section ************/
+/**************************************/
+.empowerment{
+    padding: 5% 132px;
+}
+
+.empowerment img{
+    width: 125px;
+    height: 125px;
+}
+
+.empowerment .row{
+    justify-content: space-between;
+    margin-top: 68px;
+}
+
+.empowerment .row .col-md-6 .card{
+    padding-right: 80px;
+    border: none;
+}
+
+.empowerment .row .col-md-6 .card h5{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.empowerment .row .col-md-6 .card p{
+    margin-top: 35px;
+    font-size: 16px;
+}
+
+.empowerment .row .col-md-3{
+    width: 320px;
+}
+
+.empowerment .row .col-md-3 .card{
+    align-items: center;
+    border-radius: 5px;
+}
+
+.empowerment .row .col-md-3 .card .card-head{
+    padding: 37px 90px;
+}
+
+.empowerment .row .col-md-3 .card .card-body{
+    background-color: #E4E4E4;
+    padding: 30px;
+    text-align: center;
+}
+
+.empowerment .row .col-md-3 .card .card-body h5{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.empowerment .row .col-md-3 .card .card-body p{
+    font-size: 13px;
+}
+
+.empowerment .row .col-md-3 .card .card-body a{
+    background-color: #E31E24;
+    opacity: 85%;
+    color: white;
+    width: 95px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 10px;
+}

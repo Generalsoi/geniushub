@@ -82,6 +82,7 @@ nav ul li a:hover{
 
 .communication .communication-content h2{
     font-size: 50px;
+    font-weight: bolder;
 }
 
 .call-to-action{
@@ -444,6 +445,24 @@ nav ul li a:hover{
     left: 500px;
 }
 
+.team .row {
+    justify-content: space-between;
+}
+
+.team .row .col{
+    width: 350px;
+}
+
+.team .row .col .card .card-head img{
+    height: 189px;
+}
+
+.team .row .col .card .card-body{
+    background-color: #FFE0CE;
+    opacity: 85%;
+    padding: 28px;
+}
+
 
 
 /***********************************/
@@ -469,6 +488,15 @@ nav ul li a:hover{
     border: none;
     border-radius: 8px;
     left: 500px;
+}
+
+.partners .row .col img{
+    width: 130px;
+    height: 110px;
+}
+
+.partners .row{
+    margin-top: 78px;
 }
 
 
