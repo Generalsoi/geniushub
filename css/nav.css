@@ -1,0 +1,26 @@
+nav a img{
+    height: 60px;
+    width: 60px;
+}
+
+nav #nav-ul li{
+    display: inline-block;
+    margin-left: 40px;
+    line-height: 72px;
+    align-items: center;
+}
+
+nav button{
+    background-color: #E31E24;
+    opacity: 1;
+    height: 40px;
+    width: 90px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+nav button a{
+    text-decoration: none;
+    color: white;
+}

@@ -166,6 +166,20 @@ nav button a{
     font-weight: 600;
 }
 
+.jobs .roles .apply a{
+    text-decoration: none;
+    color: black;
+}
+
+.jobs .roles .apply a:hover{
+    color: white;
+}
+
+.jobs .roles .apply:hover{
+    background-color: #F36F21;
+    transition: ease 0.5s;
+}
+
 .jobs .roles .role-title{
     font-size: 15px;
 }
