@@ -1,0 +1,178 @@
+nav a img{
+    height: 60px;
+    width: 60px;
+}
+
+nav #nav-ul li{
+    display: inline-block;
+    margin-left: 40px;
+    line-height: 72px;
+    align-items: center;
+}
+
+nav button{
+    background-color: #E31E24;
+    opacity: 1;
+    height: 40px;
+    width: 90px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+nav button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/****************************/
+/***** Introduction *********/
+/****************************/
+.introduction img{
+    width: 55px;
+    height: 55px;
+}
+
+.introduction{
+    height: calc(100vh - 100px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/images/cytonn-photography-ZJEKICY5EXY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.introduction-content{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(30vh);
+}
+
+.introduction-content button{
+    height: 90px;
+    width: 320px;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.introduction-content button a{
+    font-size: 32px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.introduction-content p{
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+
+/*********************************/
+/**** Careers section ************/
+/*********************************/
+.careers{
+    padding: 5% 132px 1%;
+}
+
+.careers h5{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.careers h6{
+    font-size: 25px;
+    color: #F36F21;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+
+
+/**********************************/
+/******* Jobs section *************/
+/**********************************/
+.jobs{
+    padding: 2% 132px;
+}
+
+.jobs .jobs-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.jobs .jobs-head h6{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.jobs .jobs-head input{
+    height: 36px;
+    width: 200px;
+    border: 1px solid #F36F21;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 12px;
+}
+
+.jobs .roles{
+    border: 1px solid #E4E4E4;
+    border-radius: 10px;
+    padding: 21px 32px 5px;
+    margin-bottom: 20px;
+}
+
+.jobs .roles ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobs .roles ul li{
+    line-height: 40px;
+}
+
+.jobs .roles ul li p{
+    margin: 0;
+    padding: 0;
+}
+
+.jobs .roles .role-type,
+.jobs .roles .location{
+    border: 1px solid #F36F21;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+}
+
+.jobs .roles .apply{
+    background-color: #FFE0CE;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.jobs .roles .role-title{
+    font-size: 15px;
+}
+
+.jobs .roles .role-desc{
+    color: #949494;
+    font-size: 12px;
+}
+
+
