@@ -106,19 +106,20 @@ nav ul li a:hover{
     background-color: #405520;
 }
 
-.mission{
+.communication .mission{
     position: absolute;
+    left: 0;
+    width: 100%;
     margin-top: 46px;
     height: 68px;
     background-color: #43240F;
-    width: 100%;
     text-align: center;
     justify-content: center;
     padding-top: 16px;
-    top: 450px;
+    top: 460px;
 }
 
-.mission .btn-{
+.communication .mission .btn-{
     height: 36px;
     width: 92px;
     font-size: 16px;
@@ -126,21 +127,97 @@ nav ul li a:hover{
     border-radius: 8px;
     margin-left: 28px;
     background: transparent;
+    color: white;
+    font-family: 'Overpass', sans-serif;
 }
 
-.mission button:hover{
+.mission .btn-:hover{
     background: #F36F21;
     cursor: pointer;
     border: none;
 }
 
-.mission a{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    font-family: 'Overpass', sans-serif;
+
+/**** POPUP CONTENT ******/
+.popup{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
 }
 
+.popup-content{
+    background-color: white;
+    height: 250px;
+    width: 450px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.popup-content .heading{
+    background-color: #ECD1C2;
+    opacity: 0.9;
+    color: #000000;
+    height: 70px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 20px;
+}
+
+.popup-content .heading h5{
+    font-weight: 600;
+}
+
+.popup-content .heading hr{
+    width: 15%;
+    margin: 0 auto;
+    height: 5px;
+    border-radius: 10px;
+    color: #F36F21;
+    opacity: 1;
+}
+
+.popup-content p{
+    text-align: left;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.popup-content .exit, .popup-content .close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    color: #000000;
+    opacity: 1;
+}
+
+.popup-content .exit:hover, .popup-content .close:hover{
+    cursor: pointer;
+    color: #000000;
+}
+
+.popup-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
+}
 
 
 /********************************/
