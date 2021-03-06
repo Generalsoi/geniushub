@@ -21,6 +21,11 @@ nav{
     padding: 1% 132px;
     height: 100px;
     border-bottom: 8px solid #B0CB1F;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
 }
 
 nav img{
@@ -54,6 +59,7 @@ nav ul li a:hover{
 /***Communication section*****/
 /*****************************/
 .communication{
+    margin-top: 100px;
     position: relative;
     display: flex;
     height: calc(95vh - 100px);
@@ -85,7 +91,7 @@ nav ul li a:hover{
     font-weight: bolder;
 }
 
-.call-to-action{
+.call-to-action button{
     width: 192px;
     height: 56px;
     margin-top: 32px;
@@ -93,17 +99,17 @@ nav ul li a:hover{
     border: none;
     border-radius: 8px;
     font-size: 20px;
+    color: white;
 }
 
-.call-to-action a{
+.call-to-action {
     text-decoration: none;
-    color: white;
     font-family: 'Overpass', sans-serif;
     font-weight: normal;
     font-size: 20px
 }
 
-.call-to-action:hover{
+.call-to-action button:hover{
     background-color: #405520;
 }
 

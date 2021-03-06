@@ -3,6 +3,8 @@ nav{
     position: fixed;
     width: 100%;
     z-index: 1;
+    overflow: hidden;
+    top: 0;
 }
 
 nav a img{
