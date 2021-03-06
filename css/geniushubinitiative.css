@@ -106,6 +106,10 @@
     padding: 10px;
 }
 
+.education .row .col-md-3 .card .card-body a i{
+    margin-left: 10px;
+}
+
 
 
 
@@ -173,10 +177,14 @@
     background-color: #E31E24;
     opacity: 85%;
     color: white;
-    width: 95px;
+    width: 125px;
     height: 40px;
     border: none;
     border-radius: 8px;
     font-size: 13px;
     padding: 10px;
+}
+
+.empowerment .row .col-md-3 .card .card-body a i{
+    margin-left: 10px;
 }
