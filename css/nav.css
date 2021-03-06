@@ -18,9 +18,5 @@ nav button{
     margin-top: 10px;
     border: none;
     border-radius: 8px;
-}
-
-nav button a{
-    text-decoration: none;
     color: white;
 }
