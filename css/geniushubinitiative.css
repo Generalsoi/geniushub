@@ -231,7 +231,7 @@
         width: 100%;
     }
 
-    .education .container{
+    .education .container{ 
         padding: 0;
     }
     
@@ -262,7 +262,7 @@
     }
     
     .education .row .col-md-3{
-        width: 320px;
+        width: 100%;
         margin-bottom: 30px;
     }
 
@@ -302,6 +302,7 @@
     }
     
     .empowerment .row .col-md-3{
+        width: 100%;
         margin-bottom: 30px;
     }
 

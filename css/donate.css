@@ -101,3 +101,76 @@
     color: white;
     margin-bottom: 0;
 }
+
+
+/**********************************************/
+/**********************************************/
+/* RESPONSIVENESS FOR THE DIFFERENT SECTIONS */
+/*********************************************/
+/*********************************************/
+@media screen and (max-width: 768px){
+    .introduction img{
+        width: 55px;
+        height: 55px;
+    }
+    
+    .introduction{
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 5% 5%;
+        margin-top: 80px;
+    }
+    
+    .introduction-content{
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        transform: translateY(20vh);
+    }
+    
+    .introduction-content button{
+        height: 85px;
+        width: 100%;
+        border: none;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+    
+    .introduction-content a{
+        font-size: 28px;
+    }
+    
+    .introduction-content p{
+        margin-top: 30px;
+        color: white;
+        font-size: 18px;
+    }
+
+    /* DONATE SECTION */
+    .donate{
+        width: 100%;
+        padding: 10% 5% 5%;
+        text-align: left;
+    }
+    
+    .donate h4{
+        font-size: 39px;
+        margin-bottom: 24px;
+    }
+
+    /* DONATE FORM SECTION */
+    .donate-form .form-content{
+        width: 100%;
+        height: 800px;
+    }
+    
+    .donate-form .form-content form .attachments{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .donate-form .form-content form button{
+        width: 100%;
+    }
+}

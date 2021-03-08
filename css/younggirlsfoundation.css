@@ -195,4 +195,84 @@
 /*********************************************/
 /*********************************************/
 @media screen and (max-width: 768px){
+    /* INTRODUCTION SECTION */
+    .introduction img{
+        width: 55px;
+        height: 55px;
+    }
+    
+    .introduction{
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 5% 5%;
+        margin-top: 80px;
+    }
+    
+    .introduction-content{
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        transform: translateY(10vh);
+    }
+    
+    .introduction-content h3{
+        font-size: 30px;
+    }
+    
+    .introduction-content p{
+        margin-top: 20px;
+    }
+
+    /* EMPOWERMENT SECTION */
+    .empowerment{
+        width: 100%;
+        padding: 10% 5%;
+    }
+    
+    .empowerment h5{
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+    
+    .empowerment h6{
+        font-size: 20px;
+    }
+
+    .empowerment p{
+        font-size: 15px;
+    }
+
+    /* GET-IN-TOUCH SECTION */
+    .get-in-touch{
+        width: 100%;
+        padding: 5% 5% 10%;
+    }
+    
+    .get-in-touch-content{
+        width: 100%;
+        height: 150px;
+        padding: 20px;
+    }
+    
+    .get-in-touch-content .envelope p{
+        margin-top: 15px;
+    }
+
+    .get-in-touch-content .envelope{
+        background-color: white;
+    }
+    
+    .get-in-touch-content .envelope:hover{
+        transform: rotate(0deg);
+        transition: ease all 0.5s;
+    }
+    
+    .get-in-touch-content div h6{
+        font-size: 20px;
+    }
+    
+    .get-in-touch-content div p{
+        font-size: 15px;
+        font-weight: 300;
+    }
 }

@@ -28,7 +28,7 @@
     border-radius: 8px;
 }
 
-.introduction-content button a{
+.introduction-content a{
     font-size: 32px;
     color: #000000;
     text-decoration: none;
@@ -167,3 +167,101 @@
 }
 
 
+/**********************************************/
+/**********************************************/
+/* RESPONSIVENESS FOR THE DIFFERENT SECTIONS */
+/*********************************************/
+/*********************************************/
+@media screen and (max-width: 768px){
+    /* INTRODUCTION SECTION */
+    .introduction img{
+        width: 55px;
+        height: 55px;
+    }
+    
+    .introduction{
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 5% 5%;
+        margin-top: 80px;
+    }
+    
+    .introduction-content{
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        transform: translateY(20vh);
+    }
+    
+    .introduction-content button{
+        height: 85px;
+        width: 100%;
+        border: none;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+    
+    .introduction-content a{
+        font-size: 28px;
+    }
+    
+    .introduction-content p{
+        margin-top: 30px;
+        color: white;
+        font-size: 18px;
+    }
+
+    /* CAREERS SECTION */
+    .careers{
+        width: 100%;
+        padding: 10% 5%;
+    }
+    
+    .careers h5{
+        font-size: 25px;
+        margin-bottom: 12px;
+    }
+    
+    .careers h6{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    /* JOBS SECTION */
+    .jobs{
+        width: 100%;
+        padding: 2% 5%;
+    }
+    
+    .jobs .jobs-head{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 40px;
+    }
+    
+    .jobs .roles{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .jobs .roles ul{
+        list-style-type: none;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .jobs .roles ul li{
+        line-height: 50px;
+        margin-top: 10px;
+    }
+    
+    .jobs .roles ul li p{
+        margin: 0;
+        padding: 0;
+    }
+  
+}
