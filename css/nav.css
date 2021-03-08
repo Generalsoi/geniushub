@@ -51,8 +51,13 @@ nav button{
         height: 55px;
     }
 
+    nav ul{
+        margin: 0;
+    }
+
     nav #nav-ul{
-        margin: 15px auto;
+        margin: 5px auto;
+        padding: 0;
     }
 
     nav #nav-ul li{
@@ -60,16 +65,17 @@ nav button{
         justify-content: center;
         text-align: center;
         align-items: center;
-        margin: 0;
-        line-height: 60px;
-    }
-
-    nav .button{
-        margin: 0 auto;
+        margin: 30px;
+        padding: 0;
+        line-height: 20px;
     }
 
     nav #nav-ul li a{
-        margin: 10px auto;
+        margin: 0;
+    }
+
+    nav .button{
+        margin: 5px auto;
     }
 
     .nav-toggle{
@@ -80,7 +86,7 @@ nav button{
     }
 
     .open{
-        height: 100vh;
+        height: 95vh;
     }
 
     .hidden{
