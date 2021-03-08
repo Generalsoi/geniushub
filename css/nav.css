@@ -51,17 +51,21 @@ nav button{
         height: 55px;
     }
 
+    nav #nav-ul{
+        margin: 15px auto;
+    }
+
     nav #nav-ul li{
         display: block;
         justify-content: center;
         text-align: center;
         align-items: center;
-        margin-top: 0;
+        margin: 0;
         line-height: 60px;
     }
 
-    nav button{
-        margin-left: 110px;
+    nav .button{
+        margin: 0 auto;
     }
 
     nav #nav-ul li a{

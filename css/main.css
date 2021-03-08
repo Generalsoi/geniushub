@@ -761,11 +761,16 @@ nav ul li a:hover{
         height: 55px;
     }
 
+    nav ul {
+        margin: 0 auto;
+    }
+
     nav ul li{
         display: block;
         justify-content: center;
         text-align: center;
         align-items: center;
+        margin: 0;
     }
 
     nav ul li a{
@@ -881,6 +886,7 @@ nav ul li a:hover{
     
     .divisions .row .col{
         width: 350px;
+        margin: 20px auto;
     }
 
     /* APPROACH SECTION */
@@ -932,6 +938,10 @@ nav ul li a:hover{
     .programs .row{
         margin-top: 20px;
     }
+
+    .programs .row .col{
+        margin: 20px auto;
+    }
     
     .programs .row .col .card img{
         width: 100px;
@@ -970,7 +980,7 @@ nav ul li a:hover{
     
     .team .row .col{
         width: 350px;
-        margin-top: 30px;
+        margin: 30px auto;
     }
 
     /* PARTNERS SECTION */
