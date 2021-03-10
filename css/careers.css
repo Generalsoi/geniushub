@@ -8,7 +8,7 @@
 
 .introduction{
     height: calc(100vh - 100px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/images/cytonn-photography-ZJEKICY5EXY-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/cytonn-photography-ZJEKICY5EXY-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

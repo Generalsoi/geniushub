@@ -67,7 +67,7 @@ nav ul li a{
     position: relative;
     display: flex;
     height: calc(95vh - 100px);
-    background-image: url(https://github.com/Generalsoi/geniushub/blob/47a03a7910d4cca3f472bbd372621fdcef2d6c50/images/indexbgimg.png);
+    background-image: url(../images/indexbgimg.png);
     opacity: 1;
 }
 
