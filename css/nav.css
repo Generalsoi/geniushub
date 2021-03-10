@@ -30,6 +30,26 @@ nav button{
     color: white;
 }
 
+nav #nav-ul li ul{
+    position: absolute;
+    background-color: #F36F21;
+    display: block;
+    top: 20px;
+    width: 300px;
+    transition: 0.5s;
+    padding: 0;
+    z-index: 1;
+}
+
+nav #nav-ul li ul a{
+    color: white;
+    font-size: 15px;
+}
+
+
+
+
+
 /**********************************************/
 /**********************************************/
 /* RESPONSIVENESS FOR THE DIFFERENT SECTIONS */

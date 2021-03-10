@@ -50,7 +50,7 @@ nav ul li a{
     color: #000000;
 }
 
-nav ul li a:hover{
+.active, nav ul li a:hover{
     color: #F36F21;
 } 
 
@@ -67,7 +67,7 @@ nav ul li a:hover{
     position: relative;
     display: flex;
     height: calc(95vh - 100px);
-    background-image: url(/images/indexbgimg.png);
+    background-image: url(https://github.com/Generalsoi/geniushub/blob/47a03a7910d4cca3f472bbd372621fdcef2d6c50/images/indexbgimg.png);
     opacity: 1;
 }
 
@@ -1046,9 +1046,11 @@ nav ul li a:hover{
     
     .footer .container ul{
         margin-top: 20px;
-    }
+    }   
+}
 
 
-    
+@media (min-width: 769px) and (max-width: 911px){
+
 }
 
