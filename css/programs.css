@@ -17,7 +17,7 @@
     width: 70%;
     margin: auto;
     text-align: center;
-    transform: translateY(30vh);
+    transform: translateY(20vh);
 }
 
 .introduction-content h3{
@@ -29,4 +29,235 @@
 .introduction-content p{
     margin-top: 30px;
     color: white;
+}
+
+.introduction-content ul {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.introduction-content ul li{
+    display: inline-block;
+}
+
+.introduction-content ul li{
+    margin-right: 40px;
+}
+
+.introduction-content ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+/***************************************/
+/*** Raising Leaders Section ***********/
+/***************************************/
+.raising-leaders{
+    padding: 5% 132px;
+}
+
+.raising-leaders h5{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.raising-leaders h6{
+    font-size: 25px;
+    color: #F36F21;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+
+
+/*****************************************/
+/***** OUR PROCESS SECTION ***************/
+/*****************************************/
+.our-process{
+    padding: 5% 132px;
+    background-color: #FFE9DC;
+}
+.our-process h5{
+    font-size: 40px;
+    text-align: center;
+}
+
+.our-process hr{
+    width: 50px;
+    margin: 20px auto;
+    background-color: #F36F21;
+    opacity: 1;
+    height: 4px;
+    border: none;
+    border-radius: 8px;
+    left: 500px;
+}
+
+.our-process h6{
+    color: #F36F21;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.our-process .number{
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+    padding: 2px 4px;
+    border-radius: 50%;
+    border: 1px solid #F36F21;
+    margin-right: 10px;
+}
+
+.our-process .container .row{
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+
+
+/***********************************/
+/** SKILL ACQUISITION SECTION ******/
+/***********************************/
+.skill-acquisition{
+    padding: 5% 132px 0;
+}
+
+.skill-acquisition h5{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.skill-acquisition h6{
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.skill-acquisition .container{
+    padding: 0;
+}
+
+.skill-acquisition .container .row{
+    justify-content: space-between;
+}
+
+.skill-acquisition .container .row .row-content{
+    padding: 12px;
+    background-color: #FFFFFF;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.skill-acquisition .container .row .row-content p{
+    font-size: 15px;
+}
+
+.skill-acquisition .container .row .row-content button{
+    border: none;
+    border-radius: 10px;
+    width: 96px;
+    height: 28px;
+    background-color: #FFE0CE;
+    font-size: 12px;
+}
+
+
+/***************************************/
+/**** APPLICATION SECTION **************/
+/***************************************/
+.apply{
+    padding: 2% 132px;
+    display: flex;
+    justify-content: center;
+}
+
+.apply button{
+    width: 197px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.apply .trainee{
+    border: 1px solid #F36F21;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.apply .trainee:hover, .apply .sponsor:hover{
+    background-color: #F36F21;
+    color: white;
+}
+
+.apply .sponsor{
+    border: none;
+    background-color: #FFE0CE;
+}
+
+
+
+/**********************************************/
+/**********************************************/
+/* RESPONSIVENESS FOR THE DIFFERENT SECTIONS */
+/*********************************************/
+/*********************************************/
+@media screen and (max-width: 768px){
+    /* INTRODUCTION SECTION */
+    .introduction{
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 5% 5%;
+        margin-top: 80px;
+    }
+    
+    .introduction-content{
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        transform: translateY(2vh);
+    }
+    
+    .introduction-content h3{
+        font-size: 25px;
+    }
+    
+    .introduction-content p{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .introduction-content ul {
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    .introduction-content ul li a{
+        font-size: 15px;
+    }
+    
+
+    /* RAISING LEADERS SECTION */
+    .raising-leaders{
+        padding: 5% 5%;
+        width: 100%;
+    }
+    
+    .raising-leaders h5{
+        font-size: 25px;
+    }
+    
+    .raising-leaders h6{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
 }

@@ -195,11 +195,6 @@
 /*********************************************/
 @media screen and (max-width: 768px){
     /* INTRODUCTION SECTION */
-    .introduction img{
-        width: 55px;
-        height: 55px;
-    }
-    
     .introduction{
         width: 100%;
         height: calc(100vh - 80px);
