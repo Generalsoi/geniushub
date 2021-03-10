@@ -777,6 +777,10 @@ nav ul li a{
         margin: 20px auto;
     }
 
+    nav ul .about{
+        margin-top: 0;
+    }
+
     .nav-toggle{
         position: absolute;
         top: 1.5rem;
