@@ -248,7 +248,7 @@
 
     /* RAISING LEADERS SECTION */
     .raising-leaders{
-        padding: 5% 5%;
+        padding: 10% 5%;
         width: 100%;
     }
     
@@ -259,5 +259,61 @@
     .raising-leaders h6{
         font-size: 18px;
         margin-bottom: 20px;
+    }
+
+    /* OUR PROCESS SECTION */
+    .our-process{
+        width: 100%;
+        padding: 5% 5%;
+    }
+    .our-process h5{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .our-process h6{
+        font-size: 18px;
+    }
+    
+    .our-process .container .row{
+        margin-top: 0;
+    }
+
+    .our-process .container .row .col-lg-6{
+        margin-top: 30px;
+    }
+
+    /* SKILL-ACQUISITION SECTION */
+    .skill-acquisition{
+        width: 100%;
+        padding: 10% 5% 0;
+    }
+    
+    .skill-acquisition h5{
+        font-size: 20px;
+    }
+    
+    .skill-acquisition h6{
+        font-size: 15px;
+    }
+    
+    .skill-acquisition .container{
+        padding: 0;
+    }
+    
+    .skill-acquisition .container .row{
+        justify-content: center;
+    }
+
+    /* APPLICATION SECTION */
+    .apply{
+        width: 100%;
+        padding: 5% 5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .apply button{
+        font-size: 13px;
     }
 }
