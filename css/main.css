@@ -830,8 +830,7 @@ nav ul li a{
         position: absolute;
         left: 0;
         width: 100%;
-        margin-top: 46px;
-        height: 20%;
+        margin-top: 20%;
         top: 330px;
     }
 
@@ -1029,7 +1028,7 @@ nav ul li a{
     .footer{
         width: 100%;
         background-color: #000000;
-        padding: 3% 5%;
+        padding: 10% 5% 3%;
     }
     
     .footer .container{
