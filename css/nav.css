@@ -44,6 +44,7 @@ nav #nav-ul li ul{
 nav #nav-ul li ul a{
     color: white;
     font-size: 15px;
+    font-weight: 700;
 }
 
 
@@ -106,7 +107,7 @@ nav #nav-ul li ul a{
     }
 
     .open{
-        height: 95vh;
+        height: 90vh;
     }
 
     .hidden{
