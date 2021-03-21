@@ -18,7 +18,7 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 1% 132px;
+    padding: 1% 7%;
     height: 100px;
     border-bottom: 8px solid #B0CB1F;
     background-color: white;
@@ -81,7 +81,7 @@ nav ul li a{
 
 .communication .communication-content{
     z-index: 1;
-    padding: 5% 132px;
+    padding: 5% 7%;
 }
 
 .communication .communication-content h4{
@@ -95,30 +95,31 @@ nav ul li a{
     font-weight: bolder;
 }
 
-.call-to-action button{
-    width: 192px;
-    height: 56px;
-    margin-top: 32px;
-    background-color: #8CBB4A;
+.communication-content button{
+    height: 55px;
+    width: 220px;
+    background-color: #1C295E;
     border: none;
     border-radius: 8px;
-    font-size: 20px;
-    color: white;
+    margin-top: 32px;
 }
 
-.call-to-action {
-    text-decoration: none;
+.communication-content button:hover {
+    background-color: #E31E24;
+    opacity: 1;
+}
+
+.communication-content button a{
     font-family: 'Overpass', sans-serif;
-    font-weight: normal;
-    font-size: 20px
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.call-to-action button:hover{
-    background-color: #405520;
-}
-
-.call-to-action i{
-    margin-left: 20px;
+.communication-content button i{
+    color: white;
+    margin-left: 3px;
 }
 
 .communication .mission{
@@ -130,7 +131,6 @@ nav ul li a{
     background-color: #43240F;
     text-align: center;
     justify-content: center;
-    padding-top: 16px;
     top: 460px;
 }
 
@@ -235,82 +235,24 @@ nav ul li a{
 }
 
 
-/********************************/
-/*********About section**********/
-/********************************/
-.about{
-    padding: 5% 284px;
-    text-align: center;
-} 
-
-.about h3{
-    font-size: 40px;
-}
-
-.about hr{
-    width: 50px;
-    margin: 30px auto;
-    background-color: #F36F21;
-    opacity: 1;
-    height: 4px;
-    border: none;
-    border-radius: 8px;
-    left: 500px;
-}
-
-.about p{
-    line-height: 30px;
-    font-size: 19px;
-}
-
-.about button{
-    height: 53px;
-    width: 196px;
-    background-color: #E31E24;
-    opacity: 0.85;
-    border: none;
-    border-radius: 8px;
-    margin-top: 32px;
-}
-
-.about button:hover{
-    background-color: #E31E24;
-    opacity: 1;
-}
-
-.about button a{
-    font-family: 'Overpass', sans-serif;
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.about button i{
-    color: white;
-    margin-left: 3px;
-}
-
-
 
 /**********************************/
 /********Divisions section*********/
 /**********************************/
 .divisions{
-    padding: 5% 150px;
-    background-color: #43240F;
+    padding: 5% 7%;
+    background-color: #fff;
     text-align: center;
 }
 
 .divisions h3{
     font-size: 40px;
-    color: white;
 }
 
 .divisions hr{
     width: 50px;
     margin: 30px auto;
-    background-color: white;
+    background-color: #F36F21;
     opacity: 1;
     height: 4px;
     border: none;
@@ -350,11 +292,12 @@ nav ul li a{
 }
 
 .divisions .row .col{
-    width: 400px;
+    width: 400px;  
 }
 
 .divisions .row .col .card{
     align-items: center;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 .divisions .row .col .card .card-head{
@@ -375,21 +318,23 @@ nav ul li a{
 }
 
 /***********************************/
-/***** Approach Section ************/
+/***** Impact Section ************/
 /***********************************/
-.approach{
-    padding: 5% 132px;
+.impact{
+    padding: 5% 7%;
     text-align: center;
+    background-color: #43240F;
 }
 
-.approach h3{
+.impact h3{
     font-size: 40px;
+    color: white;
 }
 
-.approach hr{
+.impact hr{
     width: 50px;
     margin: 30px auto;
-    background-color: #F36F21;
+    background-color: #fff;
     opacity: 1;
     height: 4px;
     border: none;
@@ -397,18 +342,26 @@ nav ul li a{
     left: 500px;
 }
 
-.approach p{
-    line-height: 30px;
-    font-size: 19px;
+.impact-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
 }
 
-.approach div{
-    padding: 0 160px 32px;
+.impact-content p{
+    color: #fff;
+    text-align: left;
+    line-height: 2.5;
 }
 
-.approach img{
-    width: 95%;
-    height: 350px;
+.impact-content-intro{
+    margin-bottom: 40px;
+}
+
+.impact-content img{
+    width: 30.5rem;
+    height: 17rem;
+    margin-left: 1.875rem;
 }
 
 
@@ -417,20 +370,19 @@ nav ul li a{
 /***** Programs section ********/
 /*******************************/
 .programs{
-    padding: 5% 132px;
-    background-color: #43240F;
+    padding: 5% 7%;
+    background-color: white;
     text-align: center;
 }
 
 .programs h3{
     font-size: 40px;
-    color: white;
 }
 
 .programs hr{
     width: 50px;
-    margin: 30px auto;
-    background-color: white;
+    margin: 30px auto 65px;
+    background-color: #F36F21;
     opacity: 1;
     height: 4px;
     border: none;
@@ -440,53 +392,60 @@ nav ul li a{
 
 .programs a{
     background-color: #E31E24;
+    opacity: 0.85;
     color: white;
-    opacity: 85%;
 }
 
-.programs .row{
-    margin-top: 68px;
+.programs-content{
+    display: flex;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4);
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 60px;
 }
 
-.programs .row .col .card img{
+.programs-content .programs-content-head img{
     width: 125px;
     height: 125px;
 }
 
-.programs .row .col{
-    width: 350px;
+.programs-content .programs-content-head{
+    width: 30%;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
 }
 
-.programs .row .col .card .card-head{
-    padding: 37px 90px;
-}
-
-.programs .row .col .card .card-body{
+.programs-content-desc{
+    display: flex;
+    justify-content: space-between;
     background-color: #E4E4E4;
-    padding: 26px;
+    height: 100%;
+    padding: 3% 2%;
+    position: relative;
 }
 
-.programs .row .col .card .card-body h5{
-    font-weight: bold;
-    font-size: 16px;
+.programs-content-desc span{
+    text-align: left;
+    width: 80%;
 }
 
-.programs .row .col .card .card-body p{
-    font-size: 13px;
+.programs-content-desc span h5{
+    font-weight: 700;
+    margin-bottom: 18px;
 }
 
-.programs .row .col .card .card-body a{
-    border: none;
+.programs-content-desc a{
+    height: 40px;
+    width: 180px;
     border-radius: 10px;
-    width: 130px;
-    font-size: 12px;
+    border: none;
+    position: absolute;
+    right: 2%;
+    bottom: 10%;
 }
-
-.programs .row .col .card .card-body a:hover{
-    background-color: #E31E24;
-    opacity: 1;
-}
-
 
 
 
@@ -494,7 +453,7 @@ nav ul li a{
 /********* Blog section ***********/
 /**********************************/
 .blog{
-    padding: 5% 132px;
+    padding: 5% 7%;
     background-color: #FFE9DC;
     opacity: 1;
     text-align: center;
@@ -521,7 +480,7 @@ nav ul li a{
 /********** Team Section ***********/
 /***********************************/
 .team{
-    padding: 5% 132px;
+    padding: 5% 7%;
     text-align: center;
 }
 
@@ -564,7 +523,7 @@ nav ul li a{
 /********** Partners ***************/
 /***********************************/
 .partners{
-    padding: 5% 132px;
+    padding: 5% 7%;
     background-color: #43240F;
     text-align: center;
 }
@@ -586,8 +545,9 @@ nav ul li a{
 }
 
 .partners .row .col img{
-    width: 130px;
-    height: 110px;
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
 }
 
 .partners .row{
@@ -596,50 +556,7 @@ nav ul li a{
 
 
 
-/***********************************/
-/********** Contact Us *************/
-/***********************************/
-.contact-us{
-    padding: 5% 132px;
-    background-color: #FFE9DC;
-    text-align: center;
-}
 
-.contact-us h3{
-    font-size: 40px;
-}
-
-.contact-us .form-content{
-    background-color: white;
-    margin: 40px auto 0;
-    height: 450px;
-    width: 400px;
-    border-radius: 10px;
-    position: relative;
-    padding: 20px 40px;
-}
-
-.contact-us .form-content form input{
-    display: block;
-    width: 100%;
-    margin: 20px auto;
-    font-size: 14px;
-    color: #949494;
-    padding: 5px 12px;
-    border: 1px solid #C3C3C3;
-    border-radius: 10px;
-}
-
-.contact-us .form-content form button{
-    width: 85px;
-    height: 36px;
-    background-color: #E31E24;
-    opacity: 0.85;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 15px;
-}
 
 
 /************************************/
@@ -647,7 +564,7 @@ nav ul li a{
 /************************************/
 .footer{
     background-color: #000000;
-    padding: 3% 132px;
+    padding: 3% 7%;
 }
 
 .footer .container{
@@ -830,7 +747,7 @@ nav ul li a{
         position: absolute;
         left: 0;
         width: 100%;
-        margin-top: 20%;
+        margin-top: 46px;
         top: 330px;
     }
 
@@ -888,64 +805,105 @@ nav ul li a{
         margin: 20px auto;
     }
 
-    /* APPROACH SECTION */
-    .approach{
+    /* IMPACT SECTION */
+    .impact{
         padding: 10% 5%;
-        text-align: center;
         width: 100%;
     }
     
-    .approach h3{
-        font-size: 40px;
+    .impact-content{
+        flex-direction: column;
     }
     
-    .approach hr{
-        margin: 30px auto;
+    .impact-content p{
+        color: #fff;
+        text-align: left;
+        line-height: 2.5;
     }
     
-    .approach p{
-        line-height: 30px;
-        font-size: 15px;
+    .impact-content-intro{
+        margin-bottom: 40px;
     }
     
-    .approach div{
-        padding: 0;
-    }
-    
-    .approach img{
+    .impact-content img{
         width: 100%;
-        height: 250px;
+        margin-left: 0;
     }
 
     /* PROGRAMS SECTION */
     .programs{
         width: 100%;
         padding: 10% 5%;
-        background-color: #43240F;
         text-align: center;
     }
     
-    .programs h3{
-        font-size: 35px;
-        color: white;
+    .programs-content{
+        flex-direction: column;
+        height: 400px;
     }
     
-    .programs hr{
-        margin: 20px auto;
-    }
-    
-    .programs .row{
-        margin-top: 20px;
-    }
-
-    .programs .row .col{
-        margin: 20px auto;
-    }
-    
-    .programs .row .col .card img{
+    .programs-content .programs-content-head img{
         width: 100px;
         height: 100px;
     }
+    
+    .programs-content .programs-content-head{
+        width: 100%;
+        height: 200px;
+        background-color: #fff;
+        padding: 5%;
+    }
+    
+    .programs-content-desc{
+        flex-direction: column;
+        height: 100%;
+        padding: 5% 5%;
+        position: relative;
+    }
+    
+    .programs-content-desc span{
+        text-align: center;
+        width: 100%;
+    }
+
+    .programs-content-desc a{
+        height: 40px;
+        width: 150px;
+        border-radius: 10px;
+        border: none;
+        position: absolute;
+        right: 25%;
+        bottom: 5%;
+    }
+    
+    
+    
+    /**********************************/
+    /********* Blog section ***********/
+    /**********************************/
+    .blog{
+        padding: 5% 7%;
+        background-color: #FFE9DC;
+        opacity: 1;
+        text-align: center;
+    }
+    
+    .blog h3{
+        font-size: 40px;
+    }
+    
+    .blog hr{
+        width: 50px;
+        margin: 30px auto;
+        background-color: #F36F21;
+        opacity: 1;
+        height: 4px;
+        border: none;
+        border-radius: 8px;
+        left: 500px;
+    }
+    
+    
 
     /* BLOG SECTION */
     .blog{
