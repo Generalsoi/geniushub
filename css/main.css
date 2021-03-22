@@ -143,6 +143,7 @@ nav ul li a{
     margin-left: 28px;
     background: transparent;
     color: white;
+    margin-top: 15px;
     font-family: 'Overpass', sans-serif;
 }
 
@@ -680,7 +681,7 @@ nav ul li a{
 
     nav ul {
         margin: 0 auto;
-    }
+    } 
 
     nav ul li{
         display: block;
@@ -691,7 +692,7 @@ nav ul li a{
     }
 
     nav ul li a{
-        margin: 20px auto;
+        margin: 0;
     }
 
     .nav-toggle{
@@ -703,6 +704,7 @@ nav ul li a{
 
     .open{
         height: 100vh;
+        margin: 0;
     }
 
     .hidden{
@@ -876,33 +878,7 @@ nav ul li a{
         bottom: 5%;
     }
     
-    
-    
-    /**********************************/
-    /********* Blog section ***********/
-    /**********************************/
-    .blog{
-        padding: 5% 7%;
-        background-color: #FFE9DC;
-        opacity: 1;
-        text-align: center;
-    }
-    
-    .blog h3{
-        font-size: 40px;
-    }
-    
-    .blog hr{
-        width: 50px;
-        margin: 30px auto;
-        background-color: #F36F21;
-        opacity: 1;
-        height: 4px;
-        border: none;
-        border-radius: 8px;
-        left: 500px;
-    }
-    
+
     
 
     /* BLOG SECTION */
@@ -965,22 +941,6 @@ nav ul li a{
         margin-top: 30px;
     }
 
-    /* CONTACT US SECTION */
-    .contact-us{
-        width: 100%;
-        padding: 10% 5%;
-        background-color: #FFE9DC;
-        text-align: center;
-    }
-    
-    .contact-us h3{
-        font-size: 35px;
-    }
-    
-    .contact-us .form-content{
-        width: 100%;
-        padding: 20px 20px;
-    }
 
     /* FOOTER SECTION */
     .footer{
