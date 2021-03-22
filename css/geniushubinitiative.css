@@ -38,7 +38,7 @@
 /****** Eduction section ************/
 /************************************/
 .education{
-    padding: 5% 132px;
+    padding: 5% 7%;
 }
 
 .education img{
@@ -118,7 +118,7 @@
 /***** Empowerment section ************/
 /**************************************/
 .empowerment{
-    padding: 5% 132px;
+    padding: 5% 7%;
 }
 
 .empowerment img{
@@ -306,4 +306,38 @@
         margin-bottom: 30px;
     }
 
+}
+
+@media (min-width: 769px) and (max-width: 1023px){
+
+}
+
+@media (min-width: 1024px) and (max-width: 1400px){
+    /* EDUCATION SECTION */
+    .education{
+        padding: 5% 3%;
+        width: 100%;
+    }
+
+    .education .row{
+        justify-content: space-between;
+    }
+
+    .education .row .col-md-3{
+        width: 280px;
+    }
+
+    /* EMPOWERMENT SECTION */
+    .empowerment{
+        padding: 5% 3%;
+        width: 100%;
+    }
+
+    .empowerment .row{
+        justify-content: space-between;
+    }
+
+    .empowerment .row .col-md-3{
+        width: 280px;
+    }
 }
