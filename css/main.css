@@ -680,11 +680,13 @@ nav ul li a{
     }
 
     nav ul {
-        margin: 0 auto;
+        margin: 0 auto 60%;
+        align-items: center;
     } 
 
     nav ul li{
         display: block;
+        line-height: 70px;
         justify-content: center;
         text-align: center;
         align-items: center;
