@@ -43,11 +43,41 @@ nav ul li{
     margin-left: 72px;
     line-height: 72px;
     align-items: center;
+    position: relative;
 }
 
 nav ul li a{
+    display: block;
     text-decoration: none;
     color: #000000;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 80px;
+    display: none;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0 15px;
+    transition: top 0.7s;
+}
+
+nav ul li:hover > ul{
+    display: block;
+    top: 70px;
+}
+
+nav ul ul li{
+    float: none;
+    width: 250px;
+    margin: 0;
+    display: list-item;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+
+nav ul ul li:hover{
+    color: #F36F21;
 }
 
 .active, nav ul li a:hover{
@@ -695,6 +725,7 @@ nav ul li a{
 
     nav ul {
         margin: 0 auto 60%;
+        padding: 0;
         align-items: center;
     } 
 
@@ -709,6 +740,10 @@ nav ul li a{
 
     nav ul li a{
         margin: 0;
+    }
+
+    .nav ul ul{
+
     }
 
     .nav-toggle{
