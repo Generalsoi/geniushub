@@ -756,6 +756,7 @@ nav ul ul li:hover{
     .open{
         height: 95vh;
         margin: 0;
+        background-attachment: fixed;
     }
 
     .hidden{
@@ -802,6 +803,7 @@ nav ul ul li:hover{
         width: 100%;
         margin-top: 46px;
         top: 330px;
+        padding: auto;
     }
 
     /* ABOUT SECTION */
