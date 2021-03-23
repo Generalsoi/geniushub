@@ -743,7 +743,7 @@ nav ul ul li:hover{
     }
 
     .nav ul ul{
-
+        display: none;
     }
 
     .nav-toggle{
