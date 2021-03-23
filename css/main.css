@@ -93,6 +93,24 @@ nav ul ul li:hover{
 }
 
 
+nav button{
+    background-color: #E31E24;
+    opacity: 1;
+    height: 40px;
+    width: 90px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+nav .button{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
 /*****************************/
 /***Communication section*****/
 /*****************************/
