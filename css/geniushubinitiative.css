@@ -8,7 +8,7 @@
 
 .introduction{
     height: calc(100vh - 100px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/black-kid.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/ghubglobalinitiative.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 100px;
@@ -311,7 +311,7 @@
 @media (min-width: 769px) and (max-width: 1023px){
 
 }
-
+ 
 @media (min-width: 1024px) and (max-width: 1400px){
     /* EDUCATION SECTION */
     .education{

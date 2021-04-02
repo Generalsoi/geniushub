@@ -8,7 +8,7 @@
 
 .introduction{
     height: calc(100vh - 100px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/juniorschool.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/jschoolhubimg.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 100px;
@@ -38,7 +38,7 @@
 /**** Raising Leaders *********/
 /******************************/
 .raising-leaders{
-    padding: 5% 132px;
+    padding: 5% 7%;
 }
 
 .raising-leaders h5{
@@ -61,7 +61,7 @@
 /**** Get In Touch **************/
 /********************************/
 .get-in-touch{
-    padding: 5% 132px;
+    padding: 5% 7%;
 }
 
 .get-in-touch-content{
@@ -271,4 +271,11 @@
         font-size: 15px;
         font-weight: 300;
     }
+}
+
+@media (min-width: 769px) and (max-width: 1023px){
+
+}
+
+@media (min-width: 1024px) and (max-width: 1400px){
 }

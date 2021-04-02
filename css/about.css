@@ -1,0 +1,242 @@
+/****************************/
+/***** Introduction *********/
+/****************************/
+.introduction img{
+    width: 55px;
+    height: 55px;
+}
+
+.introduction{
+    height: calc(100vh - 100px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/about-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.introduction-content{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(30vh);
+}
+
+.introduction-content button{
+    height: 90px;
+    width: 320px;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.introduction-content a{
+    font-size: 32px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.introduction-content p{
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+}
+
+
+/************************************/
+/********** About section ***********/
+/************************************/
+.about-content{
+    padding: 5% 7%;
+    display: flex;
+}
+
+.about-content div img{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.about-content .item{
+    flex: 1 1 0;
+    width: 0;
+}
+
+.about-content .one{
+    margin-right: 50px;
+}
+
+.profile-download{
+    text-align: center;
+}
+
+.profile-download button{
+    height: 45px;
+    width: 220px;
+    background-color: #1C295E;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Overpass', sans-serif;
+}
+
+.profile-download button:hover {
+    background-color: #273B89;
+    opacity: 1;
+}
+
+
+/********************************************/
+/**** Mission and Vision Section ************/
+/********************************************/
+.mission-and-vision{
+    padding: 5% 7%;
+    background-color: #FFE9DC;
+    display: flex;
+}
+
+.mission-and-vision .item{
+    flex: 1 1 0;
+    width: 0;
+    text-align: center;
+}
+
+.mission-and-vision .item h5{
+    font-size: 25px;
+    margin-bottom: 16px;
+    font-weight: normal;
+}
+
+.mission-and-vision .item hr{
+    width: 7%;
+    margin: 0 auto 30px;
+    height: 5px;
+    border-radius: 10px;
+    color: #F36F21;
+    opacity: 1;
+}
+
+
+
+/****************************************/
+/***** More Info Section ****************/
+/****************************************/
+.more-info{
+    padding: 5% 7%;
+}
+
+.more-info p{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.more-info ul li{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+
+
+/**********************************************/
+/**********************************************/
+/* RESPONSIVENESS FOR THE DIFFERENT SECTIONS */
+/*********************************************/
+/*********************************************/
+@media screen and (max-width: 768px){
+    .introduction img{
+        width: 55px;
+        height: 55px;
+    }
+    
+    .introduction{
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 5% 5%;
+        margin-top: 80px;
+    }
+    
+    .introduction-content{
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        transform: translateY(20vh);
+    }
+    
+    .introduction-content button{
+        height: 85px;
+        width: 100%;
+        border: none;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+    
+    .introduction-content a{
+        font-size: 28px;
+    }
+    
+    .introduction-content p{
+        margin-top: 30px;
+        color: white;
+        font-size: 18px;
+    }
+
+    /* ABOUT SECTION */
+    .about-content{
+        width: 100%;
+        padding: 5% 5%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .about-content .item{
+        width: 100%;
+    }
+
+    /* MISSION AND VISION SECTION */
+    .mission-and-vision{
+        width: 100%;
+        padding: 5% 5%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .mission-and-vision .item{
+        width: 100%;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .mission-and-vision .item hr{
+        width: 10%;
+        margin: 0 0 30px;
+    }
+
+    /* MORE INFO SECTION */
+    .more-info{
+        width: 100%;
+        padding: 7% 5%;
+    }
+
+    .more-info p{
+        text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .more-info ul li{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px){
+
+}
+
+@media (min-width: 1024px) and (max-width: 1400px){
+    .about-content div img{
+        height: 300px;
+    }
+}
