@@ -214,20 +214,20 @@
     .introduction-content{
         width: 100%;
         margin: auto;
-        text-align: left;
+        text-align: center;
         transform: translateY(20vh);
     }
     
     .introduction-content button{
-        height: 85px;
-        width: 100%;
+        height: 80px;
+        width: 70%;
         border: none;
         background-color: #fff;
         border-radius: 8px;
     }
     
     .introduction-content a{
-        font-size: 28px;
+        font-size: 18px;
     }
     
     .introduction-content p{
