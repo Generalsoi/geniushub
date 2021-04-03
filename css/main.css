@@ -28,7 +28,7 @@ nav{
     background-color: white;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     top: 0;
 }
 
@@ -78,6 +78,10 @@ nav ul ul li{
     display: list-item;
     position: relative;
     border-bottom: 1px solid black;
+}
+
+nav ul .program li{
+    width: 300px;
 }
 
 nav ul ul li:hover{
@@ -131,8 +135,12 @@ nav .button{
     opacity: 0.8;
 }
 
-.communication .communication-content{
+.communication img{
     z-index: 1;
+}
+
+.communication .communication-content{
+    z-index: 2;
     padding: 5% 7%;
 }
 
@@ -527,6 +535,11 @@ nav .button{
     left: 500px;
 }
 
+.blog .row .col .card .card-body a{
+    text-decoration: none;
+    color: black;
+}
+
 
 
 /***********************************/
@@ -801,6 +814,10 @@ nav .button{
     .communication .communication-content{
         padding: 10% 5%;
         text-align: left;
+    }
+
+    .communication img{
+        display: none;
     }
 
     .communication .communication-content h4{

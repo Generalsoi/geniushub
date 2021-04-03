@@ -1,0 +1,295 @@
+/****************************/
+/***** Introduction *********/
+/****************************/ 
+.introduction img{
+    width: 55px;
+    height: 55px;
+}
+
+.introduction{
+    height: calc(100vh - 100px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/careerimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.introduction-content{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(30vh);
+}
+
+.introduction-content button{
+    height: 90px;
+    width: 550px;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.introduction-content a{
+    font-size: 32px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.introduction-content p{
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+}
+
+
+/**********************************/
+/********* FAQS section ***********/
+/**********************************/
+.faqs{
+    padding: 5% 7% 1%;
+}
+
+.faqs h5{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.faqs h6{
+    font-size: 25px;
+    color: #F36F21;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+
+/************************************/
+/****** Faqs-content section ********/
+/************************************/
+.faqs-content{
+    padding: 5% 7%;
+}
+
+.faqs-content .accordion .accordion-item{
+    background-color: #FFE9DC;
+    padding: 2%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.faqs-content .accordion .accordion-item .accordion-link{
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.faqs-content .accordion .accordion-item .accordion-link .fa-caret-up{
+    display: none;
+}
+
+.faqs-content .accordion .accordion-item .answer{
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    transition: max-height 200ms;
+}
+
+.faqs-content .accordion .accordion-item .answer p{
+    padding: 10px;
+}
+
+.faqs-content .accordion .accordion-item:target .accordion-link {
+    color: #F36F21;
+}
+
+.faqs-content .accordion .accordion-item:target .answer{
+    max-height: 20rem;
+}
+
+.faqs-content .accordion .accordion-item:target .accordion-link .fa-caret-down{
+    display: none;
+}
+
+.faqs-content .accordion .accordion-item:target .accordion-link .fa-caret-up{
+    display: block;
+}
+
+
+/********************************/
+/**** Get In Touch **************/
+/********************************/
+.get-in-touch{
+    padding: 5% 7%;
+}
+
+.get-in-touch-content{
+    width: 50%;
+    height: 180px;
+    background-color: #FBFBFB;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.get-in-touch-content .envelope p{
+    margin-top: 15px;
+}
+
+.get-in-touch-content .envelope p i{
+    color: #F36F21;
+}
+
+.get-in-touch-content .envelope{
+    height: 60px;
+    width: 62px;
+    background-color: #FFE0CE;
+    text-align: center;
+    transform: rotate(45deg);
+    margin-right: 30px;
+}
+
+.get-in-touch-content .envelope:hover{
+    transform: rotate(0deg);
+    transition: ease all 0.5s;
+}
+
+.get-in-touch-content div h6{
+    font-size: 25px;
+}
+
+.get-in-touch-content div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.get-in-touch-content button{
+    background-color: #FFE0CE;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.get-in-touch-content button:hover{
+    background-color: #F36F21;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/**********************************************/
+/**********************************************/
+/* RESPONSIVENESS FOR THE DIFFERENT SECTIONS */
+/*********************************************/
+/*********************************************/
+@media screen and (max-width: 768px){
+    /* INTRODUCTION SECTION */
+    .introduction img{
+        width: 55px;
+        height: 55px;
+    }
+    
+    .introduction{
+        width: 100%;
+        height: calc(100vh - 80px);
+        padding: 5% 5%;
+        margin-top: 80px;
+    }
+    
+    .introduction-content{
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        transform: translateY(20vh);
+    }
+    
+    .introduction-content button{
+        height: 85px;
+        width: 100%;
+        border: none;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+    
+    .introduction-content a{
+        font-size: 28px;
+    }
+    
+    .introduction-content p{
+        margin-top: 30px;
+        color: white;
+        font-size: 18px;
+    }
+
+    /* FAQS SECTION */
+    .faqs{
+        width: 100%;
+        padding: 10% 5%;
+    }
+    
+    .faqs h5{
+        font-size: 25px;
+        margin-bottom: 12px;
+    }
+    
+    .faqs h6{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    /* GET-IN-TOUCH SECTION */
+    .get-in-touch{
+        width: 100%;
+        padding: 5% 5%;
+    }
+    
+    .get-in-touch-content{
+        width: 100%;
+        height: 150px;
+        padding: 20px;
+    }
+    
+    .get-in-touch-content .envelope p{
+        margin-top: 15px;
+    }
+
+    .get-in-touch-content .envelope{
+        background-color: white;
+    }
+    
+    .get-in-touch-content .envelope:hover{
+        transform: rotate(0deg);
+        transition: ease all 0.5s;
+    }
+    
+    .get-in-touch-content div h6{
+        font-size: 20px;
+    }
+    
+    .get-in-touch-content div p{
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px){
+
+}
+
+@media (min-width: 1024px) and (max-width: 1400px){
+}
