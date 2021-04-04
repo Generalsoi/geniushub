@@ -1,36 +1,23 @@
 const openModalButtons = document.getElementById('data-modal-target')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const closeModalButtons = document.getElementById('data-close-button')
 const overlay = document.getElementById('overlay')
+const modal = document.getElementById('modal')
 
-openModalButtons.forEach(button => {
-    button.addEventListener('click', () =>{
-        const modal = document.querySelector(button.dataset.modalTarget)
-        openModal(modal)
-    })
-})
-
-overlay.addEventListener('click', () => {
-    const modals = document.querySelectorAll('.modal.active')
-    modals.forEach(modal => {
-        closeModal(modal)
-    })
-})
-
-closeModalButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const modal = button.closest('.modal')
-        closeModal(modal)
-    })
-})
-
-function openModal(modal){
-    if (modal == null) return
-    modal.classList.add('active')
-    overlay.classList.add('active')
+openModalButtons.onclick = function() {
+    modal.style.display = 'block'
+    overlay.style.display = 'block'
 }
 
-function closeModal(modal){
-    if (modal == null) return
-    modal.classList.remove('active')
-    overlay.classList.remove('active')
+closeModalButtons.onclick = function() {
+    modal.style.display = "none"
+    overlay.style.display = 'none'
 }
+
+
+
+window.onclick = function(event){
+    if (event.target == modal){
+        modal.style.display = "none"
+    }
+}
+

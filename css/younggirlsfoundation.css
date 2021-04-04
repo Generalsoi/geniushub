@@ -129,33 +129,35 @@
 
 .modal{
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
+    overflow: auto;
+    transform: translate(-50%, -50%);
     transition: 200ms ease-in-out;
     border: 1px solid #C3C3C3;
     border-radius: 10px;
     z-index: 2;
     background-color: white;
+    height: 600px;
     width: 500px;
     max-width: 80%;
+    padding: 10px 15px;
 }
 
-.modal.active{
-    transform: translate(-50%, -50%) scale(1);
-}
 
 .modal-header{
-    padding: 10px 15px;
+    padding: auto 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #C3C3C3;
+    margin-bottom: 0;
 }
 
 .modal-header .title{
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    margin: 0;
 }
 
 .modal-header .close-button{
@@ -169,11 +171,12 @@
 
 .modal-body{
     padding: 10px 15px;
+    text-align: center;
 }
 
 #overlay{
     position: fixed;
-    opacity: 0;
+    display: none;
     transition: 200ms ease-in-out;
     top: 0;
     left: 0;
@@ -183,12 +186,9 @@
     pointer-events: none
 }
 
-#overlay .active{
-    opacity: 1;
-    pointer-events: all;
-}
 
-.modal-body form input{
+
+.modal-contents form input{
     display: block;
     width: 100%;
     height: 36px;
@@ -308,5 +308,11 @@
     .get-in-touch-content div p{
         font-size: 15px;
         font-weight: 300;
+    }
+
+    /* Pop up form section */
+    .modal{
+        padding: 5% 3%;
+        width: 100%;
     }
 }

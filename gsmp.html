@@ -263,9 +263,84 @@
     </section>
 
     <div class="apply">
-      <button class="trainee">Apply to be a Trainee</button>
-      <button class="sponsor">Apply to be a Sponsor</button>
+      <button id="data-modal-target" class="trainee">Apply to be a Trainee</button>
+      <button id="data-modal-target2" class="sponsor">Apply to be a Sponsor</button>
     </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-contents">
+        <div class="modal-header">
+          <p class="title"><span style="color: #F36F21;">Genius Hub</span> Trainee Application</p>
+          <button id="data-close-button" class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Email">
+            <input type="phone" placeholder="Phone">
+            <input type="text" placeholder="Address">
+            <select name="program-of-interest" id="skill-of-choice">
+              <option value="">Choose a skill program</option>
+              <option value="fashion-design">Training & fashion design</option>
+              <option value="barbing">Barbing</option>
+              <option value="hair-dressing">Hair dressing</option>
+            </select>
+            <input type="text" placeholder="What is your current occupation?">
+            <select name="information-origin" id="info-source">
+              <option value="">How did you hear about this <span style="color: #F36F21;">Genius Hub</span>?</option>
+              <option value="newsletter">Newsletter</option>
+              <option value="facebook">Facebook</option>
+              <option value="instagram">Instagram</option>
+              <option value="twitter">Twitter</option>
+              <option value="others">Others</option>
+            </select>
+            <textarea>Why do you want to participate in Genius Hub Skill Acquisition & Mentorship Program?</textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+    <!--<div class="modal2" id="modal2">
+      <div class="modal-contents2">
+        <div class="modal-header2">
+          <p class="title"><span style="color: #F36F21;">Genius Hub</span> Sponsor Application</p>
+          <button id="data-close-button2" class="close-button">&times;</button>
+        </div>
+        <div class="modal-body2">
+          <p style="color: #949494;">Now that you are here, it means you've decided to partner with us for the Skill Acquisition & Mentorship Program. You rock! Thanks!!</p>
+          <p class="modal-body-colored-p">Please, complete the form below and we'll respond to you immediately with a quotation based on your application.</p>
+          <form action="">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Email">
+            <input type="phone" placeholder="Phone">
+            <select name="country" id="country">
+              <option value="">Country</option>
+            </select>
+            <select name="program-of-interest" id="skill-of-choice">
+              <option value="">Choose a skill program to sponsor</option>
+              <option value="fashion-design">Training & fashion design</option>
+              <option value="barbing">Barbing</option>
+              <option value="hair-dressing">Hair dressing</option>
+            </select>
+            <input type="text" placeholder="No. of persons to sponsor">
+            <select name="information-origin" id="info-source">
+              <option value="">How did you hear about this <span style="color: #F36F21;">Genius Hub</span>?</option>
+              <option value="newsletter">Newsletter</option>
+              <option value="facebook">Facebook</option>
+              <option value="instagram">Instagram</option>
+              <option value="twitter">Twitter</option>
+              <option value="others">Others</option>
+            </select>
+            <textarea>Message</textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>-->
 
     <div class="footer">
         <div class="container">
@@ -301,5 +376,7 @@
     </div>
 
     <script src="./js/main.js"></script>
+    <script src="./js/popupmodal.js"></script>
+    <script src="./js/popupmodal2.js"></script>
 </body>
 </html>

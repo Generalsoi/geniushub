@@ -34,6 +34,19 @@
 
 
 
+/*******************************/
+/**** Images section ***********/
+/*******************************/
+.images{
+    padding: 5% 7%;
+}
+
+.images img{
+    width: 400px;
+}
+
+
+
 
 
 /**********************************************/
@@ -68,5 +81,15 @@
     
     .introduction-content p{
         margin-top: 20px;
+    }
+
+    /* images section */
+    .images{
+        width: 100%;
+        padding: 5% 3%;
+    }
+
+    .images .row .col{
+        width: 100%;
     }
 }

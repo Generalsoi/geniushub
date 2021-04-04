@@ -125,30 +125,80 @@
 /************************************/
 /***** Pop Up Form ******************/
 /************************************/
-.popup-form{
-    position: absolute;
-    width: 100%;
-    height: 200%;
-    background-color: rgba(0, 0, 0, 0.7);
-    top: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
+.modal{
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    overflow: auto;
+    transform: translate(-50%, -50%);
+    transition: 200ms ease-in-out;
+    border: 1px solid #C3C3C3;
+    border-radius: 10px;
     z-index: 2;
-}
-
-.form-content{
     background-color: white;
     height: 600px;
     width: 500px;
-    border-radius: 10px;
-    position: relative;
-    padding: 20px 40px;
+    max-width: 80%;
+    padding: 10px 15px;
+}
+
+
+.modal-header{
+    padding: auto 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C3C3C3;
+    margin-bottom: 0;
+}
+
+.modal-header .title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.modal-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.modal-body{
+    padding: 10px 15px;
     text-align: center;
 }
 
-.form-content form input{
+#overlay{
+    position: fixed;
+    display: none;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none
+}
+
+
+
+.modal-contents form input{
+    display: block;
+    width: 100%;
+    height: 36px;
+    margin: 20px auto;
+    font-size: 14px;
+    color: #949494;
+    padding: 5px 12px;
+    border: 1px solid #C3C3C3;
+    border-radius: 10px;
+}
+
+.modal-body form textarea{
     display: block;
     width: 100%;
     margin: 20px auto;
@@ -159,23 +209,7 @@
     border-radius: 10px;
 }
 
-.form-content form textarea{
-    display: block;
-    width: 100%;
-    margin: 20px auto;
-    font-size: 14px;
-    color: #949494;
-    padding: 5px 12px;
-    border: 1px solid #C3C3C3;
-    border-radius: 10px;
-}
-
-.form-content form label{
-    margin-bottom: 0;
-    font-size: 12px;
-}
-
-.form-content form button{
+.modal-body form button{
     width: 85px;
     height: 36px;
     background-color: #E31E24;
@@ -185,19 +219,6 @@
     color: white;
     font-size: 15px;
 }
-
-.close{
-    position: absolute;
-    top: 0;
-    right: 14px;
-    font-size: 42px;
-    transform: rotate(45deg);
-}
-
-.close:hover{
-    cursor: pointer;
-}
-
 
 
 /**********************************************/
