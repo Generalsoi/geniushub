@@ -54,21 +54,41 @@
       <a class="button" href="donate.html"><button>Donate</button></a>
     </nav>
 
+    <section class="introduction">
+      <div class="introduction-content">
+          <a href="#"><button>CONTACT US</button></a>
+          <p>For more inquiries on Genius Hub or inquiries on how to partner with us, please use the contact form provided below</p>
+      </div>
+    </section>
 
+    <div class="connect-with-us">
+      <p>We're happy to connect with you. Please note that all blank fields below are required</p>
+    </div>
 
 
 
     <section class="contact-us" id="contact">
-        <h3>CONTACT US</h3>
         <div class="form-content">
         <form action="">
-            <input type="text" placeholder="Full Name">
+            <div class="attachments">
+              <input type="text" placeholder="First Name" class="first-name">
+              <input type="text" placeholder="Last Name">
+            </div>
             <input type="email" placeholder="Email">
             <input type="phone" placeholder="Phone">
-            <input type="text" placeholder="Country">
-            <input type="text" placeholder="Interest">
-            <input type="text" class="textarea" placeholder="Inquiry">
-            <button type="submit">Submit</button>
+            <select name="country" id="country">
+              <option value="country">Country</option>
+            </select>
+            <select name="program-of-interest" id="interest">
+              <option value="">Interest</option>
+              <option value="globalinitiative">Genius Hub Global Initiative</option>
+              <option value="juniorschoolhub">Genius Hub Junior School Hub</option>
+              <option value="younggirlsfoundation">Genius Hub Young Girls Foundation</option>
+              <option value="gsmp">Genius Hub Skill Acquisition & Mentorship Program</option>
+              <option value="communityengagement">Genius Hub Community Engagement Program</option>
+            </select>
+            <textarea row="25">Message</textarea>
+            <button type="submit">Send Message</button>
         </form>
         </div>
     </section>

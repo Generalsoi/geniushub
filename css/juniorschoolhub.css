@@ -140,14 +140,26 @@
 
 .form-content{
     background-color: white;
-    height: 720px;
+    height: 600px;
     width: 500px;
     border-radius: 10px;
     position: relative;
     padding: 20px 40px;
+    text-align: center;
 }
 
 .form-content form input{
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    font-size: 14px;
+    color: #949494;
+    padding: 5px 12px;
+    border: 1px solid #C3C3C3;
+    border-radius: 10px;
+}
+
+.form-content form textarea{
     display: block;
     width: 100%;
     margin: 20px auto;

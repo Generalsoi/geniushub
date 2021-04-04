@@ -61,6 +61,7 @@
     border-radius: 10px;
     position: relative;
     padding: 20px 40px;
+    text-align: center;
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -74,6 +75,19 @@
     padding: 5px 12px;
     border: 1px solid #C3C3C3;
     border-radius: 10px;
+}
+
+.donate-form .form-content form select{
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin: 28px auto;
+    font-size: 14px;
+    color: #949494;
+    padding: 5px 12px;
+    border: 1px solid #C3C3C3;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .donate-form .form-content form button{
@@ -100,6 +114,10 @@
 .donate-form .form-content form .attachments input{
     color: white;
     margin-bottom: 0;
+}
+
+.donate-form .form-content form .attachments .first-name{
+    margin-right: 30px;
 }
 
 
@@ -159,15 +177,29 @@
     }
 
     /* DONATE FORM SECTION */
+    .donate-form{
+        padding: 5% 3%;
+    }
+
     .donate-form .form-content{
         width: 100%;
         height: 800px;
+        padding: 20px 3%;
+        box-shadow: none;
     }
     
     .donate-form .form-content form .attachments{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+    }
+
+    .donate-form .form-content form .attachments input{
+        width: 100%;
+    }
+
+    .donate-form .form-content form .attachments .first-name{
+        margin-right: 0;
     }
 
     .donate-form .form-content form button{

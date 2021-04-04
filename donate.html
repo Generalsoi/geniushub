@@ -68,18 +68,34 @@
 
     <section class="donate-form">
         <div class="form-content">
-            <form action="">
+            <form action=""> 
                <div class="attachments">
-                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="First Name" class="first-name">
                 <input type="text" placeholder="Last Name">
               </div>
               <input type="text" placeholder="Amount (NGN)">
-              <input type="text" placeholder="Interested Areas">
+              <select name="program-of-interest" id="interest">
+                <option value="">Interested Areas</option>
+                <option value="globalinitiative">Genius Hub Global Initiative</option>
+                <option value="juniorschoolhub">Genius Hub Junior School Hub</option>
+                <option value="younggirlsfoundation">Genius Hub Young Girls Foundation</option>
+                <option value="gsmp">Genius Hub Skill Acquisition & Mentorship Program</option>
+                <option value="communityengagement">Genius Hub Community Engagement Program</option>
+              </select>
               <input type="email" placeholder="Email">
               <input type="phone" placeholder="Phone">
-              <input type="text" placeholder="Country">
+              <select name="country" id="country">
+                <option value="country">Country</option>
+              </select>
               <input type="text" placeholder="Billing Address">
-              <input type="text" placeholder="How did you hear about us?">
+              <select name="how-you-knew-us" id="info-origin">
+                <option value="">How did you hear about us?</option>
+                <option value="Newsletter">Newsletter</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Others">Others</option>
+              </select>
               <button type="submit">Donate</button>
             </form>
           </div>

@@ -1,13 +1,29 @@
-// Function for getting the pop up form on clicking the 
-//respective button.
-//Check this on socialmediamanager.html file.
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
 
-document.getElementById("button").addEventListener(("click"), function(){
-    document.querySelector (".popup-form").style.display = "flex";
-});
+openModalButtons.forEach(button => {
+    button.addEventListener('click', () =>{
+        const modal = document.querySelector(button.dataset.modalTarget)
+        openModal(modal)
+    })
+})
 
-//the function to close the pop up form
+closeModalButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = button.closest('.modal')
+        closeModal(modal)
+    })
+})
 
-document.querySelector('.close').addEventListener(('click'), function(){
-    document.querySelector(".popup-form").style.display = "none";
-});
+function openModal(modal){
+    if (modal == null) return
+    modal.classList.add("active")
+    overlay.classList.add("active")
+}
+
+function closeModal(modal){
+    if (modal == null) return
+    modal.classList.remove('active')
+    overlay.classList.remove('active')
+}
