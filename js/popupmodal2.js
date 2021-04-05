@@ -1,6 +1,6 @@
 const openModalButtons2 = document.getElementById('data-modal-target2')
 const closeModalButtons2 = document.getElementById('data-close-button2')
-const overlay = document.getElementById('overlay')
+const overlay2 = document.getElementById('overlay2')
 const modal2 = document.getElementById('modal2')
 
 

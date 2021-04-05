@@ -1,5 +1,5 @@
 /************************************/
-/***** Pop Up Form ******************/
+/***** Pop Up Form ******************/ 
 /************************************/
 
 .modal2{
@@ -17,6 +17,7 @@
     width: 500px;
     max-width: 80%;
     padding: 10px 15px;
+    display: none;
 }
 
 
@@ -49,7 +50,7 @@
     text-align: center;
 }
 
-#overlay{
+#overlay2{
     position: fixed;
     display: none;
     transition: 200ms ease-in-out;

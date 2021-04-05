@@ -94,32 +94,22 @@
     font-size: 12px;
 }
 
-.jobs .roles{
-    border: 1px solid #E4E4E4;
-    border-radius: 10px;
-    padding: 21px 32px 5px;
-    margin-bottom: 20px;
-    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4);
+.jobs table{
+    width: 100%;
+    margin-bottom: 40px;
 }
 
-.jobs .roles:hover{
-    transform: scale(1.05);
+.jobs tr{
+    border: 1px solid #e4e4e4;
+}
+
+.jobs tr:hover{
+    transform: scale(1.02);
     transition: ease 0.5s;
 }
 
-.jobs .roles ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.jobs .roles ul li{
-    line-height: 40px;
-}
-
-.jobs .roles ul li p{
-    margin: 0;
-    padding: 0;
+.jobs td{
+    padding: 30px;
 }
 
 .jobs .roles .role-type,
@@ -187,7 +177,7 @@
     }
     
     .introduction-content{
-        width: 100%;
+        width: 100%; 
         margin: auto;
         text-align: center;
         transform: translateY(20vh);
@@ -231,6 +221,7 @@
     .jobs{
         width: 100%;
         padding: 2% 5%;
+        text-align: center;
     }
     
     .jobs .jobs-head{
@@ -240,28 +231,18 @@
         margin-bottom: 40px;
     }
     
-    .jobs .roles{
+    .jobs table, .jobs tr, .jobs td{
+        display: block;
         width: 100%;
-        padding: 0;
-        text-align: center;
     }
-    
-    .jobs .roles ul{
-        list-style-type: none;
+
+    .jobs tr{
+        margin: 0 auto 30px;
+        border-radius: 10px;
+    }
+
+    .jobs td{
         padding: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    
-    .jobs .roles ul li{
-        line-height: 50px;
-        margin-top: 10px;
-    }
-    
-    .jobs .roles ul li p{
-        margin: 0;
-        padding: 0;
     }
   
 }
