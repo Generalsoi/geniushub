@@ -831,14 +831,13 @@ nav .button{
         font-weight: bolder;
     }
 
-    .call-to-action button{
-        width: 140px;
-        height: 56px;
-        font-size: 15px;
+    .communication-content button{
+        height: 45px;
+        width: 180px;
     }
-
-    .call-to-action i{
-        margin-left: 10px;
+    
+    .communication-content button a{
+        font-size: 14px;
     }
 
     .communication .mission{
@@ -846,8 +845,13 @@ nav .button{
         left: 0;
         width: 100%;
         margin-top: 46px;
-        top: 330px;
+        top: 360px;
         padding: auto;
+        text-align: center;
+    }
+
+    .communication .mission .btn-{
+        margin-left: 20px;
     }
 
     /* ABOUT SECTION */
