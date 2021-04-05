@@ -651,15 +651,23 @@ nav .button{
 
 .footer .container .maps .useful-links{
     text-align: left;
+    margin-bottom: 20px;
+    width: 400px;
 }
 
-.footer .container .maps .useful-links ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.footer .container .maps .useful-links p{
+    font-size: 14px;
+    color: #B0CB1F;
 }
 
-.footer .container .maps .useful-links ul li{
+.footer .container .maps .useful-links .row .col li{
+    list-style-type: none;
+}
+
+.footer .container .maps .useful-links .row .col a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
 }
 
 .footer .container .maps .useful-links ul li a{
@@ -1060,6 +1068,14 @@ nav .button{
     
     .footer .container .maps img{
         width: 100%;
+    }
+
+    .footer .container .maps .useful-links{
+        width: 100%;
+    }
+
+    .footer .container .maps .useful-links .row .col a{
+        font-size: 13px;
     }
     
     .footer .container ul{
