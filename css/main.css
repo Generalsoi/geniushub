@@ -807,7 +807,7 @@ nav .button{
     .communication{
         width: 100%;
         flex-wrap: wrap;
-        height: calc(80vh - 80px);
+        height: calc(70vh - 80px);
         margin-top: 80px;
     }
 
