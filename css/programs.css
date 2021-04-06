@@ -18,7 +18,7 @@
     width: 70%;
     margin: auto;
     text-align: center;
-    transform: translateY(10vh);
+    transform: translateY(30vh);
 }
 
 .introduction-content h3 {
@@ -32,25 +32,7 @@
     color: white;
 }
 
-.introduction-content ul {
-    margin-top: 10px;
-    margin-bottom: 50px;
-    text-align: center;
-}
 
-.introduction-content ul li {
-    display: inline-block;
-}
-
-.introduction-content ul li {
-    margin-right: 40px;
-}
-
-.introduction-content ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
 
 
 
