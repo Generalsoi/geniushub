@@ -1,8 +1,8 @@
 /************************************/
-/***** Pop Up Form ******************/ 
+/***** Pop Up Form ******************/
 /************************************/
 
-.modal2{
+.modal2 {
     position: fixed;
     top: 55%;
     left: 50%;
@@ -21,7 +21,7 @@
 }
 
 
-.modal-header2{
+.modal-header2 {
     padding: auto 15px;
     display: flex;
     justify-content: space-between;
@@ -30,13 +30,13 @@
     margin-bottom: 0;
 }
 
-.modal-header2 .title{
+.modal-header2 .title {
     font-size: 1.2rem;
     font-weight: 600;
     margin: 0;
 }
 
-.modal-header2 .close-button{
+.modal-header2 .close-button {
     cursor: pointer;
     border: none;
     outline: none;
@@ -45,12 +45,12 @@
     font-weight: 600;
 }
 
-.modal-body2{
+.modal-body2 {
     padding: 10px 15px;
     text-align: center;
 }
 
-#overlay2{
+#overlay2 {
     position: fixed;
     display: none;
     transition: 200ms ease-in-out;
@@ -64,7 +64,7 @@
 
 
 
-.modal-contents2 form input{
+.modal-contents2 form input {
     display: block;
     width: 100%;
     height: 36px;
@@ -76,7 +76,7 @@
     border-radius: 10px;
 }
 
-.modal-body2 form textarea{
+.modal-body2 form textarea {
     display: block;
     width: 100%;
     margin: 20px auto;
@@ -87,22 +87,22 @@
     border-radius: 10px;
 }
 
-.color{
+.color {
     color: #F36F21;
 }
 
-.modal-body2 p{
+.modal-body2 p {
     font-size: 14px;
     text-align: left;
 }
 
-.modal-body2 .modal-body-colored-p{
+.modal-body2 .modal-body-colored-p {
     background-color: #FFE9DC;
     border-radius: 10px;
     padding: 10px;
 }
 
-.modal-body2 form select{
+.modal-body2 form select {
     display: block;
     width: 100%;
     height: 45px;
@@ -115,7 +115,7 @@
     background-color: white;
 }
 
-.modal-body2 form button{
+.modal-body2 form button {
     width: 85px;
     height: 36px;
     background-color: #E31E24;

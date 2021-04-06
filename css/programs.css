@@ -1,33 +1,33 @@
 /****************************/
 /***** Introduction *********/
 /****************************/
-.introduction img{
+.introduction img {
     width: 55px;
     height: 55px;
 }
 
-.introduction{
+.introduction {
     height: calc(100vh - 100px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/gsmpimg.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/gsmpimg.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 100px;
 }
 
-.introduction-content{
+.introduction-content {
     width: 70%;
     margin: auto;
     text-align: center;
     transform: translateY(10vh);
 }
 
-.introduction-content h3{
+.introduction-content h3 {
     color: white;
     font-size: 45px;
     font-weight: 600;
 }
 
-.introduction-content p{
+.introduction-content p {
     margin-top: 30px;
     color: white;
 }
@@ -38,15 +38,15 @@
     text-align: center;
 }
 
-.introduction-content ul li{
+.introduction-content ul li {
     display: inline-block;
 }
 
-.introduction-content ul li{
+.introduction-content ul li {
     margin-right: 40px;
 }
 
-.introduction-content ul li a{
+.introduction-content ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -57,18 +57,18 @@
 /***************************************/
 /*** Raising Leaders Section ***********/
 /***************************************/
-.raising-leaders{
+.raising-leaders {
     padding: 5% 132px;
 }
 
-.raising-leaders h5{
+.raising-leaders h5 {
     font-size: 35px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 12px;
 }
 
-.raising-leaders h6{
+.raising-leaders h6 {
     font-size: 25px;
     color: #F36F21;
     text-align: center;
@@ -80,16 +80,18 @@
 /*****************************************************/
 /***** OUR PROCESS SECTION AND CONTENT SECTION *******/
 /*****************************************************/
-.our-process, .content {
+.our-process,
+.content {
     padding: 5% 132px;
     background-color: #FFE9DC;
 }
-.our-process h5{
+
+.our-process h5 {
     font-size: 40px;
     text-align: center;
 }
 
-.our-process hr{
+.our-process hr {
     width: 50px;
     margin: 20px auto;
     background-color: #F36F21;
@@ -100,13 +102,13 @@
     left: 500px;
 }
 
-.our-process h6{
+.our-process h6 {
     color: #F36F21;
     font-size: 20px;
     margin-bottom: 14px;
 }
 
-.our-process .number{
+.our-process .number {
     font-size: 12px;
     width: 12px;
     height: 12px;
@@ -116,7 +118,7 @@
     margin-right: 10px;
 }
 
-.our-process .container .row{
+.our-process .container .row {
     justify-content: space-between;
     margin-top: 45px;
 }
@@ -126,30 +128,30 @@
 /***********************************/
 /** SKILL ACQUISITION SECTION ******/
 /***********************************/
-.skill-acquisition{
+.skill-acquisition {
     padding: 5% 132px 0;
 }
 
-.skill-acquisition h5{
+.skill-acquisition h5 {
     text-align: center;
     font-size: 24px;
     font-weight: 600;
 }
 
-.skill-acquisition h6{
+.skill-acquisition h6 {
     text-align: center;
     margin-bottom: 48px;
 }
 
-.skill-acquisition .container{
+.skill-acquisition .container {
     padding: 0;
 }
 
-.skill-acquisition .container .row{
+.skill-acquisition .container .row {
     justify-content: space-between;
 }
 
-.skill-acquisition .container .row .row-content{
+.skill-acquisition .container .row .row-content {
     padding: 12px;
     background-color: #FFFFFF;
     height: 100px;
@@ -159,11 +161,11 @@
     width: 300px;
 }
 
-.skill-acquisition .container .row .row-content p{
+.skill-acquisition .container .row .row-content p {
     font-size: 15px;
 }
 
-.skill-acquisition .container .row .row-content button{
+.skill-acquisition .container .row .row-content button {
     border: none;
     border-radius: 10px;
     width: 96px;
@@ -176,31 +178,32 @@
 /***************************************/
 /**** APPLICATION SECTION **************/
 /***************************************/
-.apply{
+.apply {
     padding: 2% 132px;
     display: flex;
     justify-content: center;
 }
 
-.apply button{
+.apply button {
     width: 197px;
     height: 40px;
     border-radius: 10px;
     font-size: 15px;
 }
 
-.apply .trainee{
+.apply .trainee {
     border: 1px solid #F36F21;
     background-color: #fff;
     margin-right: 20px;
 }
 
-.apply .trainee:hover, .apply .sponsor:hover{
+.apply .trainee:hover,
+.apply .sponsor:hover {
     background-color: #F36F21;
     color: white;
 }
 
-.apply .sponsor{
+.apply .sponsor {
     border: none;
     background-color: #FFE0CE;
 }
@@ -208,11 +211,11 @@
 /********************************/
 /**** Get In Touch **************/
 /********************************/
-.get-in-touch{
+.get-in-touch {
     padding: 5% 132px;
 }
 
-.get-in-touch-content{
+.get-in-touch-content {
     width: 50%;
     height: 180px;
     background-color: #FBFBFB;
@@ -223,15 +226,15 @@
     box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
-.get-in-touch-content .envelope p{
+.get-in-touch-content .envelope p {
     margin-top: 15px;
 }
 
-.get-in-touch-content .envelope p i{
+.get-in-touch-content .envelope p i {
     color: #F36F21;
 }
 
-.get-in-touch-content .envelope{
+.get-in-touch-content .envelope {
     height: 60px;
     width: 62px;
     background-color: #FFE0CE;
@@ -240,21 +243,21 @@
     margin-right: 30px;
 }
 
-.get-in-touch-content .envelope:hover{
+.get-in-touch-content .envelope:hover {
     transform: rotate(0deg);
     transition: ease all 0.5s;
 }
 
-.get-in-touch-content div h6{
+.get-in-touch-content div h6 {
     font-size: 25px;
 }
 
-.get-in-touch-content div p{
+.get-in-touch-content div p {
     font-size: 16px;
     font-weight: 300;
 }
 
-.get-in-touch-content button{
+.get-in-touch-content button {
     background-color: #FFE0CE;
     width: 100px;
     height: 40px;
@@ -263,7 +266,7 @@
     border: none;
 }
 
-.get-in-touch-content button:hover{
+.get-in-touch-content button:hover {
     background-color: #F36F21;
     color: white;
 }
@@ -273,7 +276,7 @@
 /***** Pop Up Form ******************/
 /************************************/
 
-.modal{
+.modal {
     position: fixed;
     top: 55%;
     left: 50%;
@@ -291,7 +294,7 @@
 }
 
 
-.modal-header{
+.modal-header {
     padding: auto 15px;
     display: flex;
     justify-content: space-between;
@@ -300,13 +303,13 @@
     margin-bottom: 0;
 }
 
-.modal-header .title{
+.modal-header .title {
     font-size: 1.2rem;
     font-weight: 600;
     margin: 0;
 }
 
-.modal-header .close-button{
+.modal-header .close-button {
     cursor: pointer;
     border: none;
     outline: none;
@@ -315,12 +318,12 @@
     font-weight: 600;
 }
 
-.modal-body{
+.modal-body {
     padding: 10px 15px;
     text-align: center;
 }
 
-#overlay{
+#overlay {
     position: fixed;
     display: none;
     transition: 200ms ease-in-out;
@@ -334,7 +337,7 @@
 
 
 
-.modal-contents form input{
+.modal-contents form input {
     display: block;
     width: 100%;
     height: 36px;
@@ -346,7 +349,7 @@
     border-radius: 10px;
 }
 
-.modal-body form textarea{
+.modal-body form textarea {
     display: block;
     width: 100%;
     margin: 20px auto;
@@ -357,22 +360,22 @@
     border-radius: 10px;
 }
 
-.color{
+.color {
     color: #F36F21;
 }
 
-.modal-body p{
+.modal-body p {
     font-size: 14px;
     text-align: left;
 }
 
-.modal-body .modal-body-colored-p{
+.modal-body .modal-body-colored-p {
     background-color: #FFE9DC;
     border-radius: 10px;
     padding: 10px;
 }
 
-.modal-body form select{
+.modal-body form select {
     display: block;
     width: 100%;
     height: 45px;
@@ -385,7 +388,7 @@
     background-color: white;
 }
 
-.modal-body form button{
+.modal-body form button {
     width: 85px;
     height: 36px;
     background-color: #E31E24;
@@ -405,27 +408,28 @@
 /* RESPONSIVENESS FOR THE DIFFERENT SECTIONS */
 /*********************************************/
 /*********************************************/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+
     /* INTRODUCTION SECTION */
-    .introduction{
+    .introduction {
         width: 100%;
         height: calc(100vh - 80px);
         padding: 5% 5%;
         margin-top: 80px;
     }
-    
-    .introduction-content{
+
+    .introduction-content {
         width: 100%;
         margin: auto;
         text-align: left;
         transform: translateY(2vh);
     }
-    
-    .introduction-content h3{
+
+    .introduction-content h3 {
         font-size: 25px;
     }
-    
-    .introduction-content p{
+
+    .introduction-content p {
         font-size: 15px;
         margin-top: 20px;
     }
@@ -435,112 +439,118 @@
         margin-bottom: 30px;
     }
 
-    .introduction-content ul li a{
+    .introduction-content ul li a {
         font-size: 15px;
     }
-    
+
 
     /* RAISING LEADERS SECTION */
-    .raising-leaders{
+    .raising-leaders {
         padding: 10% 5%;
         width: 100%;
     }
-    
-    .raising-leaders h5{
+
+    .raising-leaders h5 {
         font-size: 25px;
     }
-    
-    .raising-leaders h6{
+
+    .raising-leaders h6 {
         font-size: 18px;
         margin-bottom: 20px;
     }
 
     /* OUR PROCESS SECTION */
-    .our-process, .content{
+    .our-process,
+    .content {
         width: 100%;
         padding: 5% 5%;
     }
-    .our-process h5{
+
+    .our-process h5 {
         font-size: 35px;
         text-align: center;
     }
-    
-    .our-process h6{
+
+    .our-process h6 {
         font-size: 18px;
     }
-    
-    .our-process .container .row{
+
+    .our-process .container .row {
         margin-top: 0;
     }
 
-    .our-process .container .row .col-lg-6{
+    .our-process .container .row .col-lg-6 {
         margin-top: 30px;
     }
 
+    .content p{
+        font-size: 15px;
+    }
+
     /* SKILL-ACQUISITION SECTION */
-    .skill-acquisition{
+    .skill-acquisition {
         width: 100%;
         padding: 10% 5% 0;
     }
-    
-    .skill-acquisition h5{
+
+    .skill-acquisition h5 {
         font-size: 20px;
     }
-    
-    .skill-acquisition h6{
+
+    .skill-acquisition h6 {
         font-size: 15px;
     }
-    
-    .skill-acquisition .container{
+
+    .skill-acquisition .container {
         padding: 0;
     }
-    
-    .skill-acquisition .container .row{
+
+    .skill-acquisition .container .row {
         justify-content: center;
     }
 
     /* APPLICATION SECTION */
-    .apply{
+    .apply {
         width: 100%;
         padding: 5% 5%;
         display: flex;
         justify-content: center;
     }
-    
-    .apply button{
+
+    .apply button {
         font-size: 13px;
     }
 
     /* GET-IN-TOUCH SECTION */
-    .get-in-touch{
+    .get-in-touch {
         width: 100%;
         padding: 10% 5%;
     }
-    
-    .get-in-touch-content{
+
+    .get-in-touch-content {
         width: 100%;
         height: 150px;
         padding: 20px;
     }
-    
-    .get-in-touch-content .envelope p{
+
+    .get-in-touch-content .envelope p {
         margin-top: 15px;
     }
 
-    .get-in-touch-content .envelope{
+    .get-in-touch-content .envelope {
         background-color: white;
     }
-    
-    .get-in-touch-content .envelope:hover{
+
+    .get-in-touch-content .envelope:hover {
         transform: rotate(0deg);
         transition: ease all 0.5s;
     }
-    
-    .get-in-touch-content div h6{
+
+    .get-in-touch-content div h6 {
         font-size: 20px;
     }
-    
-    .get-in-touch-content div p{
+
+    .get-in-touch-content div p {
         font-size: 15px;
         font-weight: 300;
     }

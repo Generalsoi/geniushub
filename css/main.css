@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Overpass', sans-serif;
 }
 
-body.modal-open{
+body.modal-open {
     overflow: hidden;
 }
 
@@ -19,7 +19,7 @@ body.modal-open{
 /*********************/
 /********Navbar*******/
 /*********************/
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     padding: 1% 7%;
@@ -32,17 +32,17 @@ nav{
     top: 0;
 }
 
-nav img{
+nav img {
     line-height: 100px;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     align-items: center;
     justify-content: space-around;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     margin-left: 72px;
     line-height: 72px;
@@ -50,13 +50,13 @@ nav ul li{
     position: relative;
 }
 
-nav ul li a{
+nav ul li a {
     display: block;
     text-decoration: none;
     color: #000000;
 }
 
-nav ul ul{
+nav ul ul {
     position: absolute;
     top: 80px;
     display: none;
@@ -66,12 +66,12 @@ nav ul ul{
     transition: top 0.7s;
 }
 
-nav ul li:hover > ul{
+nav ul li:hover>ul {
     display: block;
     top: 70px;
 }
 
-nav ul ul li{
+nav ul ul li {
     float: none;
     width: 250px;
     margin: 0;
@@ -80,24 +80,25 @@ nav ul ul li{
     border-bottom: 1px solid black;
 }
 
-nav ul .program li{
+nav ul .program li {
     width: 300px;
 }
 
-nav ul ul li:hover{
+nav ul ul li:hover {
     color: #F36F21;
 }
 
-.active, nav ul li a:hover{
+.active,
+nav ul li a:hover {
     color: #F36F21;
-} 
+}
 
-.nav-toggle{
+.nav-toggle {
     display: none;
 }
 
 
-nav button{
+nav button {
     background-color: #E31E24;
     opacity: 1;
     height: 40px;
@@ -108,7 +109,7 @@ nav button{
     color: white;
 }
 
-nav .button{
+nav .button {
     color: white;
     font-size: 15px;
     font-weight: 700;
@@ -118,7 +119,7 @@ nav .button{
 /*****************************/
 /***Communication section*****/
 /*****************************/
-.communication{
+.communication {
     margin-top: 100px;
     position: relative;
     display: flex;
@@ -127,7 +128,7 @@ nav .button{
     opacity: 1;
 }
 
-.color-overlay{
+.color-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -135,27 +136,27 @@ nav .button{
     opacity: 0.8;
 }
 
-.communication img{
+.communication img {
     z-index: 1;
 }
 
-.communication .communication-content{
+.communication .communication-content {
     z-index: 2;
     padding: 5% 7%;
 }
 
-.communication .communication-content h4{
+.communication .communication-content h4 {
     font-size: 30px;
     color: white;
     margin-bottom: 24px;
 }
 
-.communication .communication-content h2{
+.communication .communication-content h2 {
     font-size: 50px;
     font-weight: bolder;
 }
 
-.communication-content button{
+.communication-content button {
     height: 55px;
     width: 220px;
     background-color: #1C295E;
@@ -169,7 +170,7 @@ nav .button{
     opacity: 1;
 }
 
-.communication-content button a{
+.communication-content button a {
     font-family: 'Overpass', sans-serif;
     text-decoration: none;
     color: white;
@@ -177,12 +178,12 @@ nav .button{
     font-weight: bold;
 }
 
-.communication-content button i{
+.communication-content button i {
     color: white;
     margin-left: 3px;
 }
 
-.communication .mission{
+.communication .mission {
     position: absolute;
     left: 0;
     width: 100%;
@@ -194,7 +195,7 @@ nav .button{
     top: 460px;
 }
 
-.communication .mission .btn-{
+.communication .mission .btn- {
     height: 36px;
     width: 92px;
     font-size: 16px;
@@ -207,7 +208,7 @@ nav .button{
     font-family: 'Overpass', sans-serif;
 }
 
-.mission .btn-:hover{
+.mission .btn-:hover {
     background: #F36F21;
     cursor: pointer;
     border: none;
@@ -215,7 +216,7 @@ nav .button{
 
 
 /**** POPUP CONTENT ******/
-.popup{
+.popup {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -228,7 +229,7 @@ nav .button{
     display: none;
 }
 
-.popup-content{
+.popup-content {
     background-color: white;
     height: 250px;
     width: 450px;
@@ -236,7 +237,7 @@ nav .button{
     position: relative;
 }
 
-.popup-content .heading{
+.popup-content .heading {
     background-color: #ECD1C2;
     opacity: 0.9;
     color: #000000;
@@ -247,11 +248,11 @@ nav .button{
     padding-top: 20px;
 }
 
-.popup-content .heading h5{
+.popup-content .heading h5 {
     font-weight: 600;
 }
 
-.popup-content .heading hr{
+.popup-content .heading hr {
     width: 15%;
     margin: 0 auto;
     height: 5px;
@@ -260,14 +261,15 @@ nav .button{
     opacity: 1;
 }
 
-.popup-content p{
+.popup-content p {
     text-align: left;
     align-items: center;
     padding: 20px;
     margin-top: 20px;
 }
 
-.popup-content .exit, .popup-content .close{
+.popup-content .exit,
+.popup-content .close {
     position: absolute;
     top: 0;
     right: 14px;
@@ -277,12 +279,13 @@ nav .button{
     opacity: 1;
 }
 
-.popup-content .exit:hover, .popup-content .close:hover{
+.popup-content .exit:hover,
+.popup-content .close:hover {
     cursor: pointer;
     color: #000000;
 }
 
-.popup-2{
+.popup-2 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -300,17 +303,17 @@ nav .button{
 /**********************************/
 /********Divisions section*********/
 /**********************************/
-.divisions{
+.divisions {
     padding: 5% 7%;
     background-color: #fff;
     text-align: center;
 }
 
-.divisions h3{
+.divisions h3 {
     font-size: 40px;
 }
 
-.divisions hr{
+.divisions hr {
     width: 50px;
     margin: 30px auto;
     background-color: #F36F21;
@@ -321,11 +324,11 @@ nav .button{
     left: 500px;
 }
 
-.divisions p{
+.divisions p {
     font-size: 14px;
 }
 
-.divisions a{
+.divisions a {
     background-color: #E31E24;
     color: white;
     opacity: 85%;
@@ -337,62 +340,62 @@ nav .button{
     padding: 10px;
 }
 
-.divisions a:hover{
+.divisions a:hover {
     background-color: #E31E24;
     opacity: 1;
 }
 
-.divisions img{
+.divisions img {
     width: 125px;
     height: 125px;
 }
 
-.divisions .row{
+.divisions .row {
     justify-content: space-between;
     margin-top: 68px;
 }
 
-.divisions .row .col{
-    width: 400px;  
+.divisions .row .col {
+    width: 400px;
 }
 
-.divisions .row .col .card{
+.divisions .row .col .card {
     align-items: center;
     box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
-.divisions .row .col .card .card-head{
+.divisions .row .col .card .card-head {
     padding: 37px 90px;
 }
 
-.divisions .row .col .card .card-body{
+.divisions .row .col .card .card-body {
     background-color: #E4E4E4;
     padding: 26px;
 }
 
-.divisions .row .col .card .card-body h5{
+.divisions .row .col .card .card-body h5 {
     font-weight: bold;
 }
 
-.divisions .row .col .card .card-body i{
+.divisions .row .col .card .card-body i {
     margin-left: 10px;
 }
 
 /***********************************/
 /***** Impact Section ************/
 /***********************************/
-.impact{
+.impact {
     padding: 5% 7%;
     text-align: center;
     background-color: #43240F;
 }
 
-.impact h3{
+.impact h3 {
     font-size: 40px;
     color: white;
 }
 
-.impact hr{
+.impact hr {
     width: 50px;
     margin: 30px auto;
     background-color: #fff;
@@ -403,23 +406,23 @@ nav .button{
     left: 500px;
 }
 
-.impact-content{
+.impact-content {
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
 }
 
-.impact-content p{
+.impact-content p {
     color: #fff;
     text-align: left;
     line-height: 2.5;
 }
 
-.impact-content-intro{
+.impact-content-intro {
     margin-bottom: 40px;
 }
 
-.impact-content img{
+.impact-content img {
     width: 30.5rem;
     height: 17rem;
     margin-left: 1.875rem;
@@ -430,17 +433,17 @@ nav .button{
 /*******************************/
 /***** Programs section ********/
 /*******************************/
-.programs{
+.programs {
     padding: 5% 7%;
     background-color: white;
     text-align: center;
 }
 
-.programs h3{
+.programs h3 {
     font-size: 40px;
 }
 
-.programs hr{
+.programs hr {
     width: 50px;
     margin: 30px auto 65px;
     background-color: #F36F21;
@@ -451,13 +454,13 @@ nav .button{
     left: 500px;
 }
 
-.programs a{
+.programs a {
     background-color: #E31E24;
     opacity: 0.85;
     color: white;
 }
 
-.programs-content{
+.programs-content {
     display: flex;
     box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4);
     height: 200px;
@@ -467,19 +470,19 @@ nav .button{
     margin-bottom: 60px;
 }
 
-.programs-content .programs-content-head img{
+.programs-content .programs-content-head img {
     width: 125px;
     height: 125px;
 }
 
-.programs-content .programs-content-head{
+.programs-content .programs-content-head {
     width: 30%;
     background-color: #fff;
     align-items: center;
     justify-content: center;
 }
 
-.programs-content-desc{
+.programs-content-desc {
     display: flex;
     justify-content: space-between;
     background-color: #E4E4E4;
@@ -488,17 +491,17 @@ nav .button{
     position: relative;
 }
 
-.programs-content-desc span{
+.programs-content-desc span {
     text-align: left;
     width: 80%;
 }
 
-.programs-content-desc span h5{
+.programs-content-desc span h5 {
     font-weight: 700;
     margin-bottom: 18px;
 }
 
-.programs-content-desc a{
+.programs-content-desc a {
     height: 40px;
     width: 180px;
     border-radius: 10px;
@@ -513,18 +516,18 @@ nav .button{
 /**********************************/
 /********* Blog section ***********/
 /**********************************/
-.blog{
+.blog {
     padding: 5% 7%;
     background-color: #FFE9DC;
     opacity: 1;
     text-align: center;
 }
 
-.blog h3{
+.blog h3 {
     font-size: 40px;
 }
 
-.blog hr{
+.blog hr {
     width: 50px;
     margin: 30px auto;
     background-color: #F36F21;
@@ -535,7 +538,7 @@ nav .button{
     left: 500px;
 }
 
-.blog .row .col .card .card-body a{
+.blog .row .col .card .card-body a {
     text-decoration: none;
     color: black;
 }
@@ -545,16 +548,16 @@ nav .button{
 /***********************************/
 /********** Team Section ***********/
 /***********************************/
-.team{
+.team {
     padding: 5% 7%;
     text-align: center;
 }
 
-.team h3{
+.team h3 {
     font-size: 40px;
 }
 
-.team hr{
+.team hr {
     width: 50px;
     margin: 30px auto;
     background-color: #F36F21;
@@ -569,15 +572,15 @@ nav .button{
     justify-content: space-between;
 }
 
-.team .row .col{
+.team .row .col {
     width: 350px;
 }
 
-.team .row .col .card .card-head img{
+.team .row .col .card .card-head img {
     height: 250px;
 }
 
-.team .row .col .card .card-body{
+.team .row .col .card .card-body {
     background-color: #FFE0CE;
     opacity: 85%;
     padding: 28px;
@@ -588,18 +591,18 @@ nav .button{
 /***********************************/
 /********** Partners ***************/
 /***********************************/
-.partners{
+.partners {
     padding: 5% 7%;
     background-color: #43240F;
     text-align: center;
 }
 
-.partners h3{
+.partners h3 {
     font-size: 40px;
     color: white;
 }
 
-.partners hr{
+.partners hr {
     width: 50px;
     margin: 30px auto;
     background-color: white;
@@ -610,13 +613,13 @@ nav .button{
     left: 500px;
 }
 
-.partners .row .col img{
+.partners .row .col img {
     width: 250px;
     height: 150px;
     border-radius: 8px;
 }
 
-.partners .row{
+.partners .row {
     margin-top: 78px;
 }
 
@@ -628,75 +631,75 @@ nav .button{
 /************************************/
 /****** Footer section **************/
 /************************************/
-.footer{
+.footer {
     background-color: #000000;
     padding: 3% 7%;
 }
 
-.footer .container{
+.footer .container {
     display: flex;
     justify-content: space-between;
 }
 
-.footer .container .maps{
+.footer .container .maps {
     text-align: right;
 }
 
-.footer .container .maps img{
+.footer .container .maps img {
     width: 400px;
     height: 250px;
     border-radius: 8px;
     margin-bottom: 24px;
 }
 
-.footer .container .maps .useful-links{
+.footer .container .maps .useful-links {
     text-align: left;
     margin-bottom: 20px;
     width: 400px;
 }
 
-.footer .container .maps .useful-links p{
+.footer .container .maps .useful-links p {
     font-size: 14px;
     color: #B0CB1F;
 }
 
-.footer .container .maps .useful-links .row .col li{
+.footer .container .maps .useful-links .row .col li {
     list-style-type: none;
 }
 
-.footer .container .maps .useful-links .row .col a{
+.footer .container .maps .useful-links .row .col a {
     text-decoration: none;
     color: white;
     font-size: 14px;
 }
 
-.footer .container .maps .useful-links ul li a{
+.footer .container .maps .useful-links ul li a {
     text-decoration: none;
     color: white;
 }
 
-.footer .container ul{
+.footer .container ul {
     list-style-type: none;
     padding: 0;
 }
 
-.footer .container ul li p{
+.footer .container ul li p {
     color: #B0CB1F;
     font-size: 14px;
     margin: 0;
 }
 
-.footer .container ul li{
+.footer .container ul li {
     color: #FFFFFF;
     font-size: 14px;
     margin-bottom: 24px;
 }
 
-.footer .container form{
+.footer .container form {
     margin-bottom: 24px;
 }
 
-.footer .container form input{
+.footer .container form input {
     border: none;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -705,13 +708,13 @@ nav .button{
     font-size: 15px;
 }
 
-.footer .container form img{
+.footer .container form img {
     width: 36px;
     height: 36px;
     margin-right: 16px;
 }
 
-.footer .container form button{
+.footer .container form button {
     border: none;
     background-color: #F36F21;
     color: white;
@@ -721,12 +724,12 @@ nav .button{
     width: 40px;
 }
 
-.footer .social-media{
+.footer .social-media {
     text-align: center;
     list-style-type: none;
 }
 
-.footer .social-media li{
+.footer .social-media li {
     display: inline-block;
     margin-right: 16px;
     color: black;
@@ -737,7 +740,7 @@ nav .button{
     border-radius: 4px;
 }
 
-.footer .copyright{ 
+.footer .copyright {
     text-align: center;
     color: #FFFFFF;
     opacity: 56%;
@@ -750,9 +753,10 @@ nav .button{
 /* RESPONSIVENESS FOR THE DIFFERENT SECTIONS */
 /*********************************************/
 /*********************************************/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+
     /* NAV SECTION */
-    nav{
+    nav {
         width: 100%;
         overflow: auto;
         height: 80px;
@@ -762,7 +766,7 @@ nav .button{
         transition: 0.5s height ease-in-out;
     }
 
-    nav .nav-img{ 
+    nav .nav-img {
         height: 55px;
     }
 
@@ -770,9 +774,9 @@ nav .button{
         margin: 0 auto;
         padding: 0;
         align-items: center;
-    } 
+    }
 
-    nav ul li{
+    nav ul li {
         display: block;
         line-height: 70px;
         justify-content: center;
@@ -781,26 +785,32 @@ nav .button{
         margin: 0;
     }
 
-    nav ul li a{
+    nav ul li a {
         margin: 0;
     }
 
-    nav ul ul{
+    nav ul ul {
         display: none;
     }
 
-    nav ul li ul{
+    nav ul li ul {
         width: 100%;
         position: relative;
-        margin-top: -90px;
+        margin-top: -70px;
         margin-bottom: 70px;
+        background-color: #F36F21;
     }
 
-    nav button{
-        margin-top: 20px;
+    nav ul li ul li a{
+        color: white;
     }
 
-    .nav-toggle{
+    nav button {
+        margin-top: 10px;
+        margin-left: 7rem;
+    }
+
+    .nav-toggle {
         position: absolute;
         top: 1.5rem;
         right: 1rem;
@@ -811,54 +821,54 @@ nav .button{
         display: block;
     } */
 
-    .open{
+    .open {
         height: 95vh;
         margin: 0;
         background-attachment: fixed;
     }
 
-    .hidden{
+    .hidden {
         display: none;
     }
 
     /* COMMUNICATION SECTION */
-    .communication{
+    .communication {
         width: 100%;
         flex-wrap: wrap;
         height: calc(70vh - 80px);
         margin-top: 80px;
     }
 
-    .communication .communication-content{
+    .communication .communication-content {
         padding: 10% 5%;
         text-align: left;
     }
 
-    .communication img{
+    .communication img {
         display: none;
     }
 
-    .communication .communication-content h4{
+    .communication .communication-content h4 {
         font-size: 20px;
         color: white;
         margin-bottom: 30px;
     }
-    
-    .communication .communication-content h2{
+
+    .communication .communication-content h2 {
         font-size: 30px;
         font-weight: bolder;
     }
 
-    .communication-content button{
+    .communication-content button {
         height: 45px;
         width: 180px;
     }
-    
-    .communication-content button a{
+
+    .communication-content button a {
         font-size: 14px;
     }
 
-    .communication .mission{
+    .communication .mission {
         position: absolute;
         left: 0;
         width: 100%;
@@ -868,126 +878,126 @@ nav .button{
         text-align: center;
     }
 
-    .communication .mission .btn1{
+    .communication .mission .btn1 {
         margin-left: 10px;
     }
 
     /* ABOUT SECTION */
-    .about{
+    .about {
         width: 100%;
         padding: 10% 5%;
         text-align: center;
-    } 
-    
-    .about h3{
+    }
+
+    .about h3 {
         font-size: 35px;
     }
-    
-    .about hr{
+
+    .about hr {
         margin: 20px auto;
     }
-    
-    .about p{
+
+    .about p {
         line-height: 30px;
         font-size: 17px;
     }
 
     /* DIVISION SECTION */
-    .divisions{
+    .divisions {
         width: 100%;
         padding: 10% 5%;
         text-align: center;
     }
-    
-    .divisions h3{
+
+    .divisions h3 {
         font-size: 35px;
     }
-    
-    .divisions hr{
+
+    .divisions hr {
         margin: 20px auto;
     }
-    
-    .divisions p{
+
+    .divisions p {
         font-size: 14px;
     }
-    
-    .divisions img{
+
+    .divisions img {
         width: 100px;
         height: 100px;
     }
-    
-    .divisions .row{
+
+    .divisions .row {
         justify-content: space-between;
         margin-top: 20px;
     }
-    
-    .divisions .row .col{
+
+    .divisions .row .col {
         width: 350px;
         margin: 20px auto;
     }
 
     /* IMPACT SECTION */
-    .impact{
+    .impact {
         padding: 10% 5%;
         width: 100%;
     }
-    
-    .impact-content{
+
+    .impact-content {
         flex-direction: column;
     }
-    
-    .impact-content p{
+
+    .impact-content p {
         color: #fff;
         text-align: left;
         line-height: 2.5;
     }
-    
-    .impact-content-intro{
+
+    .impact-content-intro {
         margin-bottom: 40px;
     }
-    
-    .impact-content img{
+
+    .impact-content img {
         width: 100%;
         margin-left: 0;
     }
 
     /* PROGRAMS SECTION */
-    .programs{
+    .programs {
         width: 100%;
         padding: 10% 5%;
         text-align: center;
     }
-    
-    .programs-content{
+
+    .programs-content {
         flex-direction: column;
         height: 400px;
     }
-    
-    .programs-content .programs-content-head img{
+
+    .programs-content .programs-content-head img {
         width: 100px;
         height: 100px;
     }
-    
-    .programs-content .programs-content-head{
+
+    .programs-content .programs-content-head {
         width: 100%;
         height: 200px;
         background-color: #fff;
         padding: 5%;
     }
-    
-    .programs-content-desc{
+
+    .programs-content-desc {
         flex-direction: column;
         height: 100%;
         padding: 5% 5%;
         position: relative;
     }
-    
-    .programs-content-desc span{
+
+    .programs-content-desc span {
         text-align: center;
         width: 100%;
     }
 
-    .programs-content-desc a{
+    .programs-content-desc a {
         height: 40px;
         width: 150px;
         border-radius: 10px;
@@ -996,184 +1006,186 @@ nav .button{
         right: 25%;
         bottom: 5%;
     }
-    
 
-    
+
+
 
     /* BLOG SECTION */
-    .blog{
+    .blog {
         width: 100%;
         padding: 10% 5%;
         text-align: center;
     }
-    
-    .blog h3{
+
+    .blog h3 {
         font-size: 35px;
     }
-    
-    .blog hr{
+
+    .blog hr {
         margin: 20px auto;
     }
 
     /* TEAM SECTION */
-    .team{
+    .team {
         width: 100%;
         padding: 10% 5%;
         text-align: center;
     }
-    
-    .team h3{
+
+    .team h3 {
         font-size: 35px;
     }
-    
-    .team hr{
+
+    .team hr {
         margin: 20px auto;
     }
-    
-    .team .row .col{
+
+    .team .row .col {
         width: 350px;
         margin: 30px auto;
     }
 
     /* PARTNERS SECTION */
-    .partners{
+    .partners {
         width: 100%;
         padding: 10% 5%;
         text-align: center;
     }
-    
-    .partners h3{
+
+    .partners h3 {
         font-size: 35px;
         color: white;
     }
-    
-    .partners hr{
+
+    .partners hr {
         margin: 20px auto;
     }
-    
-    .partners .row .col img{
+
+    .partners .row .col img {
         width: 130px;
         height: 110px;
     }
-    
-    .partners .row{
+
+    .partners .row {
         margin-top: 30px;
     }
 
 
     /* FOOTER SECTION */
-    .footer{
+    .footer {
         width: 100%;
         background-color: #000000;
         padding: 10% 5% 3%;
     }
-    
-    .footer .container{
+
+    .footer .container {
         flex-wrap: wrap;
     }
-    
-    .footer .container .maps{
+
+    .footer .container .maps {
         text-align: left;
     }
-    
-    .footer .container .maps img{
+
+    .footer .container .maps img {
         width: 100%;
     }
 
-    .footer .container .maps .useful-links{
+    .footer .container .maps .useful-links {
         width: 100%;
     }
 
-    .footer .container .maps .useful-links .row .col a{
+    .footer .container .maps .useful-links .row .col a {
         font-size: 13px;
     }
-    
-    .footer .container ul{
+
+    .footer .container ul {
         margin-top: 20px;
-    }   
+    }
 }
 
 
-@media (min-width: 769px) and (max-width: 1023px){
-        /* NAV SECTION */
-        nav{
-            width: 100%;
-            overflow: hidden;
-            height: 80px;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 1% 5%;
-            transition: 0.5s height ease-in-out;
-        }
-    
-        nav .nav-img{
-            height: 55px;
-        }
-    
-        nav ul {
-            margin: 0 auto 60%;
-            padding: 0;
-            align-items: center;
-        } 
-    
-        nav ul li{
-            display: block;
-            line-height: 70px;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            margin: 0;
-        }
-    
-        nav ul li a{
-            margin: 0;
-        }
-    
-        .nav ul ul{
-            display: none;
-        }
-    
-        .nav ul li ul{
-            width: 100%;
-            z-index: 1;
-        }
-    
-        .nav-toggle{
-            position: absolute;
-            top: 1.5rem;
-            right: 1rem;
-            display: block;
-        }
-    
-        .open{
-            height: 95vh;
-            margin: 0;
-            background-attachment: fixed;
-        }
-    
-        .hidden{
-            display: none;
-        }
+@media (min-width: 769px) and (max-width: 1023px) {
 
-}
-
-@media (min-width: 1024px) and (max-width: 1450px){
     /* NAV SECTION */
-    nav{
+    nav {
+        width: 100%;
+        overflow: hidden;
+        height: 80px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1% 5%;
+        transition: 0.5s height ease-in-out;
+    }
+
+    nav .nav-img {
+        height: 55px;
+    }
+
+    nav ul {
+        margin: 0 auto 60%;
+        padding: 0;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        line-height: 70px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    nav ul li a {
+        margin: 0;
+    }
+
+    .nav ul ul {
+        display: none;
+    }
+
+    .nav ul li ul {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .nav-toggle {
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        display: block;
+    }
+
+    .open {
+        height: 95vh;
+        margin: 0;
+        background-attachment: fixed;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1450px) {
+
+    /* NAV SECTION */
+    nav {
         width: 100%;
     }
 
-    nav ul li{
+    nav ul li {
         margin-left: 40px;
     }
 
     /*COMMUNICATION SECTION*/
-    .communication .mission{
+    .communication .mission {
         top: 420px;
     }
 
     /*DIVISIONS SECTION */
-    .divisions .row .col{
-        width: 350px;  
+    .divisions .row .col {
+        width: 350px;
     }
 }

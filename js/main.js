@@ -23,31 +23,28 @@ navToggle.addEventListener('click', function () {
 submenu1.addEventListener('click', function () {
     if (submenus1.style.display === 'block') {
         submenus1.style.display = 'none';
-    }
-    else {
+    } else {
         submenus1.style.display = 'block'
     }
 })
 submenu2.addEventListener('click', function () {
     if (submenus2.style.display === 'block') {
         submenus2.style.display = 'none';
-    }
-    else {
+    } else {
         submenus2.style.display = 'block'
     }
 })
 submenu3.addEventListener('click', function () {
     if (submenus3.style.display === 'block') {
         submenus3.style.display = 'none';
-    }
-    else {
+    } else {
         submenus3.style.display = 'block'
     }
 })
 
 
 window.addEventListener("resize", () => {
-    if (document.body.clientWidth > 768){
+    if (document.body.clientWidth > 768) {
         nav.classList.remove('open')
         navIcon.forEach(icon => {
             icon.classList.add('hidden')
