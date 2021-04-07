@@ -780,6 +780,7 @@ nav .button {
         margin: 0 auto;
         padding: 0;
         align-items: center;
+        justify-content: center;
     }
 
     nav ul li {
@@ -828,8 +829,9 @@ nav .button {
     } */
 
     .open {
-        height: 100vh;
+        height: 100%;
         margin: 0;
+        padding-top: 0;
         background-attachment: fixed;
     }
 
@@ -1148,6 +1150,7 @@ nav .button {
 
     .nav ul ul {
         display: none;
+        position: static;
     }
 
     .nav ul li ul {
