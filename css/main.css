@@ -19,99 +19,78 @@ body.modal-open {
 /*********************/
 /********Navbar*******/
 /*********************/
-nav {
-    display: flex;
-    justify-content: space-between;
+.navbar {
+    border-bottom: 8px solid #B0CB1F;
     padding: 1% 7%;
     height: 100px;
-    border-bottom: 8px solid #B0CB1F;
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-    top: 0;
 }
 
-nav img {
-    line-height: 100px;
-}
-
-nav ul {
-    list-style-type: none;
-    align-items: center;
-    justify-content: space-around;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 72px;
-    line-height: 72px;
-    align-items: center;
-    position: relative;
-}
-
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    color: #000000;
-}
-
-nav ul ul {
-    position: absolute;
-    top: 80px;
-    display: none;
-    background-color: white;
-    border-radius: 8px;
-    padding: 0 15px;
-    transition: top 0.7s;
-}
-
-nav ul li:hover>ul {
-    display: block;
-    top: 70px;
-}
-
-nav ul ul li {
-    float: none;
-    width: 250px;
-    margin: 0;
-    display: list-item;
-    position: relative;
-}
-
-nav ul .program li {
-    width: 300px;
-}
-
-nav ul ul li:hover {
+nav .navbar-nav .nav-item:hover {
     color: #F36F21;
 }
 
-.active,
-nav ul li a:hover {
+.navbar-toggler {
+    background-color: #B0CB1F;
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+
+.navbar-toggler span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: #fff;
+}
+
+.navbar-toggler span+span {
+    margin-top: 4px;
+    width: 18px;
+    margin-left: 4px;
+}
+
+.navbar-toggler span+span+span {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem 1.7rem;
+    font-size: 1.2rem;
+    position: relative;
+    color: black;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
     color: #F36F21;
 }
 
-.nav-toggle {
-    display: none;
+.navbar-light .navbar-nav .nav-link.active {
+    border-bottom: 4px solid #F36F21;
 }
 
-
-nav button {
+.btn {
     background-color: #E31E24;
     opacity: 1;
     height: 40px;
     width: 90px;
-    margin-top: 10px;
     border: none;
     border-radius: 8px;
     color: white;
 }
 
-nav .button {
+.btn:hover {
     color: white;
-    font-size: 15px;
-    font-weight: 700;
+    background-color: #F36F21;
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+}
+
+.dropdown-item{
+    padding: 1.2rem;
 }
 
 
@@ -755,88 +734,22 @@ nav .button {
 /*********************************************/
 /*********************************************/
 @media screen and (max-width: 768px) {
-    hr{
+    hr {
         display: none;
         margin: 0;
     }
 
     /* NAV SECTION */
-    nav {
+    .navbar {
+        padding: 1% 3%;
         width: 100%;
-        overflow: auto;
-        height: 70px;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1% 5%;
-        transition: 0.5s height ease-in-out;
-        border-bottom: none;
+        height: auto;
     }
 
-    nav .nav-img {
-        height: 55px;
-    }
-
-    nav ul {
-        margin: 0 auto;
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-    }
-
-    nav ul li {
-        display: block;
-        line-height: 50px;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        margin: 0;
-    }
-
-    nav ul li a {
-        margin: 0;
-    }
-
-    nav ul ul {
-        display: none;
-    }
-
-    nav ul li ul {
-        width: 100%;
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0.5rem;
+        font-size: 1.2rem;
         position: relative;
-        margin-top: -50px;
-        margin-bottom: 70px;
-        background-color: #949494;
-        opacity: 0.7;
-    }
-
-    nav ul li ul li a{
-        color: white;
-    }
-
-    nav .button {
-        margin: 10px auto;
-    }
-
-    .nav-toggle {
-        position: absolute;
-        top: 1.5rem;
-        right: 1rem;
-        display: block;
-    }
-
-    /* .active{
-        display: block;
-    } */
-
-    .open {
-        height: 100%;
-        margin: 0;
-        padding-top: 0;
-        background-attachment: fixed;
-    }
-
-    .hidden {
-        display: none;
     }
 
     /* COMMUNICATION SECTION */
@@ -973,7 +886,7 @@ nav .button {
         text-align: center;
     }
 
-    .programs h3{
+    .programs h3 {
         margin-bottom: 30px;
     }
 
@@ -1115,78 +1028,19 @@ nav .button {
 @media (min-width: 769px) and (max-width: 1023px) {
 
     /* NAV SECTION */
-    nav {
-        width: 100%;
-        overflow: hidden;
-        height: 80px;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1% 5%;
-        transition: 0.5s height ease-in-out;
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 1rem 1.2rem;
+        font-size: 0.5rem;
+        position: relative;
     }
 
-    nav .nav-img {
-        height: 55px;
-    }
-
-    nav ul {
-        margin: 0 auto 60%;
-        padding: 0;
-        align-items: center;
-    }
-
-    nav ul li {
-        display: block;
-        line-height: 70px;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        margin: 0;
-    }
-
-    nav ul li a {
-        margin: 0;
-    }
-
-    .nav ul ul {
-        display: none;
-        position: static;
-    }
-
-    .nav ul li ul {
-        width: 100%;
-        z-index: 1;
-    }
-
-    .nav-toggle {
-        position: absolute;
-        top: 1.5rem;
-        right: 1rem;
-        display: block;
-    }
-
-    .open {
-        height: 95vh;
-        margin: 0;
-        background-attachment: fixed;
-    }
-
-    .hidden {
-        display: none;
-    }
 
 }
 
 @media (min-width: 1024px) and (max-width: 1450px) {
 
     /* NAV SECTION */
-    nav {
-        width: 100%;
-    }
 
-    nav ul li {
-        margin-left: 40px;
-    }
 
     /*COMMUNICATION SECTION*/
     .communication .mission {
