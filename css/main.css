@@ -739,6 +739,10 @@ nav .navbar-nav .nav-item:hover {
         margin: 0;
     }
 
+    body{
+        font-size: 15px;
+    }
+
     /* NAV SECTION */
     .navbar {
         padding: 1% 3%;
@@ -767,7 +771,7 @@ nav .navbar-nav .nav-item:hover {
     .communication {
         width: 100%;
         flex-wrap: wrap;
-        height: calc(70vh - 80px);
+        height: calc(90vh - 100px);
         margin-top: 80px;
     }
 
@@ -1045,21 +1049,87 @@ nav .navbar-nav .nav-item:hover {
         position: relative;
     }
 
+    /* COMMUNICATION*/
+    .communication {
+        width: 100%;
+        flex-wrap: wrap;
+        height: calc(60vh - 100px);
+        margin-top: 80px;
+    }
+
 
 }
 
 @media (min-width: 1024px) and (max-width: 1450px) {
 
     /* NAV SECTION */
+    .navbar {
+        padding: 1% 3%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0.7rem;
+        font-size: 1.2rem;
+        position: relative;
+        text-align: center;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active {
+        color: #F36F21;
+        border-bottom: none;
+    }
+
+    .dropdown-menu{
+        text-align: center;
+    }
 
 
     /*COMMUNICATION SECTION*/
+    /* COMMUNICATION SECTION */
+    .communication {
+        width: 100%;
+        flex-wrap: wrap;
+        height: calc(60vh - 100px);
+        margin-top: 80px;
+    }
+
+    .communication .communication-content {
+        padding: 10% 5%;
+        text-align: left;
+    }
+
+    .communication img {
+        display: none;
+    }
+
     .communication .mission {
-        top: 420px;
+        position: static;
+        width: 100%;
+        margin-top: 55px;
+        text-align: center;
+    }
+
+    .communication .mission .btn1 {
+        margin-left: 10px;
     }
 
     /*DIVISIONS SECTION */
     .divisions .row .col {
-        width: 350px;
+        width: 300px;
+    }
+
+    /* TEAM SECTION */
+    .team {
+        width: 100%;
+        padding: 10% 5%;
+        text-align: center;
+    }
+
+    .team .row .col {
+        width: 300px;
+        margin: 30px auto;
     }
 }
