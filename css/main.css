@@ -195,7 +195,7 @@ nav .navbar-nav .nav-item:hover {
 
 .mission button:hover {
   background: #f36f21;
-  cursor: pointer;
+  cursor: pointer; 
   border: none;
 }
 
