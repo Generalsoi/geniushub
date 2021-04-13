@@ -4,11 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
   font-family: "Overpass", sans-serif;
+  overflow-x: hidden;
 }
 
 body.modal-open {
@@ -815,6 +815,11 @@ nav .navbar-nav .nav-item:hover {
     /* height: 100px; */
     text-align: center;
   }
+
+  /* .navbar > .container > a,
+  .navbar > .container > button {
+    overflow: hidden;
+  } */
 
   .navbar-collapse > .container {
     height: 100%;
