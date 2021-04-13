@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -19,8 +20,8 @@ body.modal-open {
 /*********************/
 .navbar {
   border-bottom: 8px solid #b0cb1f;
-  padding: 1% 7%;
-  height: 100px;
+  /* padding: 1% 7%; */
+  /* height: 90px; */
 }
 
 nav .navbar-nav .nav-item:hover {
@@ -30,33 +31,36 @@ nav .navbar-nav .nav-item:hover {
 .navbar-toggler {
   background-color: #b0cb1f;
   border: none;
-  padding: 10px 6px;
+  /* padding: 10px 6px; */
   outline: none;
 }
 
-.navbar-toggler span {
+/* .navbar-toggler span {
   display: block;
   width: 22px;
   height: 2px;
   border: 1px;
   background: #fff;
 }
+*/
 
+/*
 .navbar-toggler span + span {
   margin-top: 4px;
   width: 18px;
   margin-left: 4px;
 }
+*/
 
+/*
 .navbar-toggler span + span + span {
   width: 10px;
   margin-left: 10px;
 }
+*/
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 1rem 1.7rem;
-  font-size: 1.2rem;
-  position: relative;
+  font-size: 1.1rem;
   color: black;
 }
 
@@ -95,9 +99,9 @@ nav .navbar-nav .nav-item:hover {
 /***Communication section*****/
 /*****************************/
 .communication {
-  margin-top: 100px;
   position: relative;
   display: flex;
+  margin-top: 30px;
   /* height: calc(95vh - 100px); */
   background-image: url(../images/indexbgimg.png);
   opacity: 1;
@@ -115,7 +119,10 @@ nav .navbar-nav .nav-item:hover {
 }
 
 .communication #comm-wrapper {
-  padding: 10px 0px 10px 80px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 .communication img {
@@ -128,7 +135,7 @@ nav .navbar-nav .nav-item:hover {
 .communication .communication-content {
   position: relative;
   z-index: 2;
-  padding: 5% 7%;
+  padding: 2% 7%;
 }
 
 .communication .communication-content h4 {
@@ -148,7 +155,7 @@ nav .navbar-nav .nav-item:hover {
   background-color: #1c295e;
   border: none;
   border-radius: 8px;
-  margin-top: 32px;
+  margin-top: 25px;
 }
 
 .communication-content button:hover {
@@ -177,7 +184,7 @@ nav .navbar-nav .nav-item:hover {
   background-color: #43240f;
   text-align: center;
   justify-content: center;
-  top: 500px;
+  top: 540px;
   opacity: 0.7;
   z-index: 1;
 }
@@ -195,7 +202,7 @@ nav .navbar-nav .nav-item:hover {
 
 .mission button:hover {
   background: #f36f21;
-  cursor: pointer; 
+  cursor: pointer;
   border: none;
 }
 
@@ -734,7 +741,7 @@ nav .navbar-nav .nav-item:hover {
 
   .communication .communication-content {
     padding: 5% 5% 25% 5%;
-    margin-left: -30px;
+    /* margin-left: -30px; */
     text-align: left;
   }
 
@@ -803,17 +810,21 @@ nav .navbar-nav .nav-item:hover {
 
   /* NAV SECTION */
   .navbar {
-    padding: 1% 3%;
-    width: 100%;
-    height: auto;
+    /* padding: 1% 3%; */
+    /* width: 100%; */
+    /* height: 100px; */
     text-align: center;
   }
 
+  .navbar-collapse > .container {
+    height: 100%;
+    transition: 0.5s;
+  }
+
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0.7rem;
-    font-size: 1.2rem;
-    position: relative;
-    text-align: center;
+    /* padding: 0.7rem; */
+    /* font-size: 1.2rem; */
+    transition: 0.3s;
   }
 
   .navbar-light .navbar-nav .nav-link.active {
@@ -821,9 +832,9 @@ nav .navbar-nav .nav-item:hover {
     border-bottom: none;
   }
 
-  .dropdown-menu {
+  /* .dropdown-menu {
     text-align: center;
-  }
+  } */
 
   /* ABOUT SECTION */
   .about {
@@ -868,7 +879,7 @@ nav .navbar-nav .nav-item:hover {
     width: 100px;
     height: 100px;
   }
- 
+
   .divisions .row {
     justify-content: space-between;
     margin-top: 20px;
@@ -1047,11 +1058,11 @@ nav .navbar-nav .nav-item:hover {
 
 @media (min-width: 769px) and (max-width: 1200px) {
   /* NAV SECTION */
-  .navbar-expand-lg .navbar-nav .nav-link {
+  /* .navbar-expand-lg .navbar-nav .nav-link {
     padding: 1rem 1.2rem;
     font-size: 0.5rem;
     position: relative;
-  }
+  } */
 
   /* COMMUNICATION*/
   .communication {
@@ -1098,8 +1109,8 @@ nav .navbar-nav .nav-item:hover {
     text-align: center;
   }
 }
-/* 
-@media (min-width: 992px) and (max-width: 1400) {
+
+/* @media (min-width: 992px) and (max-width: 1400) {
   .communication .communication-content {
     padding: 5% 5% 50% 5%;
     margin-left: -30px;
@@ -1114,66 +1125,3 @@ nav .navbar-nav .nav-item:hover {
     text-align: center;
   }
 } */
-
-@media (min-width: 1024px) and (max-width: 1450px) {
-  /* NAV SECTION */
-  .navbar {
-    padding: 1% 3%;
-    width: 100%;
-    height: auto;
-    text-align: center;
-  }
-
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0.7rem;
-    font-size: 1.2rem;
-    position: relative;
-    text-align: center;
-  }
-
-  .navbar-light .navbar-nav .nav-link.active {
-    color: #f36f21;
-    border-bottom: none;
-  }
-
-  .dropdown-menu {
-    text-align: center;
-  }
-
-  /* COMMUNICATION SECTION */
-  .communication {
-    width: 100%;
-    flex-wrap: wrap;
-    height: calc(60vh - 100px);
-    margin-top: 80px;
-  }
-
-  .communication .communication-content {
-    padding: 10% 5%;
-    text-align: left;
-  }
-
-  .communication .mission {
-    position: static;
-    width: 100%;
-    margin-top: 55px;
-    text-align: center;
-  }
-
-  /*DIVISIONS SECTION */
-  .divisions .row .col {
-    width: 300px;
-  }
-
-  /* TEAM SECTION */
-  .team {
-    width: 100%;
-    padding: 10% 5%;
-    text-align: center;
-  }
-
-  .team .row .col {
-    width: 300px;
-    margin: 30px auto;
-  }
-}
