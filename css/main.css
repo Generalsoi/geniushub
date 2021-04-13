@@ -207,87 +207,23 @@ nav .navbar-nav .nav-item:hover {
 }
 
 /**** POPUP CONTENT ******/
-.popup {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  display: none;
-}
-
-.popup-content {
-  background-color: white;
-  height: 250px;
-  width: 450px;
-  border-radius: 10px;
-  position: relative;
-}
-
-.popup-content .heading {
+.mission-header {
   background-color: #ecd1c2;
   opacity: 0.9;
   color: #000000;
   height: 70px;
   text-align: center;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   padding-top: 20px;
 }
 
-.popup-content .heading h5 {
-  font-weight: 600;
-}
-
-.popup-content .heading hr {
+/* .popup-content .heading hr {
   width: 15%;
   margin: 0 auto;
   height: 5px;
   border-radius: 10px;
   color: #f36f21;
   opacity: 1;
-}
-
-.popup-content p {
-  text-align: left;
-  align-items: center;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-.popup-content .exit,
-.popup-content .close {
-  position: absolute;
-  top: 0;
-  right: 14px;
-  font-size: 42px;
-  transform: rotate(45deg);
-  color: #000000;
-  opacity: 1;
-}
-
-.popup-content .exit:hover,
-.popup-content .close:hover {
-  cursor: pointer;
-  color: #000000;
-}
-
-.popup-2 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  display: none;
-}
+} */
 
 /**********************************/
 /********Divisions section*********/

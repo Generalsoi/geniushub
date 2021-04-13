@@ -8,8 +8,11 @@
   <meta name="description" content="">
 
   <!--bootstrap cdn-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <!--css links-->
   <link rel="stylesheet" href="./css/main.css">
@@ -26,7 +29,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="index.html"><img class="nav-img" src="./images/Genius Hub....png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,8 +41,8 @@
             <li class="nav-item p-lg-3">
               <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item p-lg-3 dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            <li class="nav-item dropdown p-lg-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-expanded="false">
                 Divisions
               </a>
@@ -49,8 +52,8 @@
                 <li><a class="dropdown-item" href="younggirlsfoundation.html">Young Girls Foundation</a></li>
               </ul>
             </li>
-            <li class="nav-item p-lg-3 dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            <li class="nav-item dropdown p-lg-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-expanded="false">
                 Programs
               </a>
@@ -59,8 +62,8 @@
                 <li><a class="dropdown-item" href="communityengagement.html">Community Engagement Program</a></li>
               </ul>
             </li>
-            <li class="nav-item p-lg-3 dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            <li class="nav-item dropdown p-lg-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-expanded="false">
                 Blog
               </a>
@@ -107,8 +110,9 @@
 
         <div class="mission mt-5">
           <div class="mt-2 mt-lg-3 mt-md-2 mt-sm-2">
-            <button class="pt-1" style="margin-right: 1rem" id="mission">MISSION</button>
-            <button class="pt-1" id="vision">VISION</button>
+            <button class="pt-1" style="margin-right: 1rem" id="mission" data-toggle="modal"
+              data-target="#missionModal">MISSION</button>
+            <button class="pt-1" id="vision" data-toggle="modal" data-target="#visionModal">VISION</button>
           </div>
         </div>
 
@@ -117,31 +121,44 @@
     </div>
   </section>
 
-  <div class="popup">
-    <div class="popup-content">
-      <div class="heading">
-        <h5>Mission Statement</h5>
-        <hr>
+  <!-- Mission Modal -->
+  <div class="modal fade" id="missionModal" tabindex="-1" role="dialog" aria-labelledby="missionModalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header mission-header">
+          <h5 class="modal-title">Mission Statement</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body py-4">
+          <p>To increase economic empowerment, wealth creation and sustainable development in Africa through citizen
+            engagement, mentoring, skills and entrepreneurship development.</p>
+        </div>
       </div>
-      <p>To increase economic empowerment, wealth creation and sustainable development in Africa through citizen
-        engagement, mentoring, skills and entrepreneurship development.</p>
-      <div class="exit">+</div>
     </div>
   </div>
 
-  <div class="popup-2">
-    <div class="popup-content">
-      <div class="heading">
-        <h5>Vision Statement</h5>
-        <hr>
+  <!-- Vision Modal -->
+  <div class="modal fade" id="visionModal" tabindex="-1" role="dialog" aria-labelledby="visionModalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header mission-header">
+          <h5 class="modal-title">Vision Statement</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body py-4">
+          <p>To be Africa’s fastest growing, most engaging and most trans-formative community of entrepreneurs and
+            change
+            agents.</p>
+        </div>
       </div>
-      <p>To be Africa’s fastest growing, most engaging and most trans-formative community of entrepreneurs and change
-        agents.</p>
-      <div class="close">+</div>
-
     </div>
   </div>
-
 
   <section class="divisions" id="divisions">
     <h3>Genius Hub Service Divisions</h3>
@@ -424,13 +441,23 @@
     <p class="copyright">Copyright © 2021 - Genius Hub. All Rights Reserved</p>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
-    </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
     integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
     </script>
-  <script src="./js/popup.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+    </script> -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
