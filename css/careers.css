@@ -1,248 +1,245 @@
 /****************************/
 /***** Introduction *********/
-/****************************/ 
-.introduction img{
-    width: 55px;
-    height: 55px;
+/****************************/
+.introduction img {
+  width: 55px;
+  height: 55px;
 }
 
-.introduction{
-    height: calc(100vh - 100px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/careerimg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.introduction {
+  height: calc(100vh - 100px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/careerimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.introduction-content{
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    transform: translateY(30vh);
+.introduction-content {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  transform: translateY(30vh);
 }
 
-.introduction-content button{
-    height: 90px;
-    width: 320px;
-    border: none;
-    background-color: #fff;
-    border-radius: 8px;
+.introduction-content button {
+  height: 90px;
+  width: 320px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
-.introduction-content a{
-    font-size: 32px;
-    color: #000000;
-    text-decoration: none;
-    font-weight: 600;
+.introduction-content a {
+  font-size: 32px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.introduction-content p{
-    margin-top: 30px;
-    color: white;
-    font-size: 18px;
+.introduction-content p {
+  margin-top: 30px;
+  color: white;
+  font-size: 18px;
 }
-
-
-
 
 /*********************************/
 /**** Careers section ************/
 /*********************************/
-.careers{
-    padding: 5% 7% 1%;
+.careers {
+  padding: 5% 7% 1%;
 }
 
-.careers h5{
-    font-size: 35px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 12px;
+.careers h5 {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 12px;
 }
 
-.careers h6{
-    font-size: 25px;
-    color: #F36F21;
-    text-align: center;
-    margin-bottom: 32px;
+.careers h6 {
+  font-size: 25px;
+  color: #f36f21;
+  text-align: center;
+  margin-bottom: 32px;
 }
-
-
 
 /**********************************/
 /******* Jobs section *************/
 /**********************************/
-.jobs{
-    padding: 2% 7%;
+.jobs {
+  padding: 2% 7%;
 }
 
-.jobs .jobs-head{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+.jobs .jobs-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
-.jobs .jobs-head h6{
-    font-size: 20px;
-    font-weight: 600;
+.jobs .jobs-head h6 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.jobs .jobs-head input{
-    height: 36px;
-    width: 200px;
-    border: 1px solid #F36F21;
-    border-radius: 8px;
-    padding: 12px;
-    font-size: 12px;
+.jobs .jobs-head input {
+  height: 36px;
+  width: 200px;
+  border: 1px solid #f36f21;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 12px;
 }
 
-.jobs table{
-    width: 100%;
-    margin-bottom: 40px;
+.jobs table {
+  width: 100%;
+  margin-bottom: 40px;
 }
 
-.jobs tr{
-    border: 1px solid #e4e4e4;
+.jobs tr {
+  border: 1px solid #e4e4e4;
 }
 
-.jobs tr:hover{
-    transform: scale(1.02);
-    transition: ease 0.5s;
+.jobs tr:hover {
+  transform: scale(1.02);
+  transition: ease 0.5s;
 }
 
-.jobs td{
-    padding: 30px;
+.jobs td {
+  padding: 30px;
 }
 
 .jobs .roles .role-type,
-.jobs .roles .location{
-    border: 1px solid #F36F21;
-    width: 120px;
-    height: 40px;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: white;
+.jobs .roles .location {
+  border: 1px solid #f36f21;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: white;
 }
 
-.jobs .roles .apply{
-    background-color: #FFE0CE;
-    width: 120px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    font-size: 15px;
-    font-weight: 600;
+.jobs .roles .apply {
+  background-color: #ffe0ce;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.jobs .roles .apply a{
-    text-decoration: none;
-    color: black;
+.jobs .roles .apply a {
+  text-decoration: none;
+  color: black;
 }
 
-.jobs .roles .apply a:hover{
-    color: white;
+.jobs .roles .apply a:hover {
+  color: white;
 }
 
-.jobs .roles .apply:hover{
-    background-color: #F36F21;
-    transition: ease 0.5s;
+.jobs .roles .apply:hover {
+  background-color: #f36f21;
+  transition: ease 0.5s;
 }
 
-.jobs .roles .role-title{
-    font-size: 15px;
+.jobs .roles .role-title {
+  font-size: 15px;
 }
 
-.jobs .roles .role-desc{
-    color: #949494;
-    font-size: 12px;
+.jobs .roles .role-desc {
+  color: #949494;
+  font-size: 12px;
 }
-
 
 /**********************************************/
 /**********************************************/
 /* RESPONSIVENESS FOR THE DIFFERENT SECTIONS */
 /*********************************************/
 /*********************************************/
-@media screen and (max-width: 768px){
-    /* INTRODUCTION SECTION */
-    .introduction img{
-        width: 55px;
-        height: 55px;
-    }
-    
-    .introduction{
-        width: 100%;
-        height: calc(100vh - 80px);
-        padding: 5% 5%;
-        margin-top: 80px;
-    }
-    
-    .introduction-content{
-        width: 100%; 
-        margin: auto;
-        text-align: center;
-        transform: translateY(20vh);
-    }
-    
-    .introduction-content button{
-        height: 60px;
-        width: 70%;
-        border: none;
-        background-color: #fff;
-        border-radius: 8px;
-    }
-    
-    .introduction-content a{
-        font-size: 25px;
-    }
-    
-    .introduction-content p{
-        margin-top: 30px;
-        color: white;
-        font-size: 16px;
-    }
+@media screen and (max-width: 768px) {
+  /* INTRODUCTION SECTION */
+  .introduction img {
+    width: 55px;
+    height: 55px;
+  }
 
-    /* CAREERS SECTION */
-    .careers{
-        width: 100%;
-        padding: 10% 5%;
-    }
-    
-    .careers h5{
-        font-size: 25px;
-        margin-bottom: 12px;
-    }
-    
-    .careers h6{
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
+  .introduction {
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 5% 5%;
+    margin-top: 80px;
+  }
 
-    /* JOBS SECTION */
-    .jobs{
-        width: 100%;
-        padding: 2% 5%;
-        text-align: center;
-    }
-    
-    .jobs .jobs-head{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 40px;
-    }
-    
-    .jobs table, .jobs tr, .jobs td{
-        display: block;
-        width: 100%;
-    }
+  .introduction-content {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(20vh);
+  }
 
-    .jobs tr{
-        margin: 0 auto 30px;
-        border-radius: 10px;
-    }
+  .introduction-content button {
+    height: 60px;
+    width: 70%;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+  }
 
-    .jobs td{
-        padding: 10px;
-    }
-  
+  .introduction-content a {
+    font-size: 25px;
+  }
+
+  .introduction-content p {
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+  }
+
+  /* CAREERS SECTION */
+  .careers {
+    width: 100%;
+    padding: 10% 5%;
+  }
+
+  .careers h5 {
+    font-size: 25px;
+    margin-bottom: 12px;
+  }
+
+  .careers h6 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  /* JOBS SECTION */
+  .jobs {
+    width: 100%;
+    padding: 2% 5%;
+    text-align: center;
+  }
+
+  .jobs .jobs-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+
+  .jobs table,
+  .jobs tr,
+  .jobs td {
+    display: block;
+    width: 100%;
+  }
+
+  .jobs tr {
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    /* margin-left: 30px; */
+  }
+
+  .jobs td {
+    padding: 10px;
+  }
 }
