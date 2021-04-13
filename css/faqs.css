@@ -71,12 +71,16 @@
     padding: 5% 7%;
 }
 
-.faqs-content .accordion .accordion-item{
+.faqs-content .accordion .card-header{
     background-color: #FFE9DC;
     padding: 2%;
     border-radius: 10px;
     margin-bottom: 30px;
 }
+
+/*
+
+
 
 .faqs-content .accordion .accordion-item .accordion-link{
     color: black;
@@ -118,7 +122,7 @@
 
 .faqs-content .accordion .accordion-item:target .accordion-link .fa-caret-up{
     display: block;
-}
+} */
 
 
 /********************************/
