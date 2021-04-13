@@ -6,9 +6,13 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Overpass", sans-serif;
-  overflow-x: hidden;
 }
 
 body.modal-open {
@@ -666,59 +670,7 @@ nav .navbar-nav .nav-item:hover {
 /*********************************************/
 /*********************************************/
 
-@media (max-width: 768px) {
-  /* COMMUNICATION SECTION */
-  .communication {
-    width: 100%;
-    flex-wrap: wrap;
-    /* height: calc(90vh - 100px); */
-    margin-top: 80px;
-  }
-
-  .communication .communication-content {
-    padding: 5% 5% 25% 5%;
-    /* margin-left: -30px; */
-    text-align: left;
-  }
-
-  .communication #comm-wrapper {
-    padding: 10px 0px 10px 50px;
-  }
-
-  .communication img {
-    display: none;
-  }
-
-  .communication .communication-content h4 {
-    font-size: 20px;
-    color: white;
-    margin-bottom: 30px;
-  }
-
-  .communication .communication-content h2 {
-    font-size: 30px;
-    font-weight: bolder;
-  }
-
-  .communication-content button {
-    height: 45px;
-    width: 180px;
-  }
-
-  .communication-content button a {
-    font-size: 14px;
-  }
-
-  .communication .mission {
-    position: absolute;
-    width: 100%;
-    top: 380px;
-    height: 53px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .communication .communication-content {
     padding: 5% 5% 30% 5%;
     margin-left: -30px;
@@ -776,6 +728,57 @@ nav .navbar-nav .nav-item:hover {
   /* .dropdown-menu {
     text-align: center;
   } */
+
+  /* COMMUNICATION SECTION */
+  .communication {
+    width: 100%;
+    flex-wrap: wrap;
+    /* height: calc(90vh - 100px); */
+    margin-top: 80px;
+  }
+
+  .communication .communication-content {
+    padding: 5% 5% 25% 5%;
+    /* margin-left: -30px; */
+    text-align: left;
+  }
+
+  .communication #comm-wrapper {
+    padding: 10px 0px 10px 50px;
+  }
+
+  .communication img {
+    display: none;
+  }
+
+  .communication .communication-content h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  .communication .communication-content h2 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  .communication-content button {
+    height: 45px;
+    width: 180px;
+  }
+
+  .communication-content button a {
+    font-size: 14px;
+  }
+
+  .communication .mission {
+    position: absolute;
+    width: 100%;
+    top: 340px;
+    height: 53px;
+    text-align: center;
+    z-index: 2;
+  }
 
   /* ABOUT SECTION */
   .about {
