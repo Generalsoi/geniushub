@@ -148,7 +148,7 @@
     
     .introduction{
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(60vh - 80px);
         padding: 5% 5%;
         margin-top: 80px;
     }
@@ -157,11 +157,11 @@
         width: 100%;
         margin: auto;
         text-align: center;
-        transform: translateY(20vh);
+        transform: translateY(10vh);
     }
     
     .introduction-content button{
-        height: 80px;
+        height: 50px;
         width: 70%;
         border: none;
         background-color: #fff;
@@ -176,6 +176,11 @@
         margin-top: 30px;
         color: white;
         font-size: 16px;
+    }
+
+    /* CONNECT WITH US SECTION */
+    .connect-with-us{
+        margin-top: 50px;
     }
 
     /* CONTACT-US FORM SECTION */
