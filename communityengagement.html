@@ -136,36 +136,36 @@
       <div>
         <h6>Get in Touch!</h6>
         <p>Interested in joining our next community outreach, ask how</p>
-        <button id="data-modal-target">Contact Us</button>
+        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="trainee">Contact Us</button>
       </div>
 
     </div>
   </section>
 
-  <div class="modal" id="modal">
-    <div class="modal-contents">
-      <div class="modal-header">
-        <p class="title">Contact Us</p>
-        <button id="data-close-button" class="close-button">&times;</button>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="phone" placeholder="Phone">
+            <input type="text" placeholder="Address">
+            <input type="text" placeholder="Local Government Area of Residence">
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="Other Phone">
+            <textarea>Message</textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
-      <div class="modal-body">
-        <form action="">
-          <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email">
-          <input type="phone" placeholder="Phone">
-          <input type="text" placeholder="Address">
-          <input type="text" placeholder="Local Government Area of Residence">
-          <input type="text" placeholder="State">
-          <input type="text" placeholder="Other Phone">
-          <textarea>Message</textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-
     </div>
   </div>
-  <div id="overlay"></div>
-
 
   <div class="footer">
     <div class="container">
@@ -227,11 +227,14 @@
     </div>
 
     <ul class="social-media">
-      <li><i class="fab fa-instagram"></i></li>
-      <li><i class="fab fa-whatsapp"></i></li>
-      <li><i class="fab fa-twitter"></i></li>
-      <li><i class="fab fa-linkedin-in"></i></li>
-      <li><i class="fab fa-facebook-f"></i></li>
+      <li><a href="https://www.instagram.com/geniushubglobal/"><i class="fab fa-instagram"></i></a></li>
+      <li><a
+          href="https://web.whatsapp.com/send?phone=2348183109822&text=Hello!%20I%20want%20to%20make%20some%20Inquiry%20on%20Genius%20Hub"><i
+            class="fab fa-whatsapp"></i></a></li>
+      <li><a href="https://twitter.com/geniushubglobal"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/company/genius-hub-global-initiative/"><i
+            class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="https://web.facebook.com/geniushubglobal/"><i class="fab fa-facebook-f"></i></a></li>
     </ul>
     <p class="copyright">Copyright © 2021 - Genius Hub. All Rights Reserved</p>
   </div>
@@ -240,7 +243,6 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
-  <script src="./js/popupmodal.js"></script>
 </body>
 
 </html>

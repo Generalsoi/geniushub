@@ -61,8 +61,8 @@
             </ul>
           </li>
           <li class="nav-item dropdown p-lg-3">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Blog
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -139,11 +139,45 @@
         <li>Ability to deliver creative content (text, image and video)</li>
       </ul>
 
-      <button id="button">Apply Now</button>
+      <!-- <button id="data-modal-target">Apply Now</button> -->
+      <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="trainee">Contact Us</button>
+
     </div>
   </section>
 
-  <div class="popup-form">
+  <div class="modal fade popup-form" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content form-content">
+        <div class="modal-header">
+          <h6>Job Application</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Email">
+            <input type="phone" placeholder="Phone">
+            <input type="text" placeholder="Gender">
+            <input type="text" placeholder="Address">
+            <input type="text" placeholder="What is your highest education level?">
+            <div class="attachments">
+              <label for=""> Upload your resume:</label>
+              <input type="text" placeholder="Attach file">
+            </div>
+            <div class="attachments">
+              <label for="">Upload your cover letter:</label>
+              <input type="text" placeholder="Attach file">
+            </div>
+            <input type="text" placeholder="Tell us why you think you are a good fit for this role">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="modal" class="popup-form">
     <div class="form-content">
       <div class="close">+</div>
       <h6>Job Application</h6>
@@ -168,7 +202,7 @@
       </form>
 
     </div>
-  </div>
+  </div> -->
 
   <div class="footer">
     <div class="container">

@@ -319,87 +319,95 @@
   </section>
 
   <div class="apply">
-    <button id="data-modal-target" class="trainee">Apply to be a Trainee</button>
-    <button id="data-modal-target2" class="sponsor">Apply to be a Sponsor</button>
+    <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="trainee">Apply to be a Trainee</button>
+    <button data-bs-toggle="modal" data-bs-target="#staticBackdrop2" class="trainee">Apply to be a Sponsor</button>
   </div>
 
-  <div class="modal" id="modal">
-    <div class="modal-contents">
-      <div class="modal-header">
-        <p class="title"><span style="color: #F36F21;">Genius Hub</span> Trainee Application</p>
-        <button id="data-close-button" class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        <form action="">
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="phone" placeholder="Phone">
-          <input type="text" placeholder="Address">
-          <select name="program-of-interest" id="skill-of-choice">
-            <option value="">Choose a skill program</option>
-            <option value="fashion-design">Training & fashion design</option>
-            <option value="barbing">Barbing</option>
-            <option value="hair-dressing">Hair dressing</option>
-          </select>
-          <input type="text" placeholder="What is your current occupation?">
-          <select name="information-origin" id="info-source">
-            <option value="">How did you hear about this <span style="color: #F36F21;">Genius Hub</span>?</option>
-            <option value="newsletter">Newsletter</option>
-            <option value="facebook">Facebook</option>
-            <option value="instagram">Instagram</option>
-            <option value="twitter">Twitter</option>
-            <option value="others">Others</option>
-          </select>
-          <textarea>Why do you want to participate in Genius Hub Skill Acquisition & Mentorship Program?</textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
 
+  <!-- Trainee Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel"><span style="color: #F36F21;">Genius Hub</span> Trainee
+            Application</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Email">
+            <input type="phone" placeholder="Phone">
+            <input type="text" placeholder="Address">
+            <select name="program-of-interest" id="skill-of-choice">
+              <option value="">Choose a skill program</option>
+              <option value="fashion-design">Training & fashion design</option>
+              <option value="barbing">Barbing</option>
+              <option value="hair-dressing">Hair dressing</option>
+            </select>
+            <input type="text" placeholder="What is your current occupation?">
+            <select name="information-origin" id="info-source">
+              <option value="">How did you hear about this <span style="color: #F36F21;">Genius Hub</span>?</option>
+              <option value="newsletter">Newsletter</option>
+              <option value="facebook">Facebook</option>
+              <option value="instagram">Instagram</option>
+              <option value="twitter">Twitter</option>
+              <option value="others">Others</option>
+            </select>
+            <textarea>Why do you want to participate in Genius Hub Skill Acquisition & Mentorship Program?</textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
-  <div id="overlay"></div>
 
-  <div class="modal2" id="modal2">
-    <div class="modal-contents2">
-      <div class="modal-header2">
-        <p class="title"><span style="color: #F36F21;">Genius Hub</span> Sponsor Application</p>
-        <button id="data-close-button2" class="close-button">&times;</button>
+  <!-- Sponsor -->
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel"><span style="color: #F36F21;">Genius Hub</span> Trainee
+            Application</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p style="color: #949494;">Now that you are here, it means you've decided to partner with us for the Skill
+            Acquisition & Mentorship Program. You rock! Thanks!!</p>
+          <p class="modal-body-colored-p">Please, complete the form below and we'll respond to you immediately with a
+            quotation based on your application.</p>
+          <form action="">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Email">
+            <input type="phone" placeholder="Phone">
+            <select name="country" id="country">
+              <option value="">Country</option>
+            </select>
+            <select name="program-of-interest" id="skill-of-choice">
+              <option value="">Choose a skill program to sponsor</option>
+              <option value="fashion-design">Training & fashion design</option>
+              <option value="barbing">Barbing</option>
+              <option value="hair-dressing">Hair dressing</option>
+            </select>
+            <input type="text" placeholder="No. of persons to sponsor">
+            <select name="information-origin" id="info-source">
+              <option value="">How did you hear about this <span style="color: #F36F21;">Genius Hub</span>?</option>
+              <option value="newsletter">Newsletter</option>
+              <option value="facebook">Facebook</option>
+              <option value="instagram">Instagram</option>
+              <option value="twitter">Twitter</option>
+              <option value="others">Others</option>
+            </select>
+            <textarea>Message</textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
-      <div class="modal-body2">
-        <p style="color: #949494;">Now that you are here, it means you've decided to partner with us for the Skill
-          Acquisition & Mentorship Program. You rock! Thanks!!</p>
-        <p class="modal-body-colored-p">Please, complete the form below and we'll respond to you immediately with a
-          quotation based on your application.</p>
-        <form action="">
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="phone" placeholder="Phone">
-          <select name="country" id="country">
-            <option value="">Country</option>
-          </select>
-          <select name="program-of-interest" id="skill-of-choice">
-            <option value="">Choose a skill program to sponsor</option>
-            <option value="fashion-design">Training & fashion design</option>
-            <option value="barbing">Barbing</option>
-            <option value="hair-dressing">Hair dressing</option>
-          </select>
-          <input type="text" placeholder="No. of persons to sponsor">
-          <select name="information-origin" id="info-source">
-            <option value="">How did you hear about this <span style="color: #F36F21;">Genius Hub</span>?</option>
-            <option value="newsletter">Newsletter</option>
-            <option value="facebook">Facebook</option>
-            <option value="instagram">Instagram</option>
-            <option value="twitter">Twitter</option>
-            <option value="others">Others</option>
-          </select>
-          <textarea>Message</textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-
     </div>
   </div>
-  <div id="overlay2"></div>
+
 
   <div class="footer">
     <div class="container">
@@ -461,11 +469,14 @@
     </div>
 
     <ul class="social-media">
-      <li><i class="fab fa-instagram"></i></li>
-      <li><i class="fab fa-whatsapp"></i></li>
-      <li><i class="fab fa-twitter"></i></li>
-      <li><i class="fab fa-linkedin-in"></i></li>
-      <li><i class="fab fa-facebook-f"></i></li>
+      <li><a href="https://www.instagram.com/geniushubglobal/"><i class="fab fa-instagram"></i></a></li>
+      <li><a
+          href="https://web.whatsapp.com/send?phone=2348183109822&text=Hello!%20I%20want%20to%20make%20some%20Inquiry%20on%20Genius%20Hub"><i
+            class="fab fa-whatsapp"></i></a></li>
+      <li><a href="https://twitter.com/geniushubglobal"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/company/genius-hub-global-initiative/"><i
+            class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="https://web.facebook.com/geniushubglobal/"><i class="fab fa-facebook-f"></i></a></li>
     </ul>
     <p class="copyright">Copyright © 2021 - Genius Hub. All Rights Reserved</p>
   </div>
@@ -474,8 +485,6 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
-  <script src="./js/popupmodal.js"></script>
-  <script src="./js/popupmodal2.js"></script>
 </body>
 
 </html>

@@ -3,125 +3,122 @@
 /************************************/
 
 .modal2 {
-    position: fixed;
-    top: 55%;
-    left: 50%;
-    overflow: auto;
-    transform: translate(-50%, -50%);
-    transition: 200ms ease-in-out;
-    border: 1px solid #C3C3C3;
-    border-radius: 10px;
-    z-index: 2;
-    background-color: white;
-    height: 600px;
-    width: 500px;
-    max-width: 80%;
-    padding: 10px 15px;
-    display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+  transform: translate(-50%, -50%);
+  transition: 200ms ease-in-out;
+  border: 1px solid #c3c3c3;
+  border-radius: 10px;
+  z-index: 2;
+  background-color: white;
+  height: 600px;
+  width: 500px;
+  max-width: 80%;
+  padding: 10px 15px;
+  display: none;
 }
 
-
 .modal-header2 {
-    padding: auto 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #C3C3C3;
-    margin-bottom: 0;
+  padding: auto 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c3c3c3;
+  margin-bottom: 0;
 }
 
 .modal-header2 .title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 .modal-header2 .close-button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .modal-body2 {
-    padding: 10px 15px;
-    text-align: center;
+  padding: 10px 15px;
+  text-align: center;
 }
 
 #overlay2 {
-    position: fixed;
-    display: none;
-    transition: 200ms ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none
+  position: fixed;
+  display: none;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
 }
 
-
-
 .modal-contents2 form input {
-    display: block;
-    width: 100%;
-    height: 36px;
-    margin: 20px auto;
-    font-size: 14px;
-    color: #949494;
-    padding: 5px 12px;
-    border: 1px solid #C3C3C3;
-    border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: 36px;
+  margin: 20px auto;
+  font-size: 14px;
+  color: #949494;
+  padding: 5px 12px;
+  border: 1px solid #c3c3c3;
+  border-radius: 10px;
 }
 
 .modal-body2 form textarea {
-    display: block;
-    width: 100%;
-    margin: 20px auto;
-    font-size: 14px;
-    color: #949494;
-    padding: 5px 12px;
-    border: 1px solid #C3C3C3;
-    border-radius: 10px;
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+  font-size: 14px;
+  color: #949494;
+  padding: 5px 12px;
+  border: 1px solid #c3c3c3;
+  border-radius: 10px;
 }
 
 .color {
-    color: #F36F21;
+  color: #f36f21;
 }
 
 .modal-body2 p {
-    font-size: 14px;
-    text-align: left;
+  font-size: 14px;
+  text-align: left;
 }
 
 .modal-body2 .modal-body-colored-p {
-    background-color: #FFE9DC;
-    border-radius: 10px;
-    padding: 10px;
+  background-color: #ffe9dc;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .modal-body2 form select {
-    display: block;
-    width: 100%;
-    height: 45px;
-    margin: 28px auto;
-    font-size: 14px;
-    color: #949494;
-    padding: 5px 12px;
-    border: 1px solid #C3C3C3;
-    border-radius: 10px;
-    background-color: white;
+  display: block;
+  width: 100%;
+  height: 45px;
+  margin: 28px auto;
+  font-size: 14px;
+  color: #949494;
+  padding: 5px 12px;
+  border: 1px solid #c3c3c3;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .modal-body2 form button {
-    width: 85px;
-    height: 36px;
-    background-color: #E31E24;
-    opacity: 0.85;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 15px;
+  width: 85px;
+  height: 36px;
+  background-color: #e31e24;
+  opacity: 0.85;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
 }

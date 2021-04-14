@@ -140,7 +140,7 @@ nav .btn:hover {
 }
 
 .communication-content button:hover {
-  background-color: #273B89;
+  background-color: #273b89;
   opacity: 1;
 }
 
@@ -635,6 +635,10 @@ nav .btn:hover {
   border-radius: 4px;
 }
 
+.footer .social-media li a {
+  color: #000000;
+}
+
 .footer .copyright {
   text-align: center;
   color: #ffffff;
@@ -686,7 +690,7 @@ nav .btn:hover {
     overflow: hidden;
   } */
 
-  .navbar-collapse>.container {
+  .navbar-collapse > .container {
     height: 100%;
     transition: 0.5s;
   }
