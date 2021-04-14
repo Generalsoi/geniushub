@@ -24,8 +24,8 @@ body.modal-open {
 /*********************/
 .navbar {
   border-bottom: 8px solid #b0cb1f;
-   padding-left: 7%;
-   padding-right: 7%;
+  padding-left: 7%;
+  padding-right: 7%;
   /* height: 90px; */
 }
 
@@ -140,7 +140,7 @@ nav .btn:hover {
 }
 
 .communication-content button:hover {
-  background-color: #e31e24;
+  background-color: #273B89;
   opacity: 1;
 }
 
@@ -686,7 +686,7 @@ nav .btn:hover {
     overflow: hidden;
   } */
 
-  .navbar-collapse > .container {
+  .navbar-collapse>.container {
     height: 100%;
     transition: 0.5s;
   }

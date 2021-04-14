@@ -18,7 +18,7 @@
     width: 50%;
     margin: auto;
     text-align: center;
-    transform: translateY(30vh);
+    transform: translateY(10vh);
 }
 
 .introduction-content h3{
@@ -30,6 +30,26 @@
 .introduction-content p{
     margin-top: 30px;
     color: white;
+}
+
+.introduction-content .top-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 0;
+}
+
+.introduction-content .top-links a{
+    text-decoration: none;
+}
+
+.introduction-content .top-links p{
+    margin: 0;
+}
+
+.introduction-content .top-links .current-page p{
+    color: #b0cb1f;
 }
 
 
@@ -223,6 +243,10 @@
     
     .introduction-content p{
         margin-top: 20px;
+    }
+
+    .introduction-content .top-links{
+        display: none;
     }
 
     /* EDUCATION SECTION */
