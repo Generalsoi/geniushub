@@ -35,6 +35,10 @@
     margin-top: 0;
 }
 
+.introduction-content .top-links a{
+    text-decoration: none;
+}
+
 .introduction-content .top-links p{
     margin: 0;
 }
