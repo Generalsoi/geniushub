@@ -71,58 +71,19 @@
     padding: 5% 7%;
 }
 
-.faqs-content .accordion .card-header{
-    background-color: #FFE9DC;
-    padding: 2%;
+.faqs-content .accordion .accordion-item{
     border-radius: 10px;
     margin-bottom: 30px;
 }
 
-/*
-
-
-
-.faqs-content .accordion .accordion-item .accordion-link{
-    color: black;
-    text-decoration: none;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-    font-weight: 600;
+.accordion-button{
+    background-color: #FFE9DC;
 }
 
-.faqs-content .accordion .accordion-item .accordion-link .fa-caret-up{
-    display: none;
-}
-
-.faqs-content .accordion .accordion-item .answer{
-    max-height: 0;
-    overflow: hidden;
-    background-color: #fff;
-    transition: max-height 200ms;
-}
-
-.faqs-content .accordion .accordion-item .answer p{
-    padding: 10px;
-}
-
-.faqs-content .accordion .accordion-item:target .accordion-link {
+.accordion-button[aria-expanded=true]{
+    background-color: #FFE9DC;
     color: #F36F21;
 }
-
-.faqs-content .accordion .accordion-item:target .answer{
-    max-height: 20rem;
-}
-
-.faqs-content .accordion .accordion-item:target .accordion-link .fa-caret-down{
-    display: none;
-}
-
-.faqs-content .accordion .accordion-item:target .accordion-link .fa-caret-up{
-    display: block;
-} */
 
 
 /********************************/
