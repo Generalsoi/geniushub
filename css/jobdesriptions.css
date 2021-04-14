@@ -17,6 +17,10 @@
     font-weight: 600;
 }
 
+.job-description .heading a{
+    color: black;
+}
+
 .job-description .content{
     padding: 35px 35px 20px;
     border-bottom-left-radius: 10px;
