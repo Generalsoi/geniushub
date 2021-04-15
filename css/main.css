@@ -996,11 +996,11 @@ pop-vision {
   }
 
   .c-wrapper {
-    display: block;
+    display: flex;
   }
 
   .c-item {
-    flex: none;
+    flex: 1;
   }
 
   /* FOOTER SECTION */
