@@ -554,7 +554,7 @@ pop-vision {
   text-align: right;
 }
 
-.footer .container .maps img {
+.footer .container .maps iframe {
   width: 400px;
   height: 250px;
   border-radius: 8px;
@@ -983,7 +983,7 @@ pop-vision {
     text-align: left;
   }
 
-  .footer .container .maps img {
+  .footer .container .maps iframe {
     width: 100%;
   }
 
