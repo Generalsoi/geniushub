@@ -188,8 +188,18 @@ nav .btn:hover {
 }
 
 /**** POPUP CONTENT ******/
-.mission-header {
+
+.modal-content {
+  border-radius: 15px;
+}
+
+.pop-mission,
+pop-vision {
   background-color: #ecd1c2;
+  border-radius: 15px 10px 0 0;
+}
+
+.mission-header {
   opacity: 0.9;
   color: #000000;
   height: 70px;
@@ -197,14 +207,14 @@ nav .btn:hover {
   padding-top: 20px;
 }
 
-/* .popup-content .heading hr {
-  width: 15%;
-  margin: 0 auto;
-  height: 5px;
-  border-radius: 10px;
-  color: #f36f21;
-  opacity: 1;
-} */
+.h-bar {
+  position: relative;
+  right: 20px;
+  bottom: 37px;
+  border-bottom: 4px solid #f36f21;
+  width: 50px;
+  margin: auto;
+}
 
 /**********************************/
 /********Divisions section*********/
@@ -645,7 +655,7 @@ nav .btn:hover {
   opacity: 56%;
 }
 
-.footer .copyright a{
+.footer .copyright a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -985,7 +995,7 @@ nav .btn:hover {
     margin-top: 20px;
   }
 
-  .footer .copyright{
+  .footer .copyright {
     font-size: 13px;
   }
 }
