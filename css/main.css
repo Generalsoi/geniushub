@@ -699,17 +699,57 @@ pop-vision {
   }
 
   /* NAV SECTION */
-  .navbar {
-    /* padding: 1% 3%; */
-    /* width: 100%; */
-    /* height: 100px; */
-    text-align: center;
+  .collapse {
+    padding-top: 50px;
   }
 
-  /* .navbar > .container > a,
-  .navbar > .container > button {
-    overflow: hidden;
-  } */
+  .navbar-nav {
+    height: 100vh !important;
+  }
+
+  .navbar-toggler.collapsed .close-icon {
+    display: none;
+  }
+
+  .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    display: inline;
+  }
+
+  .navbar-toggler-icon {
+    font-size: 20px;
+  }
+
+  .close-icon {
+    color: rgb(71, 71, 71);
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+  .navbar-light .navbar-nav .dropdown-menu {
+    margin: 0;
+    margin-left: 35px;
+    border: none;
+    background-color: inherit;
+  }
+
+  .navbar-light .navbar-nav .dropdown-item {
+    color: rgb(84, 82, 82);
+
+    padding: 3%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .dropdown-toggle::after {
+    float: right;
+    transition: 0.5s;
+  }
+
+  .dropdown-toggle[aria-expanded="true"]::after {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
 
   .navbar-collapse > .container {
     height: 100%;
@@ -717,8 +757,6 @@ pop-vision {
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
-    /* padding: 0.7rem; */
-    /* font-size: 1.2rem; */
     transition: 0.3s;
   }
 
