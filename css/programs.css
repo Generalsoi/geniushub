@@ -342,7 +342,7 @@
   .introduction {
     width: 100%;
     height: calc(100vh - 80px);
-    padding: 5% 5%;
+    padding: 5% 5%; 
     margin-top: 80px;
   }
 
@@ -350,7 +350,7 @@
     width: 100%;
     margin: auto;
     text-align: left;
-    transform: translateY(2vh);
+    transform: translateY(7vh);
   }
 
   .introduction-content h3 {
@@ -372,9 +372,9 @@
   }
 
   .introduction-content .top-links {
-    justify-content: space-between;
-    margin-bottom: 60px;
+    display: none;
   }
+  
 
   /* RAISING LEADERS SECTION */
   .raising-leaders {

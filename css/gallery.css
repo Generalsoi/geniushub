@@ -104,6 +104,10 @@
         margin-top: 20px;
     }
 
+    .introduction-content .top-links{
+        display: none;
+    }
+
     /* images section */
     .images {
         width: 100%;
