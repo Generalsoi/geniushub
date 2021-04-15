@@ -226,11 +226,16 @@
     margin-bottom: 40px;
   }
 
-  .jobs table,
   .jobs tr,
   .jobs td {
     display: block;
     width: 100%;
+  }
+
+  .jobs table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .jobs tr {

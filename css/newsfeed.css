@@ -135,6 +135,10 @@
         margin-top: 20px;
     }
 
+    .introduction-content .top-links{
+        display: none;
+    }
+
     /* RELATED POSTS SECTION */
     .related-posts{
         width: 100%;

@@ -979,6 +979,10 @@ nav .btn:hover {
   .footer .container ul {
     margin-top: 20px;
   }
+
+  .footer .copyright{
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
