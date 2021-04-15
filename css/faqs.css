@@ -1,357 +1,288 @@
 /****************************/
 /***** Introduction *********/
-/****************************/ 
-.introduction img{
-    width: 55px;
-    height: 55px;
+/****************************/
+.introduction img {
+  width: 55px;
+  height: 55px;
 }
 
-.introduction{
-    height: calc(100vh - 100px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/careerimg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.introduction {
+  height: calc(100vh - 100px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/careerimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.introduction-content{
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    transform: translateY(30vh);
+.introduction-content {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  transform: translateY(30vh);
 }
 
-.introduction-content button{
-    height: 90px;
-    width: 550px;
-    border: none;
-    background-color: #fff;
-    border-radius: 8px;
+.introduction-content button {
+  height: 90px;
+  width: 550px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
-.introduction-content a{
-    font-size: 32px;
-    color: #000000;
-    text-decoration: none;
-    font-weight: 600;
+.introduction-content a {
+  font-size: 32px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.introduction-content p{
-    margin-top: 30px;
-    color: white;
-    font-size: 18px;
+.introduction-content p {
+  margin-top: 30px;
+  color: white;
+  font-size: 18px;
 }
-
 
 /**********************************/
 /********* FAQS section ***********/
 /**********************************/
-.faqs{
-    padding: 5% 7% 1%;
+.faqs {
+  padding: 5% 7% 1%;
 }
 
-.faqs h5{
-    font-size: 35px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 12px;
+.faqs h5 {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 12px;
 }
 
-.faqs h6{
-    font-size: 25px;
-    color: #F36F21;
-    text-align: center;
-    margin-bottom: 32px;
+.faqs h6 {
+  font-size: 25px;
+  color: #f36f21;
+  text-align: center;
+  margin-bottom: 32px;
 }
-
 
 /************************************/
 /****** Faqs-content section ********/
 /************************************/
-.faqs-content{
-    padding: 5% 7%;
+.faqs-content {
+  padding: 5% 7%;
 }
 
-.faqs-content .accordion .accordion-item{
-    border-radius: 10px;
-    margin-bottom: 30px;
+.faqs-content .accordion .accordion-item {
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
-.accordion-button{
-    background-color: #FFE9DC;
+.accordion-button {
+  background-color: #ffe9dc;
 }
 
-.accordion-button[aria-expanded=true]{
-    background-color: #FFE9DC;
-    color: #F36F21;
+.accordion-button[aria-expanded="true"] {
+  background-color: #ffe9dc;
+  color: #f36f21;
 }
-
 
 /********************************/
 /**** Get In Touch **************/
 /********************************/
-.get-in-touch{
-    padding: 5% 7%;
+.get-in-touch {
+  padding: 5% 7%;
 }
 
-.get-in-touch-content{
-    width: 50%;
-    height: 180px;
-    background-color: #FBFBFB;
-    display: flex;
-    padding: 30px;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4);
+.get-in-touch-content {
+  width: 50%;
+  height: 180px;
+  background-color: #fbfbfb;
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
-.get-in-touch-content .envelope p{
-    margin-top: 15px;
+.get-in-touch-content .envelope p {
+  margin-top: 15px;
 }
 
-.get-in-touch-content .envelope p i{
-    color: #F36F21;
+.get-in-touch-content .envelope p i {
+  color: #f36f21;
 }
 
-.get-in-touch-content .envelope{
-    height: 60px;
-    width: 62px;
-    background-color: #FFE0CE;
-    text-align: center;
-    transform: rotate(45deg);
-    margin-right: 30px;
+.get-in-touch-content .envelope {
+  height: 60px;
+  width: 62px;
+  background-color: #ffe0ce;
+  text-align: center;
+  transform: rotate(45deg);
+  margin-right: 30px;
 }
 
-.get-in-touch-content .envelope:hover{
-    transform: rotate(0deg);
-    transition: ease all 0.5s;
+.get-in-touch-content .envelope:hover {
+  transform: rotate(0deg);
+  transition: ease all 0.5s;
 }
 
-.get-in-touch-content div h6{
-    font-size: 25px;
+.get-in-touch-content div h6 {
+  font-size: 25px;
 }
 
-.get-in-touch-content div p{
-    font-size: 16px;
-    font-weight: 300;
+.get-in-touch-content div p {
+  font-size: 16px;
+  font-weight: 300;
 }
 
-.get-in-touch-content button{
-    background-color: #FFE0CE;
-    width: 100px;
-    height: 40px;
-    font-size: 15px;
-    border-radius: 10px;
-    border: none;
+.get-in-touch-content button {
+  background-color: #ffe0ce;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
 }
 
-.get-in-touch-content button:hover{
-    background-color: #F36F21;
-    color: white;
+.get-in-touch-content button:hover {
+  background-color: #f36f21;
+  color: white;
 }
-
 
 /************************************/
 /***** Pop Up Form ******************/
 /************************************/
 
-.modal{
-    position: fixed;
-    top: 55%;
-    left: 50%;
-    overflow: auto;
-    transform: translate(-50%, -50%);
-    transition: 200ms ease-in-out;
-    border: 1px solid #C3C3C3;
-    border-radius: 10px;
-    z-index: 2;
-    background-color: white;
-    height: 600px;
-    width: 500px;
-    max-width: 80%;
-    padding: 10px 15px;
+.modal-content {
+  border-radius: 10px;
 }
 
-
-.modal-header{
-    padding: auto 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #C3C3C3;
-    margin-bottom: 0;
+.modal-content form input {
+  display: block;
+  width: 100%;
+  height: 36px;
+  margin: 20px auto;
+  font-size: 14px;
+  color: #949494;
+  padding: 5px 12px;
+  border: 1px solid #c3c3c3;
+  border-radius: 10px;
 }
 
-.modal-header .title{
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 0;
+.modal-body form textarea {
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+  font-size: 14px;
+  color: #949494;
+  padding: 5px 12px;
+  border: 1px solid #c3c3c3;
+  border-radius: 10px;
 }
 
-.modal-header .close-button{
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: 600;
+.modal-body form button {
+  background-color: #e31e24;
+  opacity: 0.85;
+  border: none;
+  border-radius: 10px;
+  color: white;
 }
-
-.modal-body{
-    padding: 10px 15px;
-    text-align: center;
-}
-
-#overlay{
-    position: fixed;
-    display: none;
-    transition: 200ms ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none
-}
-
-
-
-.modal-contents form input{
-    display: block;
-    width: 100%;
-    height: 36px;
-    margin: 20px auto;
-    font-size: 14px;
-    color: #949494;
-    padding: 5px 12px;
-    border: 1px solid #C3C3C3;
-    border-radius: 10px;
-}
-
-.modal-body form textarea{
-    display: block;
-    width: 100%;
-    margin: 20px auto;
-    font-size: 14px;
-    color: #949494;
-    padding: 5px 12px;
-    border: 1px solid #C3C3C3;
-    border-radius: 10px;
-}
-
-.modal-body form button{
-    width: 85px;
-    height: 36px;
-    background-color: #E31E24;
-    opacity: 0.85;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 15px;
-}
-
-
-
-
-
 
 /**********************************************/
 /**********************************************/
 /* RESPONSIVENESS FOR THE DIFFERENT SECTIONS */
 /*********************************************/
 /*********************************************/
-@media screen and (max-width: 768px){
-    /* INTRODUCTION SECTION */
-    .introduction img{
-        width: 55px;
-        height: 55px;
-    }
-    
-    .introduction{
-        width: 100%;
-        height: calc(60vh - 80px);
-        padding: 5% 5%;
-        margin-top: 80px;
-    }
-    
-    .introduction-content{
-        width: 100%;
-        margin: auto;
-        text-align: center;
-        transform: translateY(10vh);
-    }
-    
-    .introduction-content button{
-        height: 80px;
-        width: 70%;
-        border: none;
-        background-color: #fff;
-        border-radius: 8px;
-    }
-    
-    .introduction-content a{
-        font-size: 18px;
-    }
-    
-    .introduction-content p{
-        margin-top: 30px;
-        color: white;
-        font-size: 16px;
-    }
+@media screen and (max-width: 768px) {
+  /* INTRODUCTION SECTION */
+  .introduction img {
+    width: 55px;
+    height: 55px;
+  }
 
-    /* FAQS SECTION */
-    .faqs{
-        width: 100%;
-        padding: 10% 3%;
-    }
-    
-    .faqs h5{
-        font-size: 25px;
-        margin-bottom: 12px;
-    }
-    
-    .faqs h6{
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
+  .introduction {
+    width: 100%;
+    height: calc(60vh - 80px);
+    padding: 5% 5%;
+    margin-top: 80px;
+  }
 
-    /* GET-IN-TOUCH SECTION */
-    .get-in-touch{
-        width: 100%;
-        padding: 5% 5%;
-    }
-    
-    .get-in-touch-content{
-        width: 100%;
-        height: 150px;
-        padding: 20px;
-    }
-    
-    .get-in-touch-content .envelope p{
-        margin-top: 15px;
-    }
+  .introduction-content {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(10vh);
+  }
 
-    .get-in-touch-content .envelope{
-        background-color: white;
-    }
-    
-    .get-in-touch-content .envelope:hover{
-        transform: rotate(0deg);
-        transition: ease all 0.5s;
-    }
-    
-    .get-in-touch-content div h6{
-        font-size: 20px;
-    }
-    
-    .get-in-touch-content div p{
-        font-size: 15px;
-        font-weight: 300;
-    }
+  .introduction-content button {
+    height: 80px;
+    width: 70%;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+
+  .introduction-content a {
+    font-size: 18px;
+  }
+
+  .introduction-content p {
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+  }
+
+  /* FAQS SECTION */
+  .faqs {
+    width: 100%;
+    padding: 10% 3%;
+  }
+
+  .faqs h5 {
+    font-size: 25px;
+    margin-bottom: 12px;
+  }
+
+  .faqs h6 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  /* GET-IN-TOUCH SECTION */
+  .get-in-touch {
+    width: 100%;
+    padding: 5% 5%;
+  }
+
+  .get-in-touch-content {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+  }
+
+  .get-in-touch-content .envelope p {
+    margin-top: 15px;
+  }
+
+  .get-in-touch-content .envelope {
+    background-color: white;
+  }
+
+  .get-in-touch-content .envelope:hover {
+    transform: rotate(0deg);
+    transition: ease all 0.5s;
+  }
+
+  .get-in-touch-content div h6 {
+    font-size: 20px;
+  }
+
+  .get-in-touch-content div p {
+    font-size: 15px;
+    font-weight: 300;
+  }
 }
 
-@media (min-width: 769px) and (max-width: 1023px){
-
+@media (min-width: 769px) and (max-width: 1023px) {
 }
 
-@media (min-width: 1024px) and (max-width: 1400px){
+@media (min-width: 1024px) and (max-width: 1400px) {
 }

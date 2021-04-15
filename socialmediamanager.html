@@ -145,12 +145,12 @@
     </div>
   </section>
 
-  <div class="modal fade popup-form" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content form-content">
-        <div class="modal-header">
-          <h6>Job Application</h6>
+      <div class="p-1 p-sm-4 p-md-4 p-lg-4 modal-content">
+        <div class="px-0 mx-3 modal-header">
+          <h5 class="fw-bold modal-title" id="staticBackdropLabel">Job Application</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -161,16 +161,37 @@
             <input type="text" placeholder="Gender">
             <input type="text" placeholder="Address">
             <input type="text" placeholder="What is your highest education level?">
-            <div class="attachments">
-              <label for=""> Upload your resume:</label>
-              <input type="text" placeholder="Attach file">
+            <div class="attachments mb-3">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <label for=""> Upload your resume:</label>
+                </div>
+                <div class="col-6">
+                  <span class="px-4 py-2 px-md-5 px-lg-5 float-end" onclick="document.getElementById('resume').click()">
+                    <i class="fa fa-paperclip"></i>&nbsp;&nbsp;Attach file
+                  </span>
+                  <input type="file" id="resume" style="display:none">
+                </div>
+              </div>
             </div>
             <div class="attachments">
-              <label for="">Upload your cover letter:</label>
-              <input type="text" placeholder="Attach file">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <label for=""> Upload your cover letter:</label>
+                </div>
+                <div class="col-6">
+                  <span class="px-4 py-2 px-md-5 px-lg-5 float-end"
+                    onclick="document.getElementById('cover-letter').click()">
+                    <i class="fa fa-paperclip"></i>&nbsp;&nbsp;Attach file
+                  </span>
+                  <input type="file" id="cover-letter" style="display:none">
+                </div>
+              </div>
             </div>
-            <input type="text" placeholder="Tell us why you think you are a good fit for this role">
-            <button type="submit">Submit</button>
+            <textarea placeholder="Tell us why you think you are a good fit for this role" rows="7"></textarea>
+            <div class="py-2 text-center">
+              <button class="px-4 py-3" type="submit">Submit</button>
+            </div>
           </form>
         </div>
       </div>
@@ -277,7 +298,6 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
-  <script src="./js/popupmodal.js"></script>
 
   <script>
     const goBack = document.querySelector("#goBack");
