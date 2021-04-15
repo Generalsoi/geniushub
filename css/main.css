@@ -680,11 +680,11 @@ pop-vision {
   /* Partners */
 
   .c-wrapper {
-    display: block;
+    display: flex;
   }
 
   .c-item {
-    flex: none;
+    flex: 1;
   }
 }
 
@@ -727,14 +727,14 @@ pop-vision {
 
   .navbar-light .navbar-nav .dropdown-menu {
     margin: 0;
-    margin-left: 25px;
+    margin-left: 20px;
     border: none;
     background-color: inherit;
+    box-sizing: border-box;
   }
 
   .navbar-light .navbar-nav .dropdown-item {
     color: rgb(84, 82, 82);
-
     padding: 3%;
     padding-left: 10px;
     padding-right: 10px;
