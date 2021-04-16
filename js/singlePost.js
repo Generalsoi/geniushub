@@ -35,7 +35,7 @@ post = (async () => {
      * handling related posts
      */
 
-    const relatedPosts = await getRelatedPosts(categoryId);
+    const relatedPosts = await getRelatedPosts(id, categoryId);
     relatedPosts.forEach((post) => {
       const {
         title,
@@ -55,8 +55,6 @@ post = (async () => {
       );
 
       const postHtml = convertHtmlStringToDomElement(postString);
-
-      console.log(postHtml);
 
       const postParent = document.getElementById("relatedPosts");
       postParent.appendChild(postHtml);
@@ -89,17 +87,16 @@ const parsePostAPIPayload = (payload) => {
 };
 
 // takes categoryId returns an array of related Posts Objects
-const getRelatedPosts = async (categoryId) => {
-  const relatedPostUrl = `https://alert-rooster.jurassic.ninja/wp-json/wp/v2/posts?_embed&categories=${categoryId}&per_page=3`;
+const getRelatedPosts = async (postId, categoryId) => {
+  const relatedPostUrl = `https://alert-rooster.jurassic.ninja/wp-json/wp/v2/posts?_embed&categories=${categoryId}&per_page=4`;
 
-  const relatedPostObjects = [];
   const res = await fetch(relatedPostUrl);
 
   const data = await res.json();
 
-  data.forEach((d) => relatedPostObjects.push(d));
+  const relatedPostsWithoutCurrentPost = data.filter((d) => d.id !== postId);
 
-  return relatedPostObjects;
+  return relatedPostsWithoutCurrentPost;
 };
 
 // returns htmlString

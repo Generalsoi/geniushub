@@ -1,5 +1,5 @@
 const url =
-  "https://alert-rooster.jurassic.ninja/wp-json/wp/v2/posts/?_embed&per_page=3";
+  "https://alert-rooster.jurassic.ninja/wp-json/wp/v2/posts?_embed&per_page=3";
 
 (async () => {
   try {
