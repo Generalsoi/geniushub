@@ -36,6 +36,12 @@ post = (async () => {
      */
 
     const relatedPosts = await getRelatedPosts(id, categoryId);
+
+    // hide Related post header if no related post
+    if (relatedPosts.length === 0) {
+      relatedPostHeader.style.display = "none";
+    }
+
     relatedPosts.forEach((post) => {
       const {
         title,
@@ -53,6 +59,8 @@ post = (async () => {
         imageSource,
         singlePostLink
       );
+
+      const relatedPostHeader = document.getElementById("relatedPostHeader");
 
       const postHtml = convertHtmlStringToDomElement(postString);
 
