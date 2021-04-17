@@ -8,7 +8,7 @@
 
 .introduction{
     height: calc(100vh - 100px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/ghubglobalinitiative.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/ghubglobalinitiative.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 100px;
@@ -21,9 +21,17 @@
     transform: translateY(10vh);
 }
 
-.introduction-content h3{
+.introduction-content button{
+    height: 90px;
+    width: 850px;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+}
+ 
+.introduction-content .content-h3{
     color: white;
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 600;
 }
 
@@ -225,7 +233,7 @@
     
     .introduction{
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(70vh - 80px);
         padding: 5% 5%;
         margin-top: 80px;
     }
@@ -236,9 +244,17 @@
         text-align: left;
         transform: translateY(10vh);
     }
+
+    .introduction-content button{
+        height: 90px;
+        width: 100%;
+        border: none;
+        background-color: #fff;
+        border-radius: 8px;
+    }
     
-    .introduction-content h3{
-        font-size: 40px;
+    .introduction-content .content-h3{
+        font-size: 28px;
     }
     
     .introduction-content p{

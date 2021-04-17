@@ -455,6 +455,10 @@ pop-vision {
   left: 500px;
 }
 
+.blog .row .col .card .card-body{
+  text-align: left;
+}
+
 .blog .row .col .card .card-body a {
   text-decoration: none;
   color: black;

@@ -1,157 +1,164 @@
 /****************************/
 /***** Introduction *********/
 /****************************/
-.introduction {
-  height: calc(100vh - 100px);
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/blogimg1.png); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 100px;
+.introduction{
+    height: calc(100vh - 100px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/blogimg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
 }
 
-.introduction-content {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  transform: translateY(15vh);
+.introduction-content{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(15vh);
 }
 
-.introduction-content h3 {
-  color: white;
-  font-size: 50px;
-  font-weight: 600;
+.introduction-content h3{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
 }
 
-.introduction-content p {
-  margin-top: 30px;
-  color: white;
+.introduction-content p{
+    margin-top: 30px;
+    color: white;
 }
 
-.introduction-content .top-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 80px;
-  margin-top: 0;
+.introduction-content .top-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 0;
 }
 
-.introduction-content .top-links a {
-  text-decoration: none;
+.introduction-content .top-links a{
+    text-decoration: none;
 }
 
-.introduction-content .top-links p {
-  margin: 0;
+.introduction-content .top-links p{
+    margin: 0;
 }
 
-.introduction-content .top-links .current-page p {
-  color: #b0cb1f;
+.introduction-content .top-links .current-page p{
+    color: #b0cb1f;
 }
+
+
 
 /*********************************/
 /***** Write Up section **********/
 /*********************************/
-.writeup {
-  padding: 5% 7%;
+.writeup{
+    padding: 5% 7%;
 }
 
-.writeup p {
-  font-size: 16px;
+.writeup p{
+    font-size: 16px;
 }
+
 
 /***********************************/
 /***** Related Posts Section *******/
 /***********************************/
-.related-posts {
-  padding: 5% 7%;
-  opacity: 1;
-  text-align: left;
+.related-posts{
+    padding: 5% 7%;
+    opacity: 1;
+    text-align: left;
 }
 
-.related-posts h3 {
-  font-size: 40px;
-  text-align: center;
+.related-posts h3{
+    font-size: 40px;
+    text-align: center;
 }
 
-.related-posts hr {
-  width: 50px;
-  margin: 30px auto;
-  background-color: #f36f21;
-  opacity: 1;
-  height: 4px;
-  border: none;
-  border-radius: 10px;
-  left: 500px;
+.related-posts hr{
+    width: 50px;
+    margin: 30px auto;
+    background-color: #F36F21;
+    opacity: 1;
+    height: 4px;
+    border: none;
+    border-radius: 10px;
+    left: 500px;
 }
 
-.related-posts h5 {
-  font-weight: 600;
+.related-posts h5{
+    font-weight: 600;
 }
 
-.related-posts .row .col .card {
-  box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4);
+.related-posts .row .col .card{
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
-.related-posts .row .col .card .card-body a {
-  text-decoration: none;
-  color: black;
+.related-posts .row .col .card .card-body a{
+    text-decoration: none;
+    color: black;
 }
+
+
 
 /**********************************************/
 /**********************************************/
 /* RESPONSIVENESS FOR THE DIFFERENT SECTIONS */
 /*********************************************/
 /*********************************************/
-@media screen and (max-width: 768px) {
-  /* INTRODUCTION SECTION */
-  .introduction img {
-    width: 55px;
-    height: 55px;
-  }
+@media screen and (max-width: 768px){
+    /* INTRODUCTION SECTION */
+    .introduction img{
+        width: 55px; 
+        height: 55px;
+    }
+    
+    .introduction{
+        width: 100%;
+        height: calc(70vh - 80px);
+        padding: 5% 5%;
+        margin-top: 80px;
+    }
+    
+    .introduction-content{
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        transform: translateY(10vh);
+    }
+    
+    .introduction-content h3{
+        font-size: 40px;
+    }
+    
+    .introduction-content p{
+        margin-top: 20px;
+    }
 
-  .introduction {
-    width: 100%;
-    height: calc(100vh - 80px);
-    padding: 5% 5%;
-    margin-top: 80px;
-  }
+    .introduction-content .top-links{
+        display: none;
+    }
 
-  .introduction-content {
-    width: 100%;
-    margin: auto;
-    text-align: left;
-    transform: translateY(10vh);
-  }
+    /* RELATED POSTS SECTION */
+    .related-posts{
+        width: 100%;
+        padding: 10% 5%;
+        text-align: left;
+    }
+    
+    .related-posts h3{
+        font-size: 35px;
+    }
+    
+    .related-posts hr{
+        margin: 20px auto;
+    }
 
-  .introduction-content h3 {
-    font-size: 40px;
-  }
-
-  .introduction-content p {
-    margin-top: 20px;
-  }
-
-  .introduction-content .top-links {
-    display: none;
-  }
-
-  /* RELATED POSTS SECTION */
-  .related-posts {
-    width: 100%;
-    padding: 10% 5%;
-    text-align: left;
-  }
-
-  .related-posts h3 {
-    font-size: 35px;
-  }
-
-  .related-posts hr {
-    margin: 20px auto;
-  }
 }
 
-@media (min-width: 769px) and (max-width: 1023px) {
-}
+@media (min-width: 769px) and (max-width: 1023px){
 
-@media (min-width: 1024px) and (max-width: 1400px) {
+}
+ 
+@media (min-width: 1024px) and (max-width: 1400px){
 }

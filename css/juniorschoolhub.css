@@ -9,7 +9,7 @@
 .introduction {
   height: calc(100vh - 100px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/jschoolhubimg.png);
+    url(../images/jschoolhubimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 100px;
@@ -22,7 +22,15 @@
   transform: translateY(10vh);
 }
 
-.introduction-content h3 {
+.introduction-content button {
+  height: 90px;
+  width: 850px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.introduction-content .content-h3 {
   color: white;
   font-size: 50px;
   font-weight: 600;
@@ -182,10 +190,11 @@
 /*********************************************/
 /*********************************************/
 @media screen and (max-width: 768px) {
+
   /* INTRODUCTION SECTION */
   .introduction {
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(70vh - 80px);
     padding: 5% 5%;
     margin-top: 80px;
   }
@@ -197,8 +206,16 @@
     transform: translateY(10vh);
   }
 
-  .introduction-content h3 {
-    font-size: 35px;
+  .introduction-content button {
+    height: 90px;
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+
+  .introduction-content .content-h3 {
+    font-size: 28px;
   }
 
   .introduction-content p {
@@ -265,8 +282,6 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1023px) {
-}
+@media (min-width: 769px) and (max-width: 1023px) {}
 
-@media (min-width: 1024px) and (max-width: 1400px) {
-}
+@media (min-width: 1024px) and (max-width: 1400px) {}
