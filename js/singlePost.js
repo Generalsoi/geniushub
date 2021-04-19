@@ -1,8 +1,10 @@
+const API_URL_ORIGIN = "https://alert-rooster.jurassic.ninja";
+
 const urlSearchString = window.location.search;
 
 const postSlug = urlSearchString.split("=")[1];
 
-const url = `https://alert-rooster.jurassic.ninja/wp-json/wp/v2/posts?_embed&slug=${postSlug}`;
+const url = `${API_URL_ORIGIN}/wp-json/wp/v2/posts?_embed&slug=${postSlug}`;
 
 let post;
 
@@ -96,7 +98,7 @@ const parsePostAPIPayload = (payload) => {
 
 // takes categoryId returns an array of related Posts Objects
 const getRelatedPosts = async (postId, categoryId) => {
-  const relatedPostUrl = `https://alert-rooster.jurassic.ninja/wp-json/wp/v2/posts?_embed&categories=${categoryId}&per_page=4`;
+  const relatedPostUrl = `${API_URL_ORIGIN}/wp-json/wp/v2/posts?_embed&categories=${categoryId}&per_page=4`;
 
   const res = await fetch(relatedPostUrl);
 
@@ -135,4 +137,4 @@ const convertHtmlStringToDomElement = (domString) =>
 
 // takes a post_slug, returns single post link
 const getSinglePostLink = (postSlug) =>
-  window.location.origin + "/blog-single.html?post=" + postSlug;
+  window.location.origin + "/blog-post.html?post_title=" + postSlug;

@@ -1,9 +1,10 @@
-const url = "https://alert-rooster.jurassic.ninja/wp-json/wp/v2/media";
+const API_URL_ORIGIN = "https://alert-rooster.jurassic.ninja";
+const url = `${API_URL_ORIGIN}/wp-json/wp/v2/media`;
 
 let media;
 
 (async () => {
-  const res = await fetch(url);
+  const res = await fetch(url, { mode: "no-cors" });
 
   const resJson = await res.json();
   const data = resJson;

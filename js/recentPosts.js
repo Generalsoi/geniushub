@@ -1,5 +1,6 @@
-const url =
-  "https://alert-rooster.jurassic.ninja/wp-json/wp/v2/posts?_embed&per_page=3";
+const API_URL_ORIGIN = "https://alert-rooster.jurassic.ninja";
+
+const url = `${API_URL_ORIGIN}/wp-json/wp/v2/posts?_embed&per_page=3`;
 
 (async () => {
   try {
@@ -66,7 +67,7 @@ const parsePostAPIPayload = (payload) => {
 
 // takes a post_slug, returns single post link
 const getSinglePostLink = (postSlug) =>
-  window.location.origin + "/blog-single.html?post=" + postSlug;
+  window.location.origin + "/blog-post.html?post_title=" + postSlug;
 
 // returns htmlString
 const getHtmlStringWithData = (
