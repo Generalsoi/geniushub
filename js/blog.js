@@ -1,4 +1,4 @@
-const API_URL_ORIGIN = "https://alert-rooster.jurassic.ninja";
+let API_URL_ORIGIN = "https://alert-rooster.jurassic.ninja";
 
 const url = `${API_URL_ORIGIN}/wp-json/wp/v2/posts?_embed`;
 
