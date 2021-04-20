@@ -3,6 +3,8 @@ let API_URL_ORIGIN = "https://alert-rooster.jurassic.ninja";
 const url = `${API_URL_ORIGIN}/wp-json/wp/v2/posts?_embed&per_page=3`;
 
 (async () => {
+  const postParent = document.getElementById("blogPosts");
+
   try {
     const res = await fetch(url);
 
@@ -29,14 +31,11 @@ const url = `${API_URL_ORIGIN}/wp-json/wp/v2/posts?_embed&per_page=3`;
 
       const postHtml = convertHtmlStringToDomElement(postString);
 
-      const postParent = document.getElementById("blogPosts");
       postParent.appendChild(postHtml);
     });
   } catch (error) {
     //   remove spinner before displaying error message
     document.getElementById("loading").style.display = "none";
-
-    const postParent = document.getElementById("blogPosts");
 
     const errorMessage = document.createElement("h5");
     errorMessage.className = "pt-3";
