@@ -5,7 +5,7 @@ const CLIENT_KEY_username = "1aeb07c0f5a9629fce19a6661ac3c26fabf90e1e";
 const CLIENT_SECRET_password = "d1bb5949030444060518e3aa91615a17bd507295";
 
 // handle newsletter subscription
-const form = document.getElementById("sub");
+const form = document.getElementById("subscribe");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
