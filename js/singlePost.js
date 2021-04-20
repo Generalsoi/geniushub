@@ -23,16 +23,13 @@ post = (async () => {
 
     // get html data location
     const postTitleElement = document.getElementById("postTitle");
-    const postExcerptElement = document.getElementById("postExcerpt");
     const postContentElement = document.getElementById("postContent");
     const backgroundImageElement = document.querySelector(".introduction");
 
     // append data to html location
     postTitleElement.innerHTML = title;
-    postExcerptElement.innerHTML = content.slice(0, 200) + "...";
     postContentElement.innerHTML = content;
-    backgroundImageElement.style.backgroundImage = `url(${imageSource})`;
-
+    backgroundImageElement.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${imageSource})`;
     /*
      * handling related posts
      */
@@ -77,7 +74,8 @@ post = (async () => {
 
     const errorMessage = document.createElement("h5");
     errorMessage.className = "pt-3 text-center";
-    errorMessage.innerHTML = "Server Error, something went wrong.";
+    errorMessage.innerHTML =
+      "Server Error, something went wrong while retrieving post from the server.";
     postParent.appendChild(errorMessage);
   }
 })();

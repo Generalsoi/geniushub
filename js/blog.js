@@ -59,7 +59,7 @@ const parsePostAPIPayload = (payload) => {
     slug: payload.slug,
     title: payload.title.rendered,
     excerpt: payload.content.rendered.slice(0, 200) + "...",
-    imageSource: payload._embedded["wp:featuredmedia"]["0"].source_url,
+    imageSource: payload._embedded["wp:featuredmedia"]?.["0"].source_url,
     categoryName: payload._embedded["wp:term"]["0"][0].name,
   };
 };
