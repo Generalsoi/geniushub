@@ -878,6 +878,10 @@ pop-vision {
     margin: 20px auto;
   }
 
+  .divisions .row .col .card-body .card-text{
+    text-align: left;
+  }
+
   /* IMPACT SECTION */
   .impact {
     padding: 10% 5%;
@@ -940,7 +944,7 @@ pop-vision {
   }
 
   .programs-content-desc span {
-    text-align: center;
+    text-align: left;
     width: 100%;
     margin-bottom: 15px;
   }
@@ -1002,7 +1006,7 @@ pop-vision {
   .c-wrapper {
     display: flex;
   }
-
+  
   .c-item {
     flex: 1;
   }
@@ -1094,5 +1098,16 @@ pop-vision {
     top: 350px;
     height: 53px;
     text-align: center;
+  }
+
+  /* DIVISIONS SECTION */
+  .divisions .row .col {
+
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1367px) {
+  .divisions .row .col{
+    width: 350px;
   }
 }

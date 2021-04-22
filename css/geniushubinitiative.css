@@ -246,15 +246,18 @@
     }
 
     .introduction-content button{
-        height: 90px;
+        height: 110px;
         width: 100%;
         border: none;
         background-color: #fff;
         border-radius: 8px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
     }
     
     .introduction-content .content-h3{
-        font-size: 28px;
+        font-size: 25px;
     }
     
     .introduction-content p{
