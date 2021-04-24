@@ -22,7 +22,7 @@
     integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 
   <title>Programs</title>
-</head> 
+</head>
 
 <body>
   <header class="header">
@@ -339,18 +339,18 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form action="">
-            <input type="text" placeholder="Full Name">
-            <input type="text" placeholder="Email">
-            <input type="phone" placeholder="Phone">
-            <input type="text" placeholder="Address">
+          <form action="" method="POST">
+            <input type="text" name="full_name" placeholder="Full Name">
+            <input type="text" name="email" placeholder="Email">
+            <input type="phone" name="phone" placeholder="Phone">
+            <input type="text" name="address" placeholder="Address">
             <select name="program-of-interest" id="skill-of-choice">
               <option value="">Choose a skill program</option>
               <option value="fashion-design">Training & fashion design</option>
               <option value="barbing">Barbing</option>
               <option value="hair-dressing">Hair dressing</option>
             </select>
-            <input type="text" placeholder="What is your current occupation?">
+            <input type="text" name="current_occupatation" placeholder="What is your current occupation?">
             <select name="information-origin" id="info-source">
               <option value="">How did you hear about this <span style="color: #F36F21;">Genius Hub</span>?</option>
               <option value="newsletter">Newsletter</option>
@@ -359,8 +359,8 @@
               <option value="twitter">Twitter</option>
               <option value="others">Others</option>
             </select>
-            <textarea
-              rows="7">Why do you want to participate in Genius Hub Skill Acquisition & Mentorship Program?</textarea>
+            <textarea name="reason_for_participation" rows="7"
+              placeholder="Why do you want to participate in Genius Hub Skill Acquisition & Mentorship Program?"></textarea>
             <div class="py-2 text-center">
               <button class="px-4 py-3" type="submit">Submit</button>
             </div>
@@ -386,10 +386,10 @@
             Acquisition & Mentorship Program. You rock! Thanks!!</p>
           <p class="modal-body-colored-p">Please, complete the form below and we'll respond to you immediately with a
             quotation based on your application.</p>
-          <form action="">
-            <input type="text" placeholder="Full Name">
-            <input type="text" placeholder="Email">
-            <input type="phone" placeholder="Phone">
+          <form action="" method="POST">
+            <input type="text" name="full_name" placeholder="Full Name">
+            <input type="text" name="email" placeholder="Email">
+            <input type="phone" name="phone" placeholder="Phone">
             <select name="country" id="country">
               <option value="">Country</option>
             </select>
@@ -399,7 +399,7 @@
               <option value="barbing">Barbing</option>
               <option value="hair-dressing">Hair dressing</option>
             </select>
-            <input type="text" placeholder="No. of persons to sponsor">
+            <input type="text" name="no_of_persons_to_sponsor" placeholder="No. of persons to sponsor">
             <select name="information-origin" id="info-source">
               <option value="">How did you hear about this <span style="color: #F36F21;">Genius Hub</span>?</option>
               <option value="newsletter">Newsletter</option>
@@ -408,7 +408,7 @@
               <option value="twitter">Twitter</option>
               <option value="others">Others</option>
             </select>
-            <textarea rows="7">Message</textarea>
+            <textarea rows="7" name="message" placeholder="Message"></textarea>
             <div class="py-2 text-center">
               <button class="px-4 py-3" type="submit">Submit</button>
             </div>

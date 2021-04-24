@@ -162,15 +162,15 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form action="">
-            <input type="text" placeholder="Email">
-            <input type="phone" placeholder="Phone">
-            <input type="text" placeholder="School">
-            <input type="text" placeholder="Address">
-            <input type="text" placeholder="Local Government Area">
-            <input type="text" placeholder="State">
-            <input type="text" placeholder="Other Phone">
-            <textarea rows="7">Message</textarea>
+          <form action="" method="POST">
+            <input type="text" name="email" placeholder="Email">
+            <input type="phone" name="phone" placeholder="Phone">
+            <input type="text" name="school" placeholder="School">
+            <input type="text" name="address" placeholder="Address">
+            <input type="text" name="lga" placeholder="Local Government Area">
+            <input type="text" name="state" placeholder="State">
+            <input type="text" name="other_phone" placeholder="Other Phone">
+            <textarea rows="7" name="message" placeholder="Message"></textarea>
             <div class="py-2 text-center">
               <button class="px-4 py-3" type="submit">Submit</button>
             </div>
