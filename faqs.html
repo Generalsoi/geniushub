@@ -365,12 +365,12 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form action="">
-            <input type="text" placeholder="Full Name">
-            <input type="text" placeholder="Email">
-            <input type="phone" placeholder="Phone">
-            <input type="text" placeholder="Message Subject">
-            <textarea rows="7">Message</textarea>
+          <form action="" method="POST">
+            <input type="text" name="full_name" placeholder="Full Name">
+            <input type="text" name="email" placeholder="Email">
+            <input type="phone" name="phone" placeholder="Phone">
+            <input type="text" name="subject" placeholder="Message Subject">
+            <textarea rows="7" name="message" placeholder="Message"></textarea>
             <div class="py-2 text-center">
               <button class="px-4 py-3" type="submit">Submit</button>
             </div>
