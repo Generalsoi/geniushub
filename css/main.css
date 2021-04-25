@@ -538,6 +538,11 @@ pop-vision {
   /* border-radius: 5px; */
 }
 
+.c-item img{
+  width: 150px;
+  height: 150px;
+}
+
 /************************************/
 /****** Footer section **************/
 /************************************/
@@ -1023,6 +1028,11 @@ pop-vision {
   
   .c-item {
     flex: 1;
+  }
+
+  .c-item img{
+    width: 80px;
+    height: 80px;
   }
 
   /* FOOTER SECTION */
