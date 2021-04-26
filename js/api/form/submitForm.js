@@ -112,7 +112,7 @@ const handleFormSubmissionError = (loading, validationError, formElement) => {
 
     inputElement = formElement[error.htmlField];
 
-    inputElement.style.border = "2px solid #fc9d9d";
+    inputElement.style.border = "1px solid #fc9d9d";
   });
 };
 // display server response messages
