@@ -36,7 +36,7 @@ const url = `${API_URL_ORIGIN}/wp-json/wp/v2/posts?_embed&per_page=3`;
   } catch (error) {
     //   remove spinner before displaying error message
     document.getElementById("loading").style.display = "none";
-
+    console.log(error);
     const errorMessage = document.createElement("h5");
     errorMessage.className = "pt-3";
     errorMessage.innerHTML = "Server Error, something went wrong.";
@@ -59,7 +59,7 @@ const parsePostAPIPayload = (payload) => {
     slug: payload.slug,
     title: payload.title.rendered,
     excerpt: payload.content.rendered.slice(0, 200) + "...",
-    imageSource: payload._embedded["wp:featuredmedia"]["0"].source_url,
+    imageSource: payload._embedded?.["wp:featuredmedia"]?.["0"].source_url,
     categoryName: payload._embedded["wp:term"]["0"][0].name,
   };
 };

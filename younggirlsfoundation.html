@@ -148,26 +148,59 @@
     </div>
   </section>
 
+  <!-- Form success Button trigger modal -->
+  <button type="button" id="successBtn" class="btn btn-primary d-none" data-bs-toggle="modal"
+    data-bs-target="#exampleModal">
+    Success
+  </button>
+
+  <!-- Form success modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center px-5 py-5">
+          <h5 id="success" class="text-success" role="alert">
+
+          </h5>
+          <img width="150" class="pt-3" src="./images/check.jpg" alt="success">
+          <div class="d-grid gap-2 pt-5">
+            <button class="btn btn-lg btn-success" data-bs-dismiss="modal" type="button">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="p-1 p-sm-4 p-md-4 p-lg-4 modal-content">
         <div class="px-0 mx-3 modal-header">
           <h5 class="fw-bold modal-title" id="staticBackdropLabel">Contact Us</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button id="closeOnSuccess" type="button" class="btn-close" data-bs-dismiss="modal"
+            aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form action="" method="POST">
+
+          <div id="error" class="text-center text-danger" role="alert">
+          </div>
+
+          <form id="form"
+            action="https://alert-rooster.jurassic.ninja/wp-json/contact-form-7/v1/contact-forms/83/feedback"
+            method="POST">
             <input type="text" name="full_name" placeholder="Full Name">
             <input type="text" name="email" placeholder="Email">
-            <input type="phone" name="phone" placeholder="Phone">
+            <input type="tel" name="phone" placeholder="Phone">
             <input type="text" name="address" placeholder="Address">
             <input type="text" name="lga" placeholder="Local Government Area">
             <input type="text" name="state" placeholder="State">
-            <input type="text" name="other_phone" placeholder="Other Phone">
+            <input type="tel" name="other_phone" placeholder="Other Phone">
             <textarea name="message" rows="7" placeholder="Message"></textarea>
             <div class="py-2 text-center">
-              <button class="px-4 py-3" type="submit">Submit</button>
+              <button id="submitBtn" class="px-4 py-3" type="submit">
+                <span id="btnLoading" style="display: none;" class="spinner-border spinner-border-sm" role="status"
+                  aria-hidden="true"></span>
+                Submit</button>
             </div>
           </form>
         </div>
@@ -254,6 +287,7 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/api/form/submitForm.js"></script>
 
 
 </body>

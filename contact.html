@@ -105,39 +105,43 @@
     <p>We're happy to connect with you. Please note that all blank fields below are required</p>
   </div>
 
-  <section class="contact-us" id="contact">
+  <!-- Form success Button trigger modal -->
+  <button type="button" id="successBtn" class="btn btn-primary d-none" data-bs-toggle="modal"
+    data-bs-target="#exampleModal">
+    Success
+  </button>
+
+  <!-- Form success modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center px-5 py-5">
+          <h5 id="success" class="text-success" role="alert">
+
+          </h5>
+          <img width="150" class="pt-3" src="./images/check.jpg" alt="success">
+          <div class="d-grid gap-2 pt-5">
+            <button class="btn btn-lg btn-success" data-bs-dismiss="modal" type="button">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="contact-us">
 
     <div class="form-content">
-      <!-- <form action="">
-        <input type="text" placeholder="Name of Individual/Organization">
-        <input type="email" placeholder="Email">
-        <input type="phone" placeholder="Phone">
-        <select name="country" id="country">
-          <option value="country">Country</option>
-        </select>
-        <select name="program-of-interest" id="interest">
-          <option value="">Interest</option>
-          <option value="beneficiary">Beneficiary</option>
-          <option value="volunteer">Volunteer</option>
-          <option value="facilitator">Facilitator</option>
-          <option value="partner">Partner</option>
-          <option value="other">Other</option>
-        </select>
-        <textarea row="25" placeholder="Message"></textarea>
-        <button type="submit">Send Message</button> -->
 
-      <div id="success" class="text-success" role="alert">
-      </div>
       <div id="error" class="text-danger" role="alert">
       </div>
 
-      <form method="POST"
+      <form id="form" method="POST"
         action="https://alert-rooster.jurassic.ninja/wp-json/contact-form-7/v1/contact-forms/73/feedback">
-        
+
         <div>
-          <input type="text" placeholder="Name of Individual/Organization">
+          <input type="text" name="organisation" placeholder="Name of Individual/Organization">
           <input type="email" name="email" placeholder="Email">
-          <input type="phone" name="phone" placeholder="Phone">
+          <input type="tel" name="phone" placeholder="Phone">
           <select id="country" name="country">
             <option disabled selected>Select Country</option>
             <option value="Afganistan">Afghanistan</option>
@@ -389,11 +393,11 @@
           </select>
           <select name="program-of-interest" id="interest">
             <option value="">Interest</option>
-          <option value="beneficiary">Beneficiary</option>
-          <option value="volunteer">Volunteer</option>
-          <option value="facilitator">Facilitator</option>
-          <option value="partner">Partner</option>
-          <option value="other">Other</option>
+            <option value="beneficiary">Beneficiary</option>
+            <option value="volunteer">Volunteer</option>
+            <option value="facilitator">Facilitator</option>
+            <option value="partner">Partner</option>
+            <option value="other">Other</option>
           </select>
         </div>
         <textarea name="message" row="25" placeholder="Message"></textarea>
@@ -486,7 +490,7 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
-  <script src="./js/contactUs.js"></script>
+  <script src="./js/api/form/submitForm.js"></script>
 </body>
 
 </html>
