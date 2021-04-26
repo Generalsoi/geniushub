@@ -346,11 +346,12 @@
 /*********************************************/
 /*********************************************/
 @media screen and (max-width: 768px) {
+
   /* INTRODUCTION SECTION */
   .introduction {
     width: 100%;
     height: calc(70vh - 80px);
-    padding: 5% 5%; 
+    padding: 5% 5%;
     margin-top: 80px;
   }
 
@@ -362,11 +363,14 @@
   }
 
   .introduction-content button {
-    height: 90px;
+    height: 110px;
     width: 100%;
     border: none;
     background-color: #fff;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
   }
 
   .introduction-content .content-h3 {
@@ -390,7 +394,7 @@
   .introduction-content .top-links {
     display: none;
   }
-  
+
 
   /* RAISING LEADERS SECTION */
   .raising-leaders {
