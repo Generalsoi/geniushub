@@ -2,7 +2,7 @@
 /***** Introduction *********/
 /****************************/
 .introduction img {
-  width: 55px;
+  width: 55px; 
   height: 55px;
 }
 
@@ -212,7 +212,7 @@
   }
 
   .introduction-content button {
-    height: 90px;
+    height: 110px;
     width: 100%;
     border: none;
     background-color: #fff;
