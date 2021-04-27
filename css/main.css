@@ -849,7 +849,7 @@ pop-vision {
     width: 100%;
     flex-wrap: wrap;
     /* height: calc(90vh - 100px); */
-    height: 90vh !important;
+    height: 80vh !important;
     margin-top: 50px;
   }
 
