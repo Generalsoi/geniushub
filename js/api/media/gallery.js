@@ -16,8 +16,8 @@ const url = `${API_URL_ORIGIN}/wp-json/wp/v2/media`;
     data.forEach((d) => {
       const imageSource = d.source_url;
 
-      const imageHtmlString = `<div class="col">
-    <img src="${imageSource}" alt="">
+      const imageHtmlString = `<div class="col-4 mb-3">
+    <img src="${imageSource}" width="100% alt="">
   </div>`;
 
       const imageDomHtml = convertHtmlStringToDomElement(imageHtmlString);
