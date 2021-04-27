@@ -24,9 +24,13 @@ body.modal-open {
 /*********************/
 .navbar {
   border-bottom: 8px solid #b0cb1f;
-  padding-left: 7%;
-  padding-right: 7%;
+  padding-left: 5%;
+  padding-right: 5%;
   /* height: 90px; */
+}
+
+.nav-img {
+  width: 80%;
 }
 
 nav .navbar-nav .nav-item:hover {
@@ -34,10 +38,15 @@ nav .navbar-nav .nav-item:hover {
 }
 
 .navbar-toggler {
-  background-color: #b0cb1f;
+  /* background-color: #b0cb1f; */
   border: none;
   /* padding: 10px 6px; */
   outline: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -173,7 +182,7 @@ nav .btn:hover {
   height: 36px;
   width: 92px;
   font-size: 16px;
-  border: 1px solid white;
+  border: 3px solid white;
   border-radius: 8px;
   background: transparent;
   color: white;
@@ -283,7 +292,7 @@ pop-vision {
   box-shadow: -1px 3px 10px rgba(0, 8, 24, 0.16);
 }
 
-.divisions .row .col .card:hover{
+.divisions .row .col .card:hover {
   transform: scale(1.06);
   transition: all ease 30ms;
 }
@@ -460,7 +469,7 @@ pop-vision {
   left: 500px;
 }
 
-.blog .row .col .card .card-body{
+.blog .row .col .card .card-body {
   text-align: left;
 }
 
@@ -538,7 +547,7 @@ pop-vision {
   /* border-radius: 5px; */
 }
 
-.c-item img{
+.c-item img {
   width: 150px;
   height: 150px;
 }
@@ -683,6 +692,14 @@ pop-vision {
     text-align: left;
   }
 
+  .communication img {
+    width: 13rem;
+    position: relative;
+    left: -0.2px;
+    bottom: 50px;
+    z-index: 1;
+  }
+
   .communication .mission {
     position: absolute;
     width: 100%;
@@ -702,9 +719,38 @@ pop-vision {
   }
 }
 
+@media (min-width: 400px) and (max-width: 767px) {
+  .communication img {
+    width: 13rem;
+    position: relative;
+    left: 60px;
+    bottom: 70px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+  .communication img {
+    width: 14rem;
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 610px) and (max-width: 767px) {
+  .communication img {
+    width: 15rem;
+    position: relative;
+    left: 300px;
+    bottom: 250px;
+    z-index: 1;
+  }
+}
+
 @media screen and (max-width: 768px) {
   hr {
-    display: none;
     margin: 0;
   }
 
@@ -721,7 +767,7 @@ pop-vision {
     height: 100vh !important;
   }
 
-  .navbar-nav .btn{
+  .navbar-nav .btn {
     width: 100%;
     text-transform: uppercase;
   }
@@ -736,6 +782,12 @@ pop-vision {
 
   .navbar-toggler-icon {
     font-size: 20px;
+  }
+
+  .navbar-nav .btn {
+    font-weight: bold;
+    padding-top: 8px;
+    font-size: 1.1rem;
   }
 
   .close-icon {
@@ -797,11 +849,12 @@ pop-vision {
     width: 100%;
     flex-wrap: wrap;
     /* height: calc(90vh - 100px); */
-    margin-top: 80px;
+    height: 100vh !important;
+    margin-top: 50px;
   }
 
   .communication .communication-content {
-    padding: 5% 5% 25% 5%;
+    padding: 0% 5% 25% 0%;
     /* margin-left: -30px; */
     text-align: left;
   }
@@ -810,22 +863,20 @@ pop-vision {
     padding: 10px 0px 10px 50px;
   }
 
-  .communication img {
-    display: none;
-  }
-
   .communication .communication-content h4 {
-    font-size: 20px;
+    width: 90%;
+    font-size: 18px;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .communication .communication-content h2 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bolder;
   }
 
   .communication-content button {
+    margin-top: 5px;
     height: 45px;
     width: 180px;
   }
@@ -837,7 +888,7 @@ pop-vision {
   .communication .mission {
     position: absolute;
     width: 100%;
-    top: 340px;
+    top: 480px;
     height: 53px;
     text-align: center;
     z-index: 2;
@@ -897,7 +948,7 @@ pop-vision {
     margin: 20px auto;
   }
 
-  .divisions .row .col .card-body .card-text{
+  .divisions .row .col .card-body .card-text {
     text-align: left;
   }
 
@@ -1025,12 +1076,12 @@ pop-vision {
   .c-wrapper {
     display: flex;
   }
-  
+
   .c-item {
     flex: 1;
   }
 
-  .c-item img{
+  .c-item img {
     width: 80px;
     height: 80px;
   }
@@ -1073,11 +1124,83 @@ pop-vision {
 
 @media (min-width: 769px) and (max-width: 1200px) {
   /* NAV SECTION */
-  /* .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 1rem 1.2rem;
-    font-size: 0.5rem;
-    position: relative;
-  } */
+  /* NAV SECTION */
+  .collapse {
+    padding-top: 40px;
+  }
+
+  .navbar-nav .btn {
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  .navbar-toggler.collapsed .close-icon {
+    display: none;
+  }
+
+  .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    display: inline;
+  }
+
+  .navbar-toggler-icon {
+    font-size: 20px;
+  }
+
+  .navbar-nav .btn {
+    font-weight: bold;
+    padding-top: 8px;
+    font-size: 1.1rem;
+  }
+
+  .close-icon {
+    color: rgb(24, 90, 38);
+    font-weight: bolder;
+    width: 30px;
+    /* font-size: 25px; */
+  }
+
+  .navbar-light .navbar-nav .dropdown-menu {
+    margin: 0;
+    /* margin-left: 20px; */
+    border: 1px solid #f36f21;
+    border-radius: 1px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+
+  .navbar-light .navbar-nav .dropdown-item {
+    color: rgb(84, 82, 82);
+    padding: 3%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .dropdown-toggle::after {
+    float: right;
+    transition: 0.5s;
+  }
+
+  .dropdown-toggle[aria-expanded="true"]::after {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .navbar-collapse > .container {
+    height: 99%;
+    transition: 0.5s;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    transition: 0.3s;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #f36f21;
+    border-bottom: none;
+  }
 
   /* COMMUNICATION*/
   .communication {
@@ -1125,11 +1248,10 @@ pop-vision {
   }
 
   /* DIVISIONS SECTION */
-  
 }
 
 @media (min-width: 1200px) and (max-width: 1367px) {
-  .divisions .row .col{
+  .divisions .row .col {
     width: 350px;
   }
 }
