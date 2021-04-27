@@ -1,386 +1,379 @@
 /****************************/
 /***** Introduction *********/
 /****************************/
-.introduction img{
-    width: 55px;
-    height: 55px;
-} 
-
-.introduction{
-    height: calc(100vh - 100px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/ghubglobalinitiative.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 100px;
+.introduction img {
+  width: 55px;
+  height: 55px;
 }
 
-.introduction-content{
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    transform: translateY(10vh);
+.introduction {
+  height: calc(100vh - 100px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/ghubglobalinitiative.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 80px;
 }
 
-.introduction-content button{
-    height: 90px;
-    width: 850px;
-    border: none;
-    background-color: #fff;
-    border-radius: 8px;
-}
- 
-.introduction-content .content-h3{
-    color: white;
-    font-size: 50px;
-    font-weight: 600;
+.introduction-content {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  transform: translateY(10vh);
 }
 
-.introduction-content p{
-    margin-top: 30px;
-    color: white;
+.introduction-content button {
+  height: 90px;
+  width: 850px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
-.introduction-content .top-links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 80px;
-    margin-top: 0;
+.introduction-content .content-h3 {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
 }
 
-.introduction-content .top-links a{
-    text-decoration: none;
+.introduction-content p {
+  margin-top: 30px;
+  color: white;
 }
 
-.introduction-content .top-links p{
-    margin: 0;
+.introduction-content .top-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  margin-top: 0;
 }
 
-.introduction-content .top-links .current-page p{
-    color: #b0cb1f;
+.introduction-content .top-links a {
+  text-decoration: none;
 }
 
+.introduction-content .top-links p {
+  margin: 0;
+}
 
+.introduction-content .top-links .current-page p {
+  color: #b0cb1f;
+}
 
 /************************************/
 /****** Eduction section ************/
 /************************************/
-.education{
-    padding: 5% 7%;
+.education {
+  padding: 5% 7%;
 }
 
-.education img{
-    width: 125px;
-    height: 125px;
+.education img {
+  width: 125px;
+  height: 125px;
 }
 
-.education .row{
-    justify-content: space-between;
-    margin-top: 68px;
+.education .row {
+  justify-content: space-between;
+  margin-top: 68px;
 }
 
-.education .row .col-md-6 .card{
-    padding-right: 80px;
-    border: none;
+.education .row .col-md-6 .card {
+  padding-right: 80px;
+  border: none;
 }
 
-.education .row .col-md-6 .card h5{
-    font-size: 35px;
-    font-weight: 600;
-    margin-bottom: 36px;
+.education .row .col-md-6 .card h5 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 36px;
 }
 
-.education .row .col-md-6 .card p{
-    margin-bottom: 40px;
-    font-size: 18px;
+.education .row .col-md-6 .card p {
+  margin-bottom: 40px;
+  font-size: 18px;
 }
 
-.education .row .col-md-3{
-    width: 320px;
+.education .row .col-md-3 {
+  width: 320px;
 }
 
-.education .row .col-md-3 .card{
-    align-items: center;
-    border-radius: 5px;
+.education .row .col-md-3 .card {
+  align-items: center;
+  border-radius: 5px;
 }
 
-.education .row .col-md-3 .card .card-head{
-    padding: 37px 90px;
+.education .row .col-md-3 .card .card-head {
+  padding: 37px 90px;
 }
 
-.education .row .col-md-3 .card .card-body{
-    background-color: #E4E4E4;
-    padding: 30px;
-    text-align: center;
+.education .row .col-md-3 .card .card-body {
+  background-color: #e4e4e4;
+  padding: 30px;
+  text-align: center;
 }
 
-.education .row .col-md-3 .card .card-body h5{
-    font-size: 18px;
-    font-weight: bold;
+.education .row .col-md-3 .card .card-body h5 {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.education .row .col-md-3 .card .card-body p{
-    font-size: 13px;
+.education .row .col-md-3 .card .card-body p {
+  font-size: 13px;
 }
 
-.education .row .col-md-3 .card .card-body a{
-    background-color: #E31E24;
-    opacity: 85%;
-    color: white;
-    width: 95px;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    font-size: 13px;
-    padding: 10px;
+.education .row .col-md-3 .card .card-body a {
+  background-color: #e31e24;
+  opacity: 85%;
+  color: white;
+  width: 95px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  padding: 10px;
 }
 
-.education .row .col-md-3 .card .card-body a i{
-    margin-left: 10px;
+.education .row .col-md-3 .card .card-body a i {
+  margin-left: 10px;
 }
-
-
-
 
 /**************************************/
 /***** Empowerment section ************/
 /**************************************/
-.empowerment{
-    padding: 5% 7%;
+.empowerment {
+  padding: 5% 7%;
 }
 
-.empowerment img{
-    width: 125px;
-    height: 125px;
+.empowerment img {
+  width: 125px;
+  height: 125px;
 }
 
-.empowerment .row{
-    justify-content: space-between;
-    margin-top: 68px;
+.empowerment .row {
+  justify-content: space-between;
+  margin-top: 68px;
 }
 
-.empowerment .row .col-md-6 .card{
-    padding-right: 80px;
-    border: none;
+.empowerment .row .col-md-6 .card {
+  padding-right: 80px;
+  border: none;
 }
 
-.empowerment .row .col-md-6 .card h5{
-    font-size: 35px;
-    font-weight: 600;
+.empowerment .row .col-md-6 .card h5 {
+  font-size: 35px;
+  font-weight: 600;
 }
 
-.empowerment .row .col-md-6 .card p{
-    margin-top: 35px;
-    font-size: 16px;
+.empowerment .row .col-md-6 .card p {
+  margin-top: 35px;
+  font-size: 16px;
 }
 
-.empowerment .row .col-md-3{
-    width: 320px;
+.empowerment .row .col-md-3 {
+  width: 320px;
 }
 
-.empowerment .row .col-md-3 .card{
-    align-items: center;
-    border-radius: 5px;
+.empowerment .row .col-md-3 .card {
+  align-items: center;
+  border-radius: 5px;
 }
 
-.empowerment .row .col-md-3 .card .card-head{
-    padding: 37px 90px;
+.empowerment .row .col-md-3 .card .card-head {
+  padding: 37px 90px;
 }
 
-.empowerment .row .col-md-3 .card .card-body{
-    background-color: #E4E4E4;
-    padding: 30px;
-    text-align: center;
+.empowerment .row .col-md-3 .card .card-body {
+  background-color: #e4e4e4;
+  padding: 30px;
+  text-align: center;
 }
 
-.empowerment .row .col-md-3 .card .card-body h5{
-    font-size: 18px;
-    font-weight: bold;
+.empowerment .row .col-md-3 .card .card-body h5 {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.empowerment .row .col-md-3 .card .card-body p{
-    font-size: 13px;
+.empowerment .row .col-md-3 .card .card-body p {
+  font-size: 13px;
 }
 
-.empowerment .row .col-md-3 .card .card-body a{
-    background-color: #E31E24;
-    opacity: 85%;
-    color: white;
-    width: 125px;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    font-size: 13px;
-    padding: 10px;
+.empowerment .row .col-md-3 .card .card-body a {
+  background-color: #e31e24;
+  opacity: 85%;
+  color: white;
+  width: 125px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  padding: 10px;
 }
 
-.empowerment .row .col-md-3 .card .card-body a i{
-    margin-left: 10px;
+.empowerment .row .col-md-3 .card .card-body a i {
+  margin-left: 10px;
 }
-
 
 /**********************************************/
 /**********************************************/
 /* RESPONSIVENESS FOR THE DIFFERENT SECTIONS */
 /*********************************************/
 /*********************************************/
-@media screen and (max-width: 768px){
-    /* INTRODUCTION SECTION */
-    .introduction img{
-        width: 55px;
-        height: 55px;
-    }
-    
-    .introduction{
-        width: 100%;
-        height: calc(70vh - 80px);
-        padding: 5% 5%;
-        margin-top: 80px;
-    }
-    
-    .introduction-content{
-        width: 100%;
-        margin: auto;
-        text-align: left;
-        transform: translateY(10vh);
-    }
+@media screen and (max-width: 768px) {
+  /* INTRODUCTION SECTION */
+  .introduction img {
+    width: 55px;
+    height: 55px;
+  }
 
-    .introduction-content button{
-        height: 110px;
-        width: 100%;
-        border: none;
-        background-color: #fff;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        padding: 20px;
-    }
-    
-    .introduction-content .content-h3{
-        font-size: 25px;
-    }
-    
-    .introduction-content p{
-        margin-top: 20px;
-    }
+  .introduction {
+    width: 100%;
+    height: calc(70vh - 80px);
+    padding: 5% 5%;
+    margin-top: 70px;
+  }
 
-    .introduction-content .top-links{
-        display: none;
-    }
+  .introduction-content {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    transform: translateY(10vh);
+  }
 
-    /* EDUCATION SECTION */
-    .education{
-        padding: 5% 5%;
-        width: 100%;
-    }
+  .introduction-content button {
+    height: 110px;
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
 
-    .education .container{ 
-        padding: 0;
-    }
-    
-    .education img{
-        width: 100px;
-        height: 100px;
-    }
-    
-    .education .row{
-        justify-content: center;
-        margin-top: 20px;
-    }
-    
-    .education .row .col-md-6 .card{
-        padding: 0;
-        border: none;
-    }
-    
-    .education .row .col-md-6 .card h5{
-        font-size: 25px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    
-    .education .row .col-md-6 .card p{
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-    
-    .education .row .col-md-3{
-        width: 100%;
-        margin-bottom: 30px;
-    }
+  .introduction-content .content-h3 {
+    font-size: 25px;
+  }
 
-    /* EMPOWERMENT SECTION */
-    .empowerment{
-        width: 100%;
-        padding: 5% 5%;
-    }
+  .introduction-content p {
+    margin-top: 20px;
+  }
 
-    .empowerment .container{
-        padding: 0;
-    }
-    
-    .empowerment img{
-        width: 100px;
-        height: 100px;
-    }
-    
-    .empowerment .row{
-        justify-content: center;
-        margin-top: 20px;
-    }
-    
-    .empowerment .row .col-md-6 .card{
-        padding: 0;
-    }
-    
-    .empowerment .row .col-md-6 .card h5{
-        font-size: 25px;
-        font-weight: 600;
-        text-align: center;
-    }
-    
-    .empowerment .row .col-md-6 .card p{
-        margin-top: 20px;
-        font-size: 15px;
-    }
-    
-    .empowerment .row .col-md-3{
-        width: 100%;
-        margin-bottom: 30px;
-    }
+  .introduction-content .top-links {
+    display: none;
+  }
 
+  /* EDUCATION SECTION */
+  .education {
+    padding: 5% 5%;
+    width: 100%;
+  }
+
+  .education .container {
+    padding: 0;
+  }
+
+  .education img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .education .row {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .education .row .col-md-6 .card {
+    padding: 0;
+    border: none;
+  }
+
+  .education .row .col-md-6 .card h5 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .education .row .col-md-6 .card p {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .education .row .col-md-3 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* EMPOWERMENT SECTION */
+  .empowerment {
+    width: 100%;
+    padding: 5% 5%;
+  }
+
+  .empowerment .container {
+    padding: 0;
+  }
+
+  .empowerment img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .empowerment .row {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .empowerment .row .col-md-6 .card {
+    padding: 0;
+  }
+
+  .empowerment .row .col-md-6 .card h5 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .empowerment .row .col-md-6 .card p {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .empowerment .row .col-md-3 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
-@media (min-width: 769px) and (max-width: 1023px){
-
+@media (min-width: 769px) and (max-width: 1023px) {
 }
- 
-@media (min-width: 1024px) and (max-width: 1400px){
-    /* EDUCATION SECTION */
-    .education{
-        padding: 5% 3%;
-        width: 100%;
-    }
 
-    .education .row{
-        justify-content: space-between;
-    }
+@media (min-width: 1024px) and (max-width: 1400px) {
+  /* EDUCATION SECTION */
+  .education {
+    padding: 5% 3%;
+    width: 100%;
+  }
 
-    .education .row .col-md-3{
-        width: 280px;
-    }
+  .education .row {
+    justify-content: space-between;
+  }
 
-    /* EMPOWERMENT SECTION */
-    .empowerment{
-        padding: 5% 3%;
-        width: 100%;
-    }
+  .education .row .col-md-3 {
+    width: 280px;
+  }
 
-    .empowerment .row{
-        justify-content: space-between;
-    }
+  /* EMPOWERMENT SECTION */
+  .empowerment {
+    padding: 5% 3%;
+    width: 100%;
+  }
 
-    .empowerment .row .col-md-3{
-        width: 280px;
-    }
+  .empowerment .row {
+    justify-content: space-between;
+  }
+
+  .empowerment .row .col-md-3 {
+    width: 280px;
+  }
 }

@@ -2,7 +2,7 @@
 /***** Introduction *********/
 /****************************/
 .introduction img {
-  width: 55px; 
+  width: 55px;
   height: 55px;
 }
 
@@ -12,7 +12,7 @@
     url(../images/ygirlsfoundation.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .introduction-content {
@@ -190,7 +190,6 @@
 /*********************************************/
 /*********************************************/
 @media screen and (max-width: 768px) {
-
   /* INTRODUCTION SECTION */
   .introduction img {
     width: 55px;
@@ -201,7 +200,7 @@
     width: 100%;
     height: calc(70vh - 80px);
     padding: 5% 5%;
-    margin-top: 80px;
+    margin-top: 70px;
   }
 
   .introduction-content {

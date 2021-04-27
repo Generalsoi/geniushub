@@ -6,7 +6,7 @@
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/blogimg1.png); */
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .introduction-content {
@@ -112,7 +112,7 @@
     width: 100%;
     height: calc(70vh - 80px);
     padding: 5% 5%;
-    margin-top: 80px;
+    margin-top: 70px;
   }
 
   .introduction-content {
