@@ -764,7 +764,7 @@ pop-vision {
   }
 
   .navbar-nav {
-    height: 100vh !important;
+    height: 80vh;
   }
 
   .navbar-nav .btn {
@@ -849,7 +849,7 @@ pop-vision {
     width: 100%;
     flex-wrap: wrap;
     /* height: calc(90vh - 100px); */
-    height: 100vh !important;
+    height: 100vh;
     margin-top: 50px;
   }
 
