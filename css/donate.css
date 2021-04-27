@@ -12,7 +12,7 @@
     url(../images/donateimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .introduction-content {
@@ -49,6 +49,10 @@
 .donate {
   padding: 1% 200px;
   text-align: center;
+}
+
+.donate-text {
+  text-align: justify;
 }
 
 .donate h4 {
@@ -143,7 +147,7 @@
     width: 100%;
     height: calc(60vh - 80px);
     padding: 5% 5%;
-    margin-top: 80px;
+    margin-top: 75px;
   }
 
   .introduction-content {
