@@ -114,57 +114,16 @@
       <input type="text" placeholder="Type to search...">
     </div>
 
-    <table>
-      <tr class="roles">
-        <td class="role-title">Social Media Manager (Fulltime)</td>
-        <td style="color: #F36F21;">20k-80k</td>
-        <td><button class="role-type">Senior Role</button></td>
-        <td><button class="location">Benin City</button></td>
-        <td><a href="socialmediamanager.html"><button class="apply">Apply</button></a></td>
-      </tr>
-      <tr class="roles">
-        <td class="role-title">Administrative Officer (Parttime)</td>
-        <td style="color: #F36F21;">30k-90k</td>
-        <td><button class="role-type">Intern Role</button></td>
-        <td><button class="location">Benin City</button></td>
-        <td><a href=""><button class="apply">Apply</button></a></td>
-      </tr>
-      <tr class="roles">
-        <td class="role-title">Project Manager (Fulltime)</td>
-        <td style="color: #F36F21;">30k-120k</td>
-        <td><button class="role-type">Senior Role</button></td>
-        <td><button class="location">Benin City</button></td>
-        <td><a href=""><button class="apply">Apply</button></a></td>
-      </tr>
-      <tr class="roles">
-        <td class="role-title">Graphics Designer (Fulltime)</td>
-        <td style="color: #F36F21;">20k-40k</td>
-        <td><button class="role-type">Intern Role</button></td>
-        <td><button class="location">Benin City</button></td>
-        <td><a href=""><button class="apply">Apply</button></a></td>
-      </tr>
-      <tr class="roles">
-        <td class="role-title">Finance & Accounting Manager (Fulltime)</td>
-        <td style="color: #F36F21;">100k-180k</td>
-        <td><button class="role-type">Senior Role</button></td>
-        <td><button class="location">Benin City</button></td>
-        <td><a href=""><button class="apply">Apply</button></a></td>
-      </tr>
-      <tr class="roles">
-        <td class="role-title">Learning Support Officer(Fulltime)</td>
-        <td style="color: #F36F21;">200k-280k</td>
-        <td><button class="role-type">Senior Role</button></td>
-        <td><button class="location">Benin City</button></td>
-        <td><a href=""><button class="apply">Apply</button></a></td>
-      </tr>
-      <tr class="roles">
-        <td class="role-title">Social Media Manager (Parttime)</td>
-        <td style="color: #F36F21;">20k-80k</td>
-        <td><button class="role-type">Intern Role</button></td>
-        <td><button class="location">Benin City</button></td>
-        <td><a href=""><button class="apply">Apply</button></a></td>
-      </tr>
-    </table>
+    <div id="loading">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="table"></div>
+
   </section>
 
   <div class="footer">
@@ -246,6 +205,7 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/api/careers/careers.js"></script>
   <script src="./js/api/newsletter/newsletterSubscription.js"></script>
 </body>
 
