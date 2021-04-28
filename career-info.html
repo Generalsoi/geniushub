@@ -107,6 +107,9 @@
                 </div>
             </div>
         </div>
+
+        <span id="jobTitle" style="visibility: hidden"></span>
+        <span id="submissionEmail" style="visibility: hidden"></span>
     </section>
 
 
@@ -119,13 +122,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="">
-                        <input type="text" placeholder="Full Name">
-                        <input type="text" placeholder="Email">
-                        <input type="phone" placeholder="Phone">
-                        <input type="text" placeholder="Gender">
-                        <input type="text" placeholder="Address">
-                        <input type="text" placeholder="What is your highest education level?">
+                    <form id="applyForm" action="" method="POST">
+                        <input type="text" name="full_name" placeholder="Full Name">
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="tel" name="phone" placeholder="Phone">
+                        <select name="gender" id="gender">
+                            <option selected disabled>Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <input type="text" name="address" placeholder="Address">
+                        <input type="text" name="qualification" placeholder="What is your highest education level?">
                         <div class="attachments mb-3">
                             <div class="row align-items-center">
                                 <div class="col-6">
@@ -136,7 +143,7 @@
                                         onclick="document.getElementById('resume').click()">
                                         <i class="fa fa-paperclip"></i>&nbsp;&nbsp;Attach file
                                     </span>
-                                    <input type="file" id="resume" style="display:none">
+                                    <input type="file" id="resume" name="resume" style="display:none">
                                 </div>
                             </div>
                         </div>
@@ -157,7 +164,10 @@
                         <textarea placeholder="Tell us why you think you are a good fit for this role"
                             rows="7"></textarea>
                         <div class="py-2 text-center">
-                            <button class="px-4 py-3" type="submit">Submit</button>
+                            <button class="px-4 py-3" type="submit">
+                                <span id="btnLoading" style="display: none;" class="spinner-border spinner-border-sm"
+                                    role="status" aria-hidden="true"></span>
+                                Submit</button>
                         </div>
                     </form>
                 </div>
@@ -245,10 +255,15 @@
     <script src="./js/main.js"></script>
     <script src="./js/api/careers/singleCareerInfo.js"></script>
     <script src="./js/api/newsletter/newsletterSubscription.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/api/careers/apply.js"></script>
 
     <script>
-        const goBack = document.querySelector("#goBack");
-        goBack.addEventListener('click', () => window.history.back());
+        let goBack;
+        document.onload = () => {
+            ocument.querySelector("#goBack");
+            goBack.addEventListener('click', () => window.history.back());
+        }
     </script>
 
 </body>

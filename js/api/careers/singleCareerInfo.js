@@ -17,19 +17,11 @@ post = (async () => {
     document.getElementById("loading").style.display = "none";
 
     const jobData = parsePostAPIPayload(data);
-    const { title, description } = jobData;
+    const { title, description, submissionEmail } = jobData;
 
-    // // set job title
-    // const jobTitle = document.getElementById("jobTitle");
-    // jobTitle.innerHTML = `<a id="goBack" href="careers.html"><i class="fas fa-angle-left"></i></a>&nbsp;${title}`;
-
-    // // get html data location
-    // const jobDescription = document.querySelector(".content");
-    // const applyBtn = convertHtmlStringToDomElement(
-    //   `<button data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="trainee">Apply Now</button>`
-    // );
-    // // append data to html location
-    // jobDescription.innerHTML = description;
+    // set the job title and submissionEmail for the application API
+    document.getElementById("jobTitle").innerText = title;
+    document.getElementById("submissionEmail").innerText = submissionEmail;
 
     // get html data location
     const jobDescription = document.querySelector(".job-description");
@@ -39,6 +31,7 @@ post = (async () => {
     );
     jobDescription.appendChild(jobDescriptionHTMLNode);
   } catch (error) {
+    console.log(error);
     //   remove spinner before displaying error message
     document.getElementById("loading").style.display = "none";
 
@@ -60,6 +53,7 @@ const parsePostAPIPayload = (payload) => {
     description: payload.content.rendered,
     title: payload.title.rendered,
     location: payload.meta._job_location,
+    submissionEmail: payload.meta._application,
   };
 };
 
