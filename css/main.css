@@ -522,6 +522,12 @@ pop-vision {
 /************************************/
 /****** Partners **************/
 /************************************/
+
+.partners {
+  background-color: #ffe0ce;
+  padding-bottom: 0;
+}
+
 .partners hr {
   width: 50px;
   margin: 30px auto;
@@ -1082,8 +1088,10 @@ pop-vision {
   }
 
   .c-item img {
-    width: 80px;
-    height: 80px;
+    /* width: 80px;
+    height: 80px; */
+    width: 100rem;
+    height: 5rem;
   }
 
   /* FOOTER SECTION */
