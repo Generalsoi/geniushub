@@ -1,6 +1,24 @@
 let API_URL_ORIGIN = "https://alert-rooster.jurassic.ninja";
 
-const url = `${API_URL_ORIGIN}/wp-json/wp/v2/job-listings`;
+const searchInput = document.getElementById("searchQuery");
+const searchForm = document.getElementById("search");
+
+searchForm.onsubmit = (event) => {
+  event.preventDefault();
+  return (window.location.href = `?search=${searchInput.value}`);
+};
+
+const urlSearchString = window.location.search;
+
+const searchQuery = urlSearchString.split("=")[1];
+
+let url;
+
+if (searchQuery) {
+  url = `${API_URL_ORIGIN}/wp-json/wp/v2/job-listings?search=${searchQuery}`;
+} else {
+  url = `${API_URL_ORIGIN}/wp-json/wp/v2/job-listings`;
+}
 
 (async () => {
   const careerTable = document.querySelector(".jobs").children[2];
@@ -9,6 +27,13 @@ const url = `${API_URL_ORIGIN}/wp-json/wp/v2/job-listings`;
     const res = await fetch(url);
 
     const data = await res.json();
+
+    if (data.length === 0) {
+      document.getElementById("loading").style.display = "none";
+      careerTable.innerHTML =
+        "<h5 class=text-center>Sorry, no result found</h5>";
+      return;
+    }
 
     // hide the spinner after post data loaded
     document.getElementById("loading").style.display = "none";
@@ -58,7 +83,6 @@ const url = `${API_URL_ORIGIN}/wp-json/wp/v2/job-listings`;
 
       careerTable.appendChild(tableRow);
     });
-    console.log(careerTable);
   } catch (error) {
     console.log(error);
     // remove spinner before displaying error message
@@ -87,14 +111,14 @@ const getSingleJobLink = (jobSlug) => `/career-info.html?job_title=${jobSlug}`;
 
 // get job role
 const getJobRole = async (jobTypeID) => {
-  const url = `${API_URL_ORIGIN}/wp-json/wp/v2/job-types/${jobTypeID}`;
+  const fetchUrl = `${API_URL_ORIGIN}/wp-json/wp/v2/job-types/${jobTypeID}`;
 
   try {
-    const res = await fetch(url);
+    const res = await fetch(fetchUrl);
 
     const data = await res.json();
     return data.name;
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
