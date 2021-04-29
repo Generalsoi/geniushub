@@ -339,28 +339,6 @@ pop-vision {
   left: 500px;
 }
 
-.impact-content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 4rem;
-}
-
-.impact-content p {
-  color: #fff;
-  text-align: left;
-  line-height: 2.5;
-}
-
-.impact-content-intro {
-  margin-bottom: 40px;
-}
-
-.impact-content img {
-  width: 30.5rem;
-  height: 17rem;
-  margin-left: 1.875rem;
-}
-
 /*******************************/
 /***** Programs section ********/
 /*******************************/
@@ -511,6 +489,10 @@ pop-vision {
 
 .team .row .col .card .card-head img {
   height: 250px;
+}
+
+.team .row .col .card {
+  border: none;
 }
 
 .team .row .col .card .card-body {
@@ -962,25 +944,6 @@ pop-vision {
   .impact {
     padding: 10% 5%;
     width: 100%;
-  }
-
-  .impact-content {
-    flex-direction: column;
-  }
-
-  .impact-content p {
-    color: #fff;
-    text-align: left;
-    line-height: 2;
-  }
-
-  .impact-content-intro {
-    margin-bottom: 40px;
-  }
-
-  .impact-content img {
-    width: 100%;
-    margin-left: 0;
   }
 
   /* PROGRAMS SECTION */
