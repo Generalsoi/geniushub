@@ -339,6 +339,10 @@ pop-vision {
   left: 500px;
 }
 
+.impact-content-intro {
+  font-size: 1rem;
+}
+
 /*******************************/
 /***** Programs section ********/
 /*******************************/
@@ -944,6 +948,10 @@ pop-vision {
   .impact {
     padding: 10% 5%;
     width: 100%;
+  }
+
+  .impact-content-intro {
+    /* font-size: 0.5rem; */
   }
 
   /* PROGRAMS SECTION */
