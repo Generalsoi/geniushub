@@ -85,6 +85,10 @@ nav .btn:hover {
   padding: 1.2rem;
 }
 
+.dropdown-menu a:active {
+  background-color: inherit;
+}
+
 /*****************************/
 /***Communication section*****/
 /*****************************/
