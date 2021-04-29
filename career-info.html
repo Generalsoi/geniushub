@@ -112,6 +112,29 @@
         <span id="submissionEmail" style="visibility: hidden"></span>
     </section>
 
+    <!-- Email success Button trigger modal -->
+    <button type="button" id="successBtn" class="btn btn-primary d-none" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        Success
+    </button>
+
+    <!-- Email success modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center px-5 py-5">
+                    <h6 id="success" class="text-success" role="alert">
+                        Application sent successfully, we will get back to you.
+                    </h6>
+                    <img width="150" class="pt-3" src="./images/check.jpg" alt="success">
+                    <div class="d-grid gap-2 pt-5">
+                        <button class="btn btn-lg btn-success" data-bs-dismiss="modal" type="button">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -122,21 +145,26 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+
+                    <div id="error" class="text-center text-danger" role="alert">
+                    </div>
+
                     <form id="applyForm" action="" method="POST">
-                        <input type="text" name="full_name" placeholder="Full Name">
-                        <input type="text" name="email" placeholder="Email">
-                        <input type="tel" name="phone" placeholder="Phone">
-                        <select name="gender" id="gender">
+                        <input type="text" name="full_name" placeholder="Full Name" required>
+                        <input type="text" name="email" placeholder="Email" required>
+                        <input type="tel" name="phone" placeholder="Phone" required>
+                        <select name="gender" id="gender" required>
                             <option selected disabled>Gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
-                        <input type="text" name="address" placeholder="Address">
-                        <input type="text" name="qualification" placeholder="What is your highest education level?">
+                        <input type="text" name="address" placeholder="Address" required>
+                        <input type="text" name="qualification" placeholder="What is your highest education level?"
+                            required>
                         <div class="attachments mb-3">
                             <div class="row align-items-center">
                                 <div class="col-6">
-                                    <label for=""> Upload your resume:</label>
+                                    <label id="resume_label" for=""> Upload your resume:</label>
                                 </div>
                                 <div class="col-6">
                                     <span class="px-4 py-2 px-md-5 px-lg-5 float-end"
@@ -150,7 +178,7 @@
                         <div class="attachments">
                             <div class="row align-items-center">
                                 <div class="col-6">
-                                    <label for=""> Upload your cover letter:</label>
+                                    <label id="cover_label" for=""> Upload your cover letter:</label>
                                 </div>
                                 <div class="col-6">
                                     <span class="px-4 py-2 px-md-5 px-lg-5 float-end"
@@ -161,8 +189,9 @@
                                 </div>
                             </div>
                         </div>
-                        <textarea placeholder="Tell us why you think you are a good fit for this role"
-                            rows="7"></textarea>
+                        <textarea name="reason_for_application"
+                            placeholder="Tell us why you think you are a good fit for this role" rows="7"
+                            required></textarea>
                         <div class="py-2 text-center">
                             <button class="px-4 py-3" type="submit">
                                 <span id="btnLoading" style="display: none;" class="spinner-border spinner-border-sm"

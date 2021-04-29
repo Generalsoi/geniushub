@@ -31,7 +31,7 @@ const url = `${API_URL_ORIGIN}/wp-json/wp/v2/job-listings`;
       const jobPriceRange = document.createElement("td");
       jobPriceRange.className = "px-5";
       jobPriceRange.style.color = "#F36F21";
-      jobPriceRange.innerText = "xk - xk";
+      jobPriceRange.innerText = "-";
 
       const jobRole = document.createElement("td");
       jobRole.className = "px-5";
