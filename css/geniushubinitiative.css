@@ -68,6 +68,16 @@
   padding: 5% 7%;
 }
 
+.education hr {
+  width: 50px;
+  margin: -20px 0px 45px 0;
+  background-color: #f36f21;
+  opacity: 1;
+  height: 4px;
+  border: none;
+  border-radius: 8px;
+}
+
 .education img {
   width: 125px;
   height: 125px;
@@ -267,6 +277,10 @@
   .education {
     padding: 5% 5%;
     width: 100%;
+  }
+
+  .education hr {
+    margin: -10px auto 25px auto;
   }
 
   .education .container {
