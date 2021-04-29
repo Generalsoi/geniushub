@@ -65,7 +65,7 @@
 /****** Eduction section ************/
 /************************************/
 .education {
-  padding: 5% 7%;
+  padding: 5% 10%;
 }
 
 .education hr {
@@ -153,6 +153,16 @@
 /**************************************/
 .empowerment {
   padding: 5% 7%;
+}
+
+.empowerment hr {
+  width: 50px;
+  margin: 5px 0px 10px 0;
+  background-color: #f36f21;
+  opacity: 1;
+  height: 4px;
+  border: none;
+  border-radius: 8px;
 }
 
 .empowerment img {
@@ -322,6 +332,10 @@
   .empowerment {
     width: 100%;
     padding: 5% 5%;
+  }
+
+  .empowerment hr {
+    margin: 10px auto 20px auto;
   }
 
   .empowerment .container {
