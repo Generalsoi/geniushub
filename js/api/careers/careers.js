@@ -42,10 +42,12 @@ if (searchQuery) {
     data.forEach(async (d) => {
       const jobData = parsePostAPIPayload(d);
 
-      const { id, slug, title, location, jobTypeID } = jobData;
+      const { id, slug, title, price, location, jobTypeID } = jobData;
 
       const jobDataRes = await getJobRole(jobTypeID);
       const jobType = jobDataRes === undefined ? "No role stated" : jobDataRes;
+
+      const jobPrice = price === undefined ? "---" : price;
 
       const singleJobLink = getSingleJobLink(slug);
 
@@ -57,9 +59,8 @@ if (searchQuery) {
       jobTitle.innerText = `${title}`;
 
       const jobPriceRange = document.createElement("td");
-      jobPriceRange.className = "px-5";
       jobPriceRange.style.color = "#F36F21";
-      jobPriceRange.innerText = "---";
+      jobPriceRange.innerText = jobPrice;
 
       const jobRole = document.createElement("td");
       jobRole.className = "px-5";
@@ -101,6 +102,7 @@ const parsePostAPIPayload = (payload) => {
     id: payload.id,
     slug: payload.slug,
     title: payload.title.rendered,
+    price: payload.meta._company_tagline,
     location: payload.meta._job_location,
     jobTypeID: payload["job-types"][0],
   };
