@@ -90,6 +90,34 @@ nav .btn:hover {
   background-color: inherit;
 }
 
+/* Chat button */
+#chat {
+  position: fixed;
+  bottom: 20px; 
+  right: 30px;
+  z-index: 99; 
+  border: none; 
+  outline: none;
+  background-color: #dedede;
+  color: #444;
+  font-weight: bold; 
+  cursor: pointer;
+}
+
+#chat:hover {
+  background-color: efefef;
+  color: black;
+}
+
+#chatSmall {
+  display: none;
+}
+
+.fa-whatsapp {
+  color: white;
+  background: radial-gradient(black 50%, transparent 80%);
+}
+
 /*****************************/
 /***Communication section*****/
 /*****************************/
@@ -836,6 +864,32 @@ pop-vision {
     color: #f36f21;
     border-bottom: none;
   }
+
+#chat {
+  display: none;
+}
+
+#chatSmall {
+  display: block;
+  position: fixed;
+  bottom: 20px; 
+  right: 30px;
+  z-index: 99; 
+  border: none; 
+  outline: none;
+  background-color: #dedede;
+  color: #444;
+  font-weight: bold; 
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 10px 16px;
+  padding-top: 14px;
+}
+
+#chatSmall:hover {
+  background-color: #fff;
+}
 
   /* COMMUNICATION SECTION */
   .communication {
