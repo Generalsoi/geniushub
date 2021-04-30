@@ -13,11 +13,12 @@ const url = `${API_URL_ORIGIN}/wp-json/wp/v2/media`;
     document.getElementById("loading").style.display = "none";
 
     const data = resJson;
-    data.forEach((d) => {
+    data.forEach((d, i) => {
       const imageSource = d.source_url;
-
-      const imageHtmlString = `<div class="col-lg-4 col-md-4 col-sm-6 mb-3">
-    <img src="${imageSource}" width="100% alt="">
+      
+      const imageHtmlString = `<div id="imageParent" class="col-lg-4 col-md-4 col-sm-6 mb-3">
+    <img src="${imageSource}" width="100% alt="${d.title}">
+    <div class="caption">${d.caption.rendered}</div>
   </div>`;
 
       const imageDomHtml = convertHtmlStringToDomElement(imageHtmlString);
@@ -25,6 +26,7 @@ const url = `${API_URL_ORIGIN}/wp-json/wp/v2/media`;
     });
   } catch (error) {
     //   remove spinner before displaying error message
+    console.log(error)
     document.getElementById("loading").style.display = "none";
 
     const errorMessage = document.createElement("h5");

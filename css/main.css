@@ -408,7 +408,6 @@ pop-vision {
 
 .programs-content {
   display: flex;
-  box-shadow: -1px 3px 10px rgba(0, 8, 24, 0.16);
   height: 200px;
   align-items: center;
   justify-content: center;
@@ -430,6 +429,7 @@ pop-vision {
 
 .programs-content-desc {
   display: flex;
+  box-shadow: -1px 3px 10px rgba(0, 8, 24, 0.16);
   justify-content: space-between;
   background-color: #e4e4e4;
   height: 100%;
@@ -457,6 +457,10 @@ pop-vision {
   bottom: 10%;
   padding-top: 8px;
   justify-content: center;
+}
+
+.programs-content .btn {
+  margin-bottom: 20px;
 }
 
 /**********************************/
