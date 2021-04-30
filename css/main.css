@@ -24,8 +24,8 @@ body.modal-open {
 /*********************/
 .navbar {
   border-bottom: 8px solid #b0cb1f;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-left: 4%;
+  padding-right: 2%;
   /* height: 90px; */
 }
 
@@ -79,7 +79,7 @@ nav .btn:hover {
 }
 
 .dropdown-menu {
-  border-radius: 10px;
+  padding: 0;
 }
 
 .dropdown-item {
@@ -109,7 +109,7 @@ nav .btn:hover {
   width: 100%;
   height: 100%;
   background-color: #f36f21;
-  opacity: 0.8;
+  opacity: 0.66;
 }
 
 .communication #comm-wrapper {
@@ -243,7 +243,7 @@ pop-vision {
 }
 
 .divisions h3 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .divisions hr {
@@ -329,7 +329,7 @@ pop-vision {
 }
 
 .impact h3 {
-  font-size: 40px;
+  font-size: 35px;
   color: white;
 }
 
@@ -358,7 +358,7 @@ pop-vision {
 }
 
 .programs h3 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .programs hr {
@@ -474,7 +474,7 @@ pop-vision {
 }
 
 .team h3 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .team hr {
@@ -531,7 +531,7 @@ pop-vision {
 }
 
 .partners h3 {
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -692,7 +692,7 @@ pop-vision {
   .communication img {
     width: 13rem;
     position: relative;
-    left: -0.2px;
+    left: -30px;
     bottom: 50px;
     z-index: 1;
   }
@@ -716,21 +716,21 @@ pop-vision {
   }
 }
 
-@media (min-width: 400px) and (max-width: 767px) {
+@media (min-width: 470px) and (max-width: 767px) {
   .communication img {
     width: 13rem;
     position: relative;
-    left: 60px;
-    bottom: 70px;
+    left: -30px;
+    bottom: 90px;
     z-index: 1;
   }
 }
 
-@media (min-width: 550px) and (max-width: 767px) {
+@media (min-width: 579px) and (max-width: 767px) {
   .communication img {
     width: 14rem;
     position: relative;
-    left: 100px;
+    left: -3px;
     bottom: 100px;
     z-index: 1;
   }
@@ -740,8 +740,8 @@ pop-vision {
   .communication img {
     width: 15rem;
     position: relative;
-    left: 300px;
-    bottom: 250px;
+    left: -3px;
+    bottom: 130px;
     z-index: 1;
   }
 }
@@ -762,6 +762,8 @@ pop-vision {
 
   .navbar-nav {
     height: 100vh !important;
+    padding-left: 6px;
+    padding-right: 18px;
   }
 
   .navbar-nav .btn {
@@ -795,7 +797,6 @@ pop-vision {
 
   .navbar-light .navbar-nav .dropdown-menu {
     margin: 0;
-    /* margin-left: 20px; */
     border: 1px solid #f36f21;
     border-radius: 1px;
     background-color: #fff;
@@ -835,10 +836,6 @@ pop-vision {
     color: #f36f21;
     border-bottom: none;
   }
-
-  /* .dropdown-menu {
-    text-align: center;
-  } */
 
   /* COMMUNICATION SECTION */
   .communication {
@@ -918,7 +915,7 @@ pop-vision {
   }
 
   .divisions h3 {
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .divisions hr {
@@ -954,6 +951,10 @@ pop-vision {
     width: 100%;
   }
 
+  .impact h3 {
+    font-size: 40px;
+  }
+
   /* PROGRAMS SECTION */
   .programs {
     width: 100%;
@@ -962,7 +963,7 @@ pop-vision {
   }
 
   .programs h3 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .programs-content {
@@ -1025,7 +1026,7 @@ pop-vision {
   }
 
   .team h3 {
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 30px;
   }
 
@@ -1041,7 +1042,7 @@ pop-vision {
   /* Partners */
 
   .partners h3 {
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 30px;
     text-align: center;
   }
@@ -1227,6 +1228,7 @@ pop-vision {
 
   /* DIVISIONS SECTION */
 }
+
 
 @media (min-width: 1200px) and (max-width: 1367px) {
   .divisions .row .col {
