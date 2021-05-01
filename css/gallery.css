@@ -24,7 +24,7 @@
 
 .introduction-content button {
   height: 90px;
-  width: 150px;
+  width: 180px;
   border: none;
   background-color: #fff;
   border-radius: 8px;
@@ -40,6 +40,7 @@
 .introduction-content p {
   margin-top: 30px;
   color: white;
+  font-size: 22px;
 }
 
 .introduction-content .top-links {
@@ -66,13 +67,21 @@
 /*******************************/
 /**** Images section ***********/
 /*******************************/
-/* .images {
-  padding: 5% 7%;
+
+#imageParent {
+  /* cursor: pointer; */
+  position: relative;
+  color: white;
 }
 
-.images img {
-  width: 400px;
-} */
+.caption {
+  position:absolute;
+  background-color: black;
+  opacity: 0.5;
+  width: 94%;
+  bottom: 10px;
+  padding: 10px
+}
 
 /**********************************************/
 /**********************************************/
@@ -96,13 +105,13 @@
   .introduction-content {
     width: 100%;
     margin: auto;
-    text-align: left;
+    text-align: center;
     transform: translateY(10vh);
   }
 
   .introduction-content button {
     height: 50px;
-    width: 40%;
+    width: 30%;
     border: none;
     background-color: #fff;
     border-radius: 8px;
@@ -114,6 +123,7 @@
 
   .introduction-content p {
     margin-top: 20px;
+    font-size: 20px;
   }
 
   .introduction-content .top-links {

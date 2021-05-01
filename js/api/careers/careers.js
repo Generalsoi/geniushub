@@ -5,7 +5,7 @@ const searchForm = document.getElementById("search");
 
 searchForm.onsubmit = (event) => {
   event.preventDefault();
-  return (window.location.href = `?search=${searchInput.value}`);
+  return (window.location.href = `?search=${searchInput.value}#careers`);
 };
 
 const urlSearchString = window.location.search;
@@ -55,7 +55,7 @@ if (searchQuery) {
       tableRow.className = "roles";
 
       const jobTitle = document.createElement("td");
-      jobTitle.className = "role-title px-5";
+      jobTitle.className = "role-title";
       jobTitle.innerText = `${title}`;
 
       const jobPriceRange = document.createElement("td");
@@ -63,15 +63,12 @@ if (searchQuery) {
       jobPriceRange.innerText = jobPrice;
 
       const jobRole = document.createElement("td");
-      jobRole.className = "px-5";
       jobRole.innerHTML = `<button class="role-type">${jobType}</button>`;
 
       const jobLocation = document.createElement("td");
-      jobLocation.className = "px-5";
       jobLocation.innerHTML = `<button class="location">${location}</button>`;
 
       const jobSingleData = document.createElement("td");
-      jobSingleData.className = "px-5";
       jobSingleData.innerHTML = `<a href="${singleJobLink}"><button class="apply">Apply</button></a>`;
 
       tableRow.append(

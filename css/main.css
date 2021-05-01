@@ -24,8 +24,8 @@ body.modal-open {
 /*********************/
 .navbar {
   border-bottom: 8px solid #b0cb1f;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-left: 4%;
+  padding-right: 2%;
   /* height: 90px; */
 }
 
@@ -64,6 +64,7 @@ nav .navbar-nav .nav-item:hover {
 
 nav .btn {
   background-color: #e31e24;
+  margin-left: 20px;
   opacity: 1;
   height: 40px;
   width: 90px;
@@ -79,7 +80,7 @@ nav .btn:hover {
 }
 
 .dropdown-menu {
-  border-radius: 10px;
+  padding: 0;
 }
 
 .dropdown-item {
@@ -88,6 +89,34 @@ nav .btn:hover {
 
 .dropdown-menu a:active {
   background-color: inherit;
+}
+
+/* Chat button */
+#chat {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #dedede;
+  color: #444;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#chat:hover {
+  background-color: efefef;
+  color: black;
+}
+
+#chatSmall {
+  display: none;
+}
+
+.fa-whatsapp {
+  color: white;
+  background: radial-gradient(black 50%, transparent 80%);
 }
 
 /*****************************/
@@ -109,7 +138,7 @@ nav .btn:hover {
   width: 100%;
   height: 100%;
   background-color: #f36f21;
-  opacity: 0.8;
+  opacity: 0.66;
 }
 
 .communication #comm-wrapper {
@@ -245,7 +274,7 @@ pop-vision {
 }
 
 .divisions h3 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .divisions hr {
@@ -332,7 +361,7 @@ pop-vision {
 }
 
 .impact h3 {
-  font-size: 40px;
+  font-size: 35px;
   color: white;
 }
 
@@ -361,7 +390,7 @@ pop-vision {
 }
 
 .programs h3 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .programs hr {
@@ -384,7 +413,6 @@ pop-vision {
 
 .programs-content {
   display: flex;
-  box-shadow: -1px 3px 10px rgba(0, 8, 24, 0.16);
   height: 200px;
   align-items: center;
   justify-content: center;
@@ -406,6 +434,7 @@ pop-vision {
 
 .programs-content-desc {
   display: flex;
+  box-shadow: -1px 3px 10px rgba(0, 8, 24, 0.16);
   justify-content: space-between;
   background-color: #e4e4e4;
   height: 100%;
@@ -433,6 +462,10 @@ pop-vision {
   bottom: 10%;
   padding-top: 8px;
   justify-content: center;
+}
+
+.programs-content .btn {
+  margin-bottom: 20px;
 }
 
 /**********************************/
@@ -478,7 +511,7 @@ pop-vision {
 }
 
 .team h3 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .team hr {
@@ -535,7 +568,7 @@ pop-vision {
 }
 
 .partners h3 {
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -697,7 +730,7 @@ pop-vision {
   .communication img {
     width: 13rem;
     position: relative;
-    left: -0.2px;
+    left: -30px;
     bottom: 50px;
     z-index: 1;
   }
@@ -721,21 +754,21 @@ pop-vision {
   }
 }
 
-@media (min-width: 400px) and (max-width: 767px) {
+@media (min-width: 470px) and (max-width: 767px) {
   .communication img {
     width: 13rem;
     position: relative;
-    left: 60px;
-    bottom: 70px;
+    left: -30px;
+    bottom: 90px;
     z-index: 1;
   }
 }
 
-@media (min-width: 550px) and (max-width: 767px) {
+@media (min-width: 579px) and (max-width: 767px) {
   .communication img {
     width: 14rem;
     position: relative;
-    left: 100px;
+    left: -3px;
     bottom: 100px;
     z-index: 1;
   }
@@ -745,8 +778,8 @@ pop-vision {
   .communication img {
     width: 15rem;
     position: relative;
-    left: 300px;
-    bottom: 250px;
+    left: -3px;
+    bottom: 130px;
     z-index: 1;
   }
 }
@@ -767,12 +800,19 @@ pop-vision {
 
   .navbar-nav {
     height: 100vh !important;
+    padding-left: 6px;
+    padding-right: 18px;
   }
 
   .navbar-nav .btn {
     width: 100%;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+    margin-top: 30px;
     text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 8px;
+    font-size: 1.1rem;
   }
 
   .navbar-toggler.collapsed .close-icon {
@@ -803,7 +843,6 @@ pop-vision {
 
   .navbar-light .navbar-nav .dropdown-menu {
     margin: 0;
-    /* margin-left: 20px; */
     border: 1px solid #f36f21;
     border-radius: 1px;
     background-color: #fff;
@@ -844,9 +883,31 @@ pop-vision {
     border-bottom: none;
   }
 
-  /* .dropdown-menu {
-    text-align: center;
-  } */
+  #chat {
+    display: none;
+  }
+
+  #chatSmall {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #dedede;
+    color: #444;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 10px 16px;
+    padding-top: 14px;
+  }
+
+  #chatSmall:hover {
+    background-color: #fff;
+  }
 
   /* COMMUNICATION SECTION */
   .communication {
@@ -926,7 +987,7 @@ pop-vision {
   }
 
   .divisions h3 {
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .divisions hr {
@@ -962,6 +1023,10 @@ pop-vision {
     width: 100%;
   }
 
+  .impact h3 {
+    font-size: 40px;
+  }
+
   /* PROGRAMS SECTION */
   .programs {
     width: 100%;
@@ -970,7 +1035,7 @@ pop-vision {
   }
 
   .programs h3 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .programs-content {
@@ -1033,7 +1098,7 @@ pop-vision {
   }
 
   .team h3 {
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 30px;
   }
 
@@ -1049,7 +1114,7 @@ pop-vision {
   /* Partners */
 
   .partners h3 {
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 30px;
     text-align: center;
   }
@@ -1067,10 +1132,7 @@ pop-vision {
   }
 
   .c-item img {
-    /* width: 80px;
-    height: 80px; */
-    width: 100rem;
-    height: 5rem;
+    height: auto;
   }
 
   /* FOOTER SECTION */
@@ -1118,8 +1180,13 @@ pop-vision {
 
   .navbar-nav .btn {
     width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
     text-transform: uppercase;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    padding-top: 8px;
+    font-size: 1.1rem;
   }
 
   .navbar-toggler.collapsed .close-icon {
