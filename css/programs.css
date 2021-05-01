@@ -196,6 +196,7 @@
 .apply .trainee {
   border: 1px solid #f36f21;
   background-color: #fff;
+  box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.4);
   margin-right: 20px;
 }
 
@@ -208,6 +209,7 @@
 .apply .sponsor {
   border: none;
   background-color: #ffe0ce;
+  box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 /********************************/
@@ -462,13 +464,14 @@
   /* APPLICATION SECTION */
   .apply {
     width: 100%;
-    padding: 5% 5%;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
+    align-items: center;
   }
 
   .apply button {
     font-size: 13px;
+    margin-bottom: 20px;
   }
 
   /* GET-IN-TOUCH SECTION */
