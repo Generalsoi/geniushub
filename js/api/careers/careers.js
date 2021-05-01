@@ -1,4 +1,4 @@
-let API_URL_ORIGIN = "https://alert-rooster.jurassic.ninja";
+let API_URL_ORIGIN = "https://muzzlab.com/geniushub";
 
 const searchInput = document.getElementById("searchQuery");
 const searchForm = document.getElementById("search");
