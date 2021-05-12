@@ -17,7 +17,7 @@ const url = `${API_URL_ORIGIN}/wp-json/wp/v2/media`;
       const imageSource = d.source_url;
 
       let imageHtmlString = `<div class="col-lg-4 col-md-4 col-sm-6 mb-3">
-    <img src="${imageSource}" width="100% alt="${d.title}">
+    <img src="${imageSource}" width="100%" alt="${d.title}">
   </div>`;
       if (d.caption.rendered.length === 0) {
         imageHtmlString += `<div>${d.caption.rendered}</div>`;

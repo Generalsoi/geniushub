@@ -36,6 +36,8 @@ post = (async () => {
 
     const relatedPosts = await getRelatedPosts(id, categoryId);
 
+    const relatedPostHeader = document.getElementById("relatedPostHeader");
+
     // hide Related post header if no related post
     if (relatedPosts.length === 0) {
       relatedPostHeader.style.display = "none";
@@ -59,14 +61,13 @@ post = (async () => {
         singlePostLink
       );
 
-      const relatedPostHeader = document.getElementById("relatedPostHeader");
-
       const postHtml = convertHtmlStringToDomElement(postString);
 
       const postParent = document.getElementById("relatedPosts");
       postParent.appendChild(postHtml);
     });
   } catch (error) {
+    console.log(error);
     //   remove spinner before displaying error message
     document.getElementById("loading").style.display = "none";
 
@@ -88,7 +89,7 @@ const parsePostAPIPayload = (payload) => {
     title: payload.title.rendered,
     excerpt: payload.content.rendered.slice(0, 200) + "...",
     content: payload.content.rendered,
-    imageSource: payload._embedded["wp:featuredmedia"]["0"].source_url,
+    imageSource: payload._embedded["wp:featuredmedia"]?.["0"].source_url,
     categoryId: payload._embedded["wp:term"]["0"][0].id,
     categoryName: payload._embedded["wp:term"]["0"][0].name,
   };

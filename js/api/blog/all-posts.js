@@ -31,8 +31,6 @@ const url = `${API_URL_ORIGIN}/wp-json/wp/v2/posts?_embed`;
 
       const postHtml = convertHtmlStringToDomElement(postString);
 
-      console.log(postHtml);
-
       postParent.appendChild(postHtml);
     });
   } catch (error) {
