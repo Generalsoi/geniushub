@@ -16,11 +16,11 @@ const url = `${API_URL_ORIGIN}/wp-json/wp/v2/media`;
     data.forEach((d, i) => {
       const imageSource = d.source_url;
 
-      let imageHtmlString = `<div id="imageParent" class="col-lg-4 col-md-4 col-sm-6 mb-3">
+      let imageHtmlString = `<div class="col-lg-4 col-md-4 col-sm-6 mb-3">
     <img src="${imageSource}" width="100% alt="${d.title}">
   </div>`;
       if (d.caption.rendered.length === 0) {
-        imageHtmlString += `<div class="caption">${d.caption.rendered}</div>`;
+        imageHtmlString += `<div>${d.caption.rendered}</div>`;
       }
 
       const imageDomHtml = convertHtmlStringToDomElement(imageHtmlString);
