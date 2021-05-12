@@ -1,4 +1,4 @@
-let API_URL_ORIGIN = "https://muzzlab.com/geniushub";
+let API_URL_ORIGIN = "https://geniushubglobal.com";
 
 const searchInput = document.getElementById("searchQuery");
 const searchForm = document.getElementById("search");

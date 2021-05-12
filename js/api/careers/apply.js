@@ -29,13 +29,14 @@ const handleFormSubmission = async (event) => {
   );
 
   const jobTitle = document.getElementById("jobTitle").innerHTML,
-    submissionEmail = document.getElementById("submissionEmail").innerHTML,
+    // submissionEmail = document.getElementById("submissionEmail").innerHTML,
+    emailTo = "careers@geniushubglobal.com",
     emailFrom = formElement["email"].value;
 
   try {
     const response = await Email.send({
-      SecureToken: "4b1e7728-b1b9-418a-89e7-21b6ed37f5b4",
-      To: "5eb608be1c-ed10aa@inbox.mailtrap.io",
+      SecureToken: "0e94233e-d69f-4e85-bdf7-9652b199f5f5",
+      To: emailTo,
       From: emailFrom,
       Subject: `Application for ${jobTitle}`,
       Body: htmlEmailBody,
@@ -45,7 +46,7 @@ const handleFormSubmission = async (event) => {
           data: resumeDataUri,
         },
         {
-          name: coverLetter.name,
+          name: coverLetterFile.name,
           data: coverLetterDataUri,
         },
       ],

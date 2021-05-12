@@ -386,13 +386,11 @@
           <div id="error" class="text-center text-danger" role="alert">
           </div>
 
-          <form id="form1" class="formID"
-            action="https://alert-rooster.jurassic.ninja/wp-json/contact-form-7/v1/contact-forms/84/feedback"
-            method="POST">
-            <input type="text" name="full_name" placeholder="Full Name">
-            <input type="text" name="email" placeholder="Email">
-            <input type="tel" name="phone" placeholder="Phone">
-            <input type="text" name="address" placeholder="Address">
+          <form id="form1" class="formID" action="" method="POST">
+            <input type="text" required name="full_name" placeholder="Full Name">
+            <input type="text" required name="email" placeholder="Email">
+            <input type="tel" required name="phone" placeholder="Phone">
+            <input type="text" required name="address" placeholder="Address">
             <select name="program-of-interest" id="skill-of-choice">
               <option disabled selected>Choose a skill program</option>
               <option value="tailoring-and-fashion-design">Training & fashion design</option>
@@ -435,7 +433,7 @@
               <option value="coconut-oil">Cocunut Oil</option>
               <option value="pig-rearing">Pig Rearing</option>
             </select>
-            <input type="text" name="occupation" placeholder="What is your current occupation?">
+            <input type="text" required name="occupation" placeholder="What is your current occupation?">
             <select name="information-origin" id="info-source">
               <option disabled selected>How did you hear about this <span style="color: #F36F21;">Genius Hub</span>?
               </option>
@@ -445,7 +443,7 @@
               <option value="twitter">Twitter</option>
               <option value="others">Others</option>
             </select>
-            <textarea name="reason_for_participation" rows="7"
+            <textarea name="reason_for_participation" rows="7" required
               placeholder="Why do you want to participate in Genius Hub Skill Acquisition & Mentorship Program?"></textarea>
             <div class="py-2 text-center">
               <button id="submitBtn" class="px-4 py-3" type="submit">
@@ -883,7 +881,9 @@
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
   <script src="./js/api/newsletter/newsletterSubscription.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="./js/api/form/submitForm.js"></script>
+
 </body>
 
 </html>

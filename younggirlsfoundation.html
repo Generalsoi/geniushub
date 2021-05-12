@@ -195,17 +195,15 @@
           <div id="error" class="text-center text-danger" role="alert">
           </div>
 
-          <form id="form"
-            action="https://alert-rooster.jurassic.ninja/wp-json/contact-form-7/v1/contact-forms/83/feedback"
-            method="POST">
-            <input type="text" name="full_name" placeholder="Full Name">
-            <input type="text" name="email" placeholder="Email">
-            <input type="tel" name="phone" placeholder="Phone">
-            <input type="text" name="address" placeholder="Address">
-            <input type="text" name="lga" placeholder="Local Government Area">
-            <input type="text" name="state" placeholder="State">
-            <input type="tel" name="other_phone" placeholder="Other Phone">
-            <textarea name="message" rows="7" placeholder="Message"></textarea>
+          <form id="form" action="" method="POST">
+            <input type="text" required name="full_name" placeholder="Full Name">
+            <input type="text" required name="email" placeholder="Email">
+            <input type="tel" required name="phone" placeholder="Phone">
+            <input type="text" required name="address" placeholder="Address">
+            <input type="text" required name="lga" placeholder="Local Government Area">
+            <input type="text" required name="state" placeholder="State">
+            <input type="tel" required name="other_phone" placeholder="Other Phone">
+            <textarea name="message" required rows="7" placeholder="Message"></textarea>
             <div class="py-2 text-center">
               <button id="submitBtn" class="px-4 py-3" type="submit">
                 <span id="btnLoading" style="display: none;" class="spinner-border spinner-border-sm" role="status"
@@ -298,7 +296,9 @@
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
   <script src="./js/api/newsletter/newsletterSubscription.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="./js/api/form/submitForm.js"></script>
+
 
 
 </body>

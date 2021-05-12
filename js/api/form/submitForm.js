@@ -4,8 +4,11 @@ const formSubmissionHandler = async (event) => {
 
   // get the form attributes from event.target object
   const formElement = event.target,
-    { action, method } = formElement,
     body = new FormData(formElement);
+
+  const emailFrom = formElement["email"].value;
+  // const emailTo = "5eb608be1c-ed10aa@inbox.mailtrap.io";
+  const emailTo = "contact@geniushubglobal.com";
 
   const loadingBtnID = pageHasMoreForms()
     ? formElement?.id === "form1"
@@ -20,14 +23,12 @@ const formSubmissionHandler = async (event) => {
   displaySubmitButtonSpinner(loading);
 
   try {
-    const res = await fetch(action, { method, body });
-    const jsonRes = await res.json();
-
-    const {
-      isSuccess,
-      message,
-      validationError,
-    } = normalizeContactForm7Response(jsonRes);
+    const { isSuccess, message } = await sendEmail(
+      formElement,
+      body,
+      emailFrom,
+      emailTo
+    );
 
     // set the form submission response message
     displayServerResponseMessage(formElement, isSuccess, message);
@@ -55,15 +56,9 @@ const formSubmissionHandler = async (event) => {
     }
 
     // if not successful return the error handler
-    return handleFormSubmissionError(loading, validationError, formElement);
+    return handleFormSubmissionError(loading);
   } catch (error) {
-    console.log(error);
-    removeSubmitButtonSpinner(loading);
-
-    // display custom error message for other api exceptions
-    messageNode = document.getElementById("error");
-    messageNode.innerText = "Something went wrong, try again.";
-    messageNode.style.padding = "10px 0px";
+    handleFormSubmissionError(loading);
   }
 };
 
@@ -71,50 +66,55 @@ const formSubmissionHandler = async (event) => {
 const formBlurEventHandler = (event) => {
   if (event.target.value.length > 0) {
     event.target.style.border = "1px solid #198754";
+  } else if (event.target.value.length === 0) {
+    event.target.style.border = "1px solid #fc9d9d";
   }
 };
 
 // format errors from api response
-const normalizeContactForm7Response = (response) => {
-  // The other possible statuses are different kind of errors
-  const isSuccess = response.status === "mail_sent";
-  // A message is provided for all statuses
-  const message = response.message;
-  const validationError = isSuccess
-    ? {}
-    : // We transform an array of objects into an object
-      Object.entries(
-        response.invalid_fields.map((error) => {
-          // Extracts the part after "cf7-form-control-wrap"
-          const key = /cf7[-a-z]*.(.*)/.exec(error.into)[1];
+const sendEmail = async (formElement, formDataEntries, emailFrom, emailTo) => {
+  const emailSubject = pageHasMoreForms()
+    ? formElement?.id === "form1"
+      ? "Genius Hub Trainee Application"
+      : "Genius Hub Sponsor Application"
+    : document.title;
 
-          return [key, error.message];
-        })
-      );
+  let htmlEmailBody = "";
+
+  formDataEntries.forEach(
+    (value, key) =>
+      (htmlEmailBody += `<p>${key.toUpperCase()}:&nbsp;&nbsp;<b>${value}</b></p>`)
+  );
+
+  const response = await Email.send({
+    SecureToken: "0e94233e-d69f-4e85-bdf7-9652b199f5f5",
+    To: emailTo,
+    From: emailFrom,
+    Subject: `Contact Form Response (${emailSubject})`,
+    Body: htmlEmailBody,
+  });
+
+  const isSuccess = response === "OK";
+
+  const message = "Thank you for contacting us.";
 
   return {
     isSuccess,
     message,
-    validationError,
   };
 };
 
 // handle error submission
-const handleFormSubmissionError = (loading, validationError, formElement) => {
+const handleFormSubmissionError = (loading) => {
   removeSubmitButtonSpinner(loading);
 
-  let inputElement;
-  validationError.forEach(([i, errorRes]) => {
-    const error = {
-      htmlField: errorRes[0],
-      errorMsg: errorRes[1],
-    };
-
-    inputElement = formElement[error.htmlField];
-
-    inputElement.style.border = "1px solid #fc9d9d";
-  });
+  // display custom error message for other api exceptions
+  messageNode = document.getElementById("error");
+  messageNode.innerText =
+    "Something went wrong, please fill the form fields correctly and try again.";
+  messageNode.style.padding = "10px 0px";
 };
+
 // display server response messages
 const displayServerResponseMessage = (formElement, isSuccess, message) => {
   const messageHTMLNodeId = isSuccess

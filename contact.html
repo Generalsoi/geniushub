@@ -145,13 +145,12 @@
       <div id="error" class="text-danger" role="alert">
       </div>
 
-      <form id="form" method="POST"
-        action="https://alert-rooster.jurassic.ninja/wp-json/contact-form-7/v1/contact-forms/73/feedback">
+      <form id="form" method="POST" action="">
 
         <div>
-          <input type="text" name="organisation" placeholder="Name of Individual/Organization">
-          <input type="email" name="email" placeholder="Email">
-          <input type="tel" name="phone" placeholder="Phone">
+          <input type="text" required name="organisation" placeholder="Name of Individual/Organization">
+          <input type="email" required name="email" placeholder="Email">
+          <input type="tel" required name="phone" placeholder="Phone">
           <select id="country" name="country">
             <option disabled selected>Select Country</option>
             <option value="Afganistan">Afghanistan</option>
@@ -410,7 +409,7 @@
             <option value="other">Other</option>
           </select>
         </div>
-        <textarea name="message" row="25" placeholder="Message"></textarea>
+        <textarea name="message" required row="25" placeholder="Message"></textarea>
         <button id="submitBtn" type="submit">
           <span id="btnLoading" style="display: none;" class="spinner-border spinner-border-sm" role="status"
             aria-hidden="true"></span>
@@ -501,7 +500,9 @@
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
   <script src="./js/api/newsletter/newsletterSubscription.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="./js/api/form/submitForm.js"></script>
+
 </body>
 
 </html>

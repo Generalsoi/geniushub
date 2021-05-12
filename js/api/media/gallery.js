@@ -1,4 +1,4 @@
-let API_URL_ORIGIN = "https://muzzlab.com/geniushub";
+let API_URL_ORIGIN = "https://geniushubglobal.com";
 const url = `${API_URL_ORIGIN}/wp-json/wp/v2/media`;
 
 (async () => {
