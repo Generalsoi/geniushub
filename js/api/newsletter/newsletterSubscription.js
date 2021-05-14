@@ -1,6 +1,6 @@
 let origin = "https://geniushubglobal.com";
 
-const API_NEWSLETTER_url = `${origin}/wp-json/newsletter/v2/subscribers?client_key=532adf72c37084ba885b2a12669372d367f2e9c5&client_secret=1193d2eb5dfa26c3c14734a9f1a7f0c21196692e`;
+const API_NEWSLETTER_url = `${origin}/wp-json/newsletter/v2/subscribers`;
 
 // handle newsletter subscription
 const form = document.getElementById("subscribe");
@@ -12,12 +12,16 @@ form.addEventListener("submit", async (e) => {
   // clean up server image
   document.getElementById("serverPop")?.remove();
 
-  const headers = new Headers();
-  headers.append("Content-Type", "application/json");
-
   const options = {
     method: "POST",
-    headers: headers,
+    headers: new Headers({
+      Authorization:
+        "Basic " +
+        btoa(
+          "532adf72c37084ba885b2a12669372d367f2e9c5:1193d2eb5dfa26c3c14734a9f1a7f0c21196692e"
+        ),
+      "Content-Type": "application/json",
+    }),
     body: JSON.stringify({
       email: emailElement.value,
     }),
@@ -47,9 +51,9 @@ form.addEventListener("submit", async (e) => {
     document.getElementById(`${status}Button`).click();
     form.reset();
 
-    console.log("data", data);
+    // console.log("data", data);
   } catch (error) {
-    console.log("error", error);
+    // console.log("error", error);
   }
 });
 
