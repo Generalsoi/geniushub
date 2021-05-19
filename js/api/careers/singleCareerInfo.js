@@ -1,4 +1,4 @@
-let API_URL_ORIGIN = "https://geniushubglobal.com";
+let API_URL_ORIGIN = "https://geniushubglobal.com/geniusadmin/index.php";
 
 const urlSearchString = window.location.search;
 

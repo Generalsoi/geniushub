@@ -1,4 +1,4 @@
-let origin = "https://geniushubglobal.com";
+let origin = "https://geniushubglobal.com/geniusadmin/index.php";
 
 const API_NEWSLETTER_url = `${origin}/wp-json/newsletter/v2/subscribers`;
 

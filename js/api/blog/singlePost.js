@@ -1,4 +1,4 @@
-let API_URL_ORIGIN = "https://geniushubglobal.com";
+let API_URL_ORIGIN = "https://geniushubglobal.com/geniusadmin/index.php";
 
 const urlSearchString = window.location.search;
 
@@ -27,7 +27,7 @@ post = (async () => {
     const backgroundImageElement = document.querySelector(".introduction");
 
     // append data to html location
-    postTitleElement.innerHTML = title;
+    postTitleElement.innerHTML = title.slice(0, 50) + "...";
     postContentElement.innerHTML = content;
     backgroundImageElement.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${imageSource})`;
     /*
