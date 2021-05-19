@@ -7,9 +7,11 @@ const form = document.getElementById("subscribe");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
+  document.getElementById("newsSubscribeBtn").disabled = true;
+
   const emailElement = form.elements["email"];
 
-  // clean up server image
+  // clean up server image from the dom
   document.getElementById("serverPop")?.remove();
 
   const options = {
@@ -18,7 +20,7 @@ form.addEventListener("submit", async (e) => {
       Authorization:
         "Basic " +
         btoa(
-          "532adf72c37084ba885b2a12669372d367f2e9c5:1193d2eb5dfa26c3c14734a9f1a7f0c21196692e"
+          "c716f072dc80c3b02b4f4d916bc83b0bda8d3a11:999304c216d4d888abcf5523fd3291da4b693e67"
         ),
       "Content-Type": "application/json",
     }),
@@ -49,10 +51,13 @@ form.addEventListener("submit", async (e) => {
     );
     docBody.appendChild(serverResponse);
     document.getElementById(`${status}Button`).click();
+    document.getElementById("newsSubscribeBtn").disabled = false;
     form.reset();
 
     // console.log("data", data);
   } catch (error) {
+    document.getElementById("newsSubscribeBtn").disabled = false;
+
     // console.log("error", error);
   }
 });

@@ -9,7 +9,7 @@
 .introduction {
   height: calc(100vh - 100px);
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/about-img.png);
+    url(../images/about.img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
